@@ -1,0 +1,30 @@
+# Preface {.unnumbered}
+
+Welcome!
+
+## Inhalt
+
+## Script
+Im Script treffen Sie auf Kästchen:
+
+
+Einige Hinweiskästchen sind eingeklappt.Mit einem Klick auf das Kästchen wird dieses aufgeklappt.
+
+::: {.callout-tip title="Ich bin aufklappbar!" collapse="true" icon="false"}
+Und mit einem weiteren klick, kann man mich wieder schliessen.
+:::
+
+
+::: {.callout-tip title="Beispielaufgaben"}
+In solchen Kästchen stehen Beispielaufgaben zu aktuellen Themen. Diese werden wir entweder direkt in Plenum oder zuerst selbstständig bearbeiten und dann im direkten Anschluss besprechen.
+:::
+
+
+::: {.callout-caution title="Definition / Eigenschaften" icon=false}
+So werden Definitionen oder weitere wichtige Infos behandelt
+:::
+
+
+::: {.callout-note title="Interatktives / Ergänzendes"}
+Interaktives oder weiterführende Infos findest du in diesen Kästchen
+:::

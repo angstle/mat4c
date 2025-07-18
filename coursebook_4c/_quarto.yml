@@ -1,0 +1,42 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Skript Mathematik 4c"
+  author: "Levin Angst"
+  date: today
+  favicon: logo_funktionen.jpg
+  description: Dieses Buch umfasst den Unterrichtsstoff für das Jahr 2025/26
+  keyword: "test, unterricht"
+  url: "https://gitlab.uzh.ch/levinrogerangst/test_quarto/"
+  page-navigation: true
+  sidebar:
+    logo: logo_funktionen.jpg
+    search: true
+  repo-url: https://gitlab.uzh.ch/levinrogerangst/test_quarto/
+  repo-subdir: book
+  repo-branch: main
+  repo-actions: [edit, issue, source]
+  sharing: [twitter, linkedin]
+  image: logo_funktionen.jpg
+
+  chapters:
+    - index.qmd
+    - 1_quad_funktionen.qmd
+    - 2_quadratische_gleichungen.qmd
+    - 3_vektoren.qmd
+    - 4_trigo.qmd
+    - 5_potenz_wurzelfunktionen.qmd
+    - 6_exponential_logarithmus.qmd
+
+format:
+  html:
+    mermaid:
+      theme: neutral
+    theme:
+      light: flatly
+      dark: superhero
+    code-fold: false
+    css: custom.css
+    mainfont: FiraCode

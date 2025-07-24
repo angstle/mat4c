@@ -9,21 +9,19 @@ book:
   favicon: logo_funktionen.jpg
   description: Dieses Buch umfasst den Unterrichtsstoff für das Jahr 2025/26
   keyword: "test, unterricht"
-  url: "https://gitlab.uzh.ch/levinrogerangst/test_quarto/"
+  url: "https://angstle.github.io/mat4c/"
   page-navigation: true
   sidebar:
     logo: logo_funktionen.jpg
     search: true
-  repo-url: https://gitlab.uzh.ch/levinrogerangst/test_quarto/
   repo-subdir: book
   repo-branch: main
-  repo-actions: [edit, issue, source]
-  sharing: [twitter, linkedin]
   image: logo_funktionen.jpg
 
   chapters:
     - index.qmd
     - 1_quad_funktionen.qmd
+    - 1_1_quadratische_funktionen_aufgaben.qmd
     - 2_quadratische_gleichungen.qmd
     - 3_vektoren.qmd
     - 4_trigo.qmd

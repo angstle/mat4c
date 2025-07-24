@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Dieses Buch umfasst den Unterrichtsstoff für das Jahr 2025/26">
+
+<title>2&nbsp; Übungsaufgaben Quadratische Funktionen – Skript Mathematik 4c</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./2_quadratische_gleichungen.html" rel="next">
+<link href="./1_quad_funktionen.html" rel="prev">
+<link href="./logo_funktionen.jpg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-022c32add0b373e1d671bbeace80d355.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-8636f0b93bb1e90f67bd5734d6d07bdf.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./1_1_quadratische_funktionen_aufgaben.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Übungsaufgaben Quadratische Funktionen</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo_funktionen.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Skript Mathematik 4c</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einleitung</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_quad_funktionen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Quadratische Funktionen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_1_quadratische_funktionen_aufgaben.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Übungsaufgaben Quadratische Funktionen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quadratische_gleichungen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Quadratische Gleichungen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3_vektoren.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Vektoren</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4_trigo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Trigonometrie</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5_potenz_wurzelfunktionen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Potenz- / Wurzelfunktionen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./6_exponential_logarithmus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Exponentialfunktion / Logarithmus</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-aufgaben_rein_quadratische_funktion" id="toc-sec-aufgaben_rein_quadratische_funktion" class="nav-link active" data-scroll-target="#sec-aufgaben_rein_quadratische_funktion"><span class="header-section-number">2.1</span> Rein quadratische Funktion</a></li>
+  <li><a href="#sec-aufgaben_allgemeine_quadratische_funktion" id="toc-sec-aufgaben_allgemeine_quadratische_funktion" class="nav-link" data-scroll-target="#sec-aufgaben_allgemeine_quadratische_funktion"><span class="header-section-number">2.2</span> Allgemeine quadratische Funktion</a></li>
+  <li><a href="#sec-aufgaben_allgemeine_form_quadratische_funktion" id="toc-sec-aufgaben_allgemeine_form_quadratische_funktion" class="nav-link" data-scroll-target="#sec-aufgaben_allgemeine_form_quadratische_funktion"><span class="header-section-number">2.3</span> Allgemeine Form der quadratischen Funktion</a></li>
+  <li><a href="#sec-aufgaben_optimierungsprobleme" id="toc-sec-aufgaben_optimierungsprobleme" class="nav-link" data-scroll-target="#sec-aufgaben_optimierungsprobleme"><span class="header-section-number">2.4</span> Optimierungsprobleme</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-aufgaben_quadratische_funktionen" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Übungsaufgaben Quadratische Funktionen</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-aufgaben_rein_quadratische_funktion" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-aufgaben_rein_quadratische_funktion"><span class="header-section-number">2.1</span> Rein quadratische Funktion</h2>
+<ol type="1">
+<li>Welche der Punkte liegen auf der Parabel mit der Gleichung <span class="math inline">\(y=2.5x^2\)</span>?</li>
+</ol>
+<ul>
+<li><span class="math inline">\(A(2|10)\)</span></li>
+<li><span class="math inline">\(B(-2|10)\)</span></li>
+<li><span class="math inline">\(C(7|122)\)</span></li>
+<li><span class="math inline">\(D(4|40)\)</span></li>
+<li><span class="math inline">\(E(\sqrt{2}|5)\)</span></li>
+<li><span class="math inline">\(F(\sqrt{6.25}|-1)\)</span></li>
+<li><span class="math inline">\(G(0|2.5)\)</span></li>
+<li><span class="math inline">\(H(-\sqrt{3}|-22.5)\)</span></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>A, B, D, E</p>
+</div>
+</div>
+</div>
+<hr>
+<ol start="2" type="1">
+<li>Bestimmen Sie die Funktionsgleichungen folgender Parabeln.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="1_1_quadratische_funktionen_aufgaben_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Schwarz: <span class="math inline">\(f(x)=-\frac{5}{2} \cdot x^2\)</span></li>
+<li>Blau: <span class="math inline">\(f(x)=-x^2\)</span></li>
+<li>Rot: <span class="math inline">\(f(x)= \sqrt 2 \cdot x^2\)</span> ODER <span class="math inline">\(f(x) = 1.4 \cdot x^2\)</span></li>
+<li>Grün: <span class="math inline">\(f(x)= -5 \cdot x^2\)</span></li>
+<li>Violet: <span class="math inline">\(f(x)= 10 \cdot x^2\)</span></li>
+<li>Orange: <span class="math inline">\(f(x)= 3 \cdot x^2\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<ol start="3" type="1">
+<li><p>Der Punkt <span class="math inline">\(P\)</span> liegt jeweils auf dem Graphen der Funktion <span class="math inline">\(f(x)=\frac{3}{4}x^2\)</span>. Bestimmen sie die Fehlende Koordinate.</p>
+<ol type="a">
+<li><span class="math inline">\(P(4|y)\)</span></li>
+<li><span class="math inline">\(P(x|3)\)</span></li>
+<li><span class="math inline">\(P(-1.5|y)\)</span></li>
+<li><span class="math inline">\(P(x|0)\)</span></li>
+<li><span class="math inline">\(P(x|27)\)</span></li>
+<li><span class="math inline">\(P(10|y)\)</span></li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><span class="math inline">\(P(4|12)\)</span></li>
+<li><span class="math inline">\(P(\pm 2|3)\)</span></li>
+<li><span class="math inline">\(P(-1.5|1.69)\)</span></li>
+<li><span class="math inline">\(P(0|0)\)</span></li>
+<li><span class="math inline">\(P(\pm 6|27)\)</span></li>
+<li><span class="math inline">\(P(10|75)\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<ol start="4" type="1">
+<li><p>Der Graph einer rein quadratischen Funktion verläuft durch den Punkt <span class="math inline">\(P.\)</span> Bestimmen sie die Funktionsgleichung und zeichnen sie den Graphen.</p>
+<ol type="a">
+<li><span class="math inline">\(P(1|3)\)</span></li>
+<li><span class="math inline">\(P(2|-2)\)</span></li>
+<li><span class="math inline">\(P(-4|-5)\)</span></li>
+<li><span class="math inline">\(P(-3|27)\)</span></li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><span class="math inline">\(f(x) = 3x^2\)</span></li>
+<li><span class="math inline">\(f(x) = -0.5x^2\)</span></li>
+<li><span class="math inline">\(f(x) = -0.3125x^2\)</span></li>
+<li><span class="math inline">\(f(x) = 3x^2\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-aufgaben_allgemeine_quadratische_funktion" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-aufgaben_allgemeine_quadratische_funktion"><span class="header-section-number">2.2</span> Allgemeine quadratische Funktion</h2>
+<ol type="1">
+<li><p>Bei der rein quadratischen Funktion haben wir gesehen, dass diese immer eine Nullstelle bei <span class="math inline">\(x = 0\)</span> hat. Wir möchten uns nun anschauen wie viele Nullstellen allgemeine quadratische Funktionen haben.</p>
+<ol type="a">
+<li>Überlegen Sie sich, wie viele Nullstellen quadratische Funktionen haben (verschiedene Fälle).</li>
+<li>Skizzieren Sie ein Beispiel für eine quadratische (nicht rein quadratische) Funktion mit genau einer Nullstelle. Finden Sie auch eine mögliche Funktionsgleichung?</li>
+<li>Skizzieren Sie ein Beispiel für eine quadratische Funktion ohne Nullstelle. Finden Sie auch eine mögliche Funktionsgleichung?</li>
+<li>Skizzieren Sie ein Beispiel für eine quadratische Funktion mit zwei Nullstellen. Finden Sie auch eine mögliche Funktionsgleichung?</li>
+<li>Skizzieren Sie ein Beispiel für eine quadratische Funktion mit unendlich vielen Nullstellen. Finden Sie auch eine mögliche Funktionsgleichung?</li>
+<li>Finden Sie Bedingungen für die Parameter <span class="math inline">\(a, u, v\)</span> so, dass eine quadratische Funktion keine, eine oder zwei Nullstellen hat.</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>Quadratische Funktionen können keine, genau eine oder 2 Nullstellen haben</li>
+<li>Beispiel: <span class="math inline">\(f(x) = (x-1)^2\)</span></li>
+<li>Beispiel: <span class="math inline">\(f(x) = (x+1)^2 + 4\)</span></li>
+<li>Beispiel: <span class="math inline">\(f(x) = (x-3)^2 - 4\)</span></li>
+<li>Unendlich viele Nullstellen sind nur bei der Nullfunktion <span class="math inline">\(f(x) = 0\)</span> möglich</li>
+<li><ol type="i">
+<li>Zwei Nullstellen: <span class="math inline">\(a \ne 0\)</span>, <span class="math inline">\(v &lt; 0\)</span></li>
+<li>Eine Nullstelle: <span class="math inline">\(a \ne 0\)</span>, <span class="math inline">\(v = 0\)</span></li>
+<li>Keine Nullstelle: <span class="math inline">\(a \ne 0\)</span>, <span class="math inline">\(v &gt; 0\)</span></li>
+</ol></li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<ol start="2" type="1">
+<li>Eine Parabel hat den Scheitel <span class="math inline">\(S(2|3)\)</span> und verläuft durch den Punkt <span class="math inline">\(P(4|−5)\)</span>. Bestimmen Sie die Funktionsgleichung der Parabel.</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(f(x) = -2\cdot (x-2)^2 + 3\)</span></p>
+</div>
+</div>
+</div>
+<hr>
+<ol start="3" type="1">
+<li>Zeichnen Sie die Graphen der quadratischen Funktionen ohne Wertetabelle in ein Koordinatensystem.</li>
+</ol>
+<ul>
+<li><span class="math inline">\(f(x)=(x-2)^2 - 1\)</span></li>
+<li><span class="math inline">\(g(x)=-2(x+1)^2 + 3\)</span></li>
+<li><span class="math inline">\(h(x)=\frac{1}{3}(x+3)^2 - 2\)</span></li>
+</ul>
+<hr>
+<ol start="4" type="1">
+<li>Beschreiben Sie in Worten, wie die Parabel aus der Normparabel <span class="math inline">\((y=x^2)\)</span> entstanden ist (Streckung, Stauchung, Verschiebung etc.)</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(y=2x^2 + 5\)</span></li>
+<li><span class="math inline">\(y=\frac{2}{3}(x - 2)^2\)</span></li>
+<li><span class="math inline">\(y=-3(x+2)^2 + 3\)</span></li>
+<li><span class="math inline">\(y=\frac{2}{5}(x-\frac{1}{2})^2 -1\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><p>Streckung um Faktor <span class="math inline">\(2\)</span>, Verschiebung um <span class="math inline">\(+5\)</span> in y-Richtung (<span class="math inline">\(f(x)=2\cdot (x-0)^2 + 5\)</span>)</p></li>
+<li><p>Stauchung um Faktor <span class="math inline">\(\frac{2}{3}\)</span>, Verschiebung um <span class="math inline">\(+2\)</span> in x-Richtung (<span class="math inline">\(f(x)=\frac{2}{3}\cdot (x-2)^2 + 0\)</span>)</p></li>
+<li><p>Streckung um Faktor <span class="math inline">\(-3\)</span> (Spiegelung an x-Achse), Verschiebung um <span class="math inline">\(-2\)</span> in x-Richtung und <span class="math inline">\(+3\)</span> in y-Richtung (<span class="math inline">\(f(x)=-3 \cdot (x+2)^2 + 3\)</span>)</p></li>
+<li><p>Stauchung um Faktor <span class="math inline">\(\frac{2}{5}\)</span> Verschiebung um <span class="math inline">\(+\frac{1}{2}\)</span> in x-Richtung und <span class="math inline">\(-1\)</span> in y-Richtung (<span class="math inline">\(f(x)=\frac{2}{5} \cdot (x-0.5)^2 -1\)</span>)</p></li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<ol start="5" type="1">
+<li>Bestimmen Sie die Funktionsgleichungen der folgenden Parabeln</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="1_1_quadratische_funktionen_aufgaben_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Schwarz: <span class="math inline">\(f(x)=-(x-3)^2 +2\)</span></li>
+<li>Blau: <span class="math inline">\(f(x)=(x)^2 - 13\)</span></li>
+<li>Rot: <span class="math inline">\(f(x)=(x+\sqrt{2})^2\)</span></li>
+<li>Grün: <span class="math inline">\(f(x)=-5 \cdot x^2\)</span></li>
+<li>Violet: <span class="math inline">\(f(x)=2 \cdot x^2+10\)</span></li>
+<li>Orange: <span class="math inline">\(f(x)=-10\cdot (x-5)^2+2\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<ol start="6" type="1">
+<li>Die Wertetabellen gehören zu quadratischen Funktionen. Bestimmen Sie die Funktionsgleichung.</li>
+</ol>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(x\)</span></th>
+<th><span class="math inline">\(-5\)</span></th>
+<th><span class="math inline">\(-4\)</span></th>
+<th><span class="math inline">\(-3\)</span></th>
+<th><span class="math inline">\(-2\)</span></th>
+<th><span class="math inline">\(-1\)</span></th>
+<th><span class="math inline">\(0\)</span></th>
+<th><span class="math inline">\(1\)</span></th>
+<th><span class="math inline">\(2\)</span></th>
+<th><span class="math inline">\(3\)</span></th>
+<th><span class="math inline">\(4\)</span></th>
+<th><span class="math inline">\(5\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(f(x)\)</span></td>
+<td><span class="math inline">\(10\)</span></td>
+<td><span class="math inline">\(5\)</span></td>
+<td><span class="math inline">\(2\)</span></td>
+<td><span class="math inline">\(1\)</span></td>
+<td><span class="math inline">\(2\)</span></td>
+<td><span class="math inline">\(5\)</span></td>
+<td><span class="math inline">\(10\)</span></td>
+<td><span class="math inline">\(17\)</span></td>
+<td><span class="math inline">\(26\)</span></td>
+<td><span class="math inline">\(37\)</span></td>
+<td><span class="math inline">\(50\)</span></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(g(x)\)</span></td>
+<td><span class="math inline">\(59\)</span></td>
+<td><span class="math inline">\(44\)</span></td>
+<td><span class="math inline">\(31\)</span></td>
+<td><span class="math inline">\(20\)</span></td>
+<td><span class="math inline">\(11\)</span></td>
+<td><span class="math inline">\(4\)</span></td>
+<td><span class="math inline">\(-1\)</span></td>
+<td><span class="math inline">\(-4\)</span></td>
+<td><span class="math inline">\(-5\)</span></td>
+<td><span class="math inline">\(-4\)</span></td>
+<td><span class="math inline">\(-1\)</span></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(h(x)\)</span></td>
+<td><span class="math inline">\(-27\)</span></td>
+<td><span class="math inline">\(-13\)</span></td>
+<td><span class="math inline">\(-3\)</span></td>
+<td><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(5\)</span></td>
+<td><span class="math inline">\(3\)</span></td>
+<td><span class="math inline">\(-3\)</span></td>
+<td><span class="math inline">\(-13\)</span></td>
+<td><span class="math inline">\(-27\)</span></td>
+<td><span class="math inline">\(-45\)</span></td>
+<td><span class="math inline">\(-67\)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(f(x) = (x+2)^2 + 1\)</span></li>
+<li><span class="math inline">\(g(x) = (x-3)^2 - 5\)</span></li>
+<li><span class="math inline">\(h(x) = -2(x+1)^2 + 5\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<ol start="7" type="1">
+<li>Der rote Graph im Koordinatensystem ist eine verschobene Parabel.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="1_1_quadratische_funktionen_aufgaben_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="i">
+<li>Bestimmen sie die Gleichung der Parabel, wenn der Ursprung im Punkt A, B, C liegt.</li>
+<li>Wo liegt der Ursprung des Koordinatensystems, wenn die Funktionsgleichung der Parabel <span class="math inline">\(y = 2(x−2)^2 − 2\)</span> bzw. <span class="math inline">\(y = 2(x + 3)^2 − 5\)</span> lautet.</li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>TBD</p>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-aufgaben_allgemeine_form_quadratische_funktion" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-aufgaben_allgemeine_form_quadratische_funktion"><span class="header-section-number">2.3</span> Allgemeine Form der quadratischen Funktion</h2>
+<p>Die allgemeine Form erhält man aus der Scheitelpunktform durch ausmultiplizieren und vereinfachen.</p>
+<hr>
+<ol type="1">
+<li>Wandeln Sie die Scheitelpunktform in die allgemeine Form um</li>
+</ol>
+<ul>
+<li><span class="math inline">\(f(x) = 3(x-5)^2 -8\)</span></li>
+<li><span class="math inline">\(g(x) = -\frac{1}{4}(x+2)^2 + 6\)</span></li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(f(x) = 3x^2 - 30x + 67\)</span></li>
+<li><span class="math inline">\(g(x) = -\frac{1}{4}x^2 - x + 5\)</span></li>
+</ul>
+</div>
+</div>
+</div>
+<hr>
+<p>Die umwandlung der allgemeinen zur Scheitelpunktform ist nicht ganz so einfach. Man muss den Term quadratisch ergänzen, sodass man eine Binomische Formel anwenden kann.</p>
+<ol start="2" type="1">
+<li><p>Ergänzen sie die Terme so, dass Sie eine bimonische Formel anwenden können und wenden Sie diese anschliessend an.</p>
+<ol type="a">
+<li><span class="math inline">\(x^2-6x+ \Box\)</span></li>
+<li><span class="math inline">\(s^2 +4s + \Box\)</span></li>
+<li><span class="math inline">\(z^2 + z + \Box\)</span></li>
+<li><span class="math inline">\(t^2 - 5t + \Box\)</span></li>
+<li><span class="math inline">\(h^2 - \frac{1}{3}h + \Box\)</span></li>
+<li><span class="math inline">\(u^2 + 1.6u + \Box\)</span></li>
+<li><span class="math inline">\(4x^2 - 4x + \Box\)</span></li>
+<li><span class="math inline">\(16c^2 +5c + \Box\)</span></li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><span class="math inline">\(x^2 - 6x + 9\)</span></li>
+<li><span class="math inline">\(s^2 + 4s + 4\)</span></li>
+<li><span class="math inline">\(z^2 + z + \frac{1}{4}\)</span></li>
+<li><span class="math inline">\(t^2 - 5t + 6.25\)</span></li>
+<li><span class="math inline">\(h^2 - \frac{1}{3}h + \frac{1}{36}\)</span></li>
+<li><span class="math inline">\(u^2 + 1.6u + 0.64\)</span></li>
+<li><span class="math inline">\(4x^2 - 4x + 1\)</span></li>
+<li><span class="math inline">\(16c^2 + 5c + \frac{25}{64}\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<ol start="3" type="1">
+<li><p>Wandeln sie folgende Funktionen von der allgemeinen in die Scheitelpunktform um.</p>
+<ol type="a">
+<li><span class="math inline">\(f(x) = x^2 - 4x + 4\)</span></li>
+<li><span class="math inline">\(f(x) = (x^2 + 4x + 4) + 3\)</span></li>
+<li><span class="math inline">\(f(x) = x^2 - 6x + 9 + 3\)</span></li>
+<li><span class="math inline">\(f(x) = x^2 - 6x + 14\)</span></li>
+<li><span class="math inline">\(f(x) = x^2 + 4x + 4 - 2\)</span></li>
+<li><span class="math inline">\(f(x) = x^2 + 4x + 2\)</span></li>
+<li><span class="math inline">\(f(x) = x^2 - 8x + 19\)</span></li>
+<li><span class="math inline">\(f(x) = x^2 - 10x + 17\)</span></li>
+<li><span class="math inline">\(f(x) = 3x^2 - 12x + 15\)</span></li>
+<li><span class="math inline">\(f(x) = 3x^2 + 6x - 1\)</span></li>
+<li><span class="math inline">\(f(x) = 2x^2 + 9x + 15\)</span></li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><span class="math inline">\(f(x) = (x - 2)^2\)</span></li>
+<li><span class="math inline">\(f(x) = (x + 2)^2 + 3\)</span></li>
+<li><span class="math inline">\(f(x) = (x - 3)^2 + 3\)</span></li>
+<li><span class="math inline">\(f(x) = (x - 3)^2 + 5\)</span></li>
+<li><span class="math inline">\(f(x) = (x + 2)^2 - 2\)</span></li>
+<li><span class="math inline">\(f(x) = (x + 2)^2 - 2\)</span></li>
+<li><span class="math inline">\(f(x) = (x - 4)^2 + 3\)</span></li>
+<li><span class="math inline">\(f(x) = (x - 5)^2 - 8\)</span></li>
+<li><span class="math inline">\(f(x) = 3(x - 2)^2 + 3\)</span></li>
+<li><span class="math inline">\(f(x) = 3(x + 1)^2 - 4\)</span></li>
+<li><span class="math inline">\(f(x) = 2(x + \frac{9}{4})^2 + \frac{3}{8}\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<ol start="4" type="1">
+<li><p>Beschreiben Sie den Verlauf der Parabel, ohne sie zu zeichnen.</p>
+<ol type="a">
+<li><span class="math inline">\(y=-2(x+8)^2 + 5\)</span></li>
+<li><span class="math inline">\(y=x^2 -3x + 7\)</span></li>
+</ol></li>
+</ol>
+<hr>
+<ol start="5" type="1">
+<li><p>Martina springt im Freibad vom Sprungturm. Ihre Flugbahn entspricht ungefähr einer Parabel der Form <span class="math inline">\(h(x) = -5x^2 + 2x + 3\)</span>. <span class="math inline">\(h\)</span> entspricht der Höhe über dem Wasser in Meter und <span class="math inline">\(x\)</span> die horizontale Entfernung vom Absprungpunkt in Meter.</p>
+<ol type="a">
+<li>Von welcher Höhe ist Martina gesprungen?</li>
+<li>Was ist Martinas höchste Höhe während des Flugs?</li>
+<li>Wie weit springt Martina?</li>
+<li>Geben Sie eine Funktionsgleichung in allgemeiner Form für einen Sprung aus Höhe k.</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>3m</li>
+<li>3.2m</li>
+<li>1m</li>
+<li><span class="math inline">\(h(x) = -5x^2 + 2x + k\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<ol start="6" type="1">
+<li><p>Beschreiben Sie den Verlauf der Parabel, ohne sie zu zeichnen.</p>
+<ol type="a">
+<li><span class="math inline">\(y = (x - 1)^2 + 3\)</span></li>
+<li><span class="math inline">\(y = -x^2 + 7\)</span></li>
+<li><span class="math inline">\(y = x^2 + 4x + 4\)</span></li>
+<li><span class="math inline">\(y = -x^2 + 4x + 10\)</span></li>
+<li><span class="math inline">\(y = 3x^2 + 24x + 11\)</span></li>
+<li><span class="math inline">\(y = -(x - 6)^2\)</span></li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Zeichnen sie die Funktion z.B. mit Geogebra und kontrollieren sie so ihr Ergebnis</p>
+</div>
+</div>
+</div>
+<hr>
+<ol start="7" type="1">
+<li><p>Bestimmen Sie den Scheitel der Parabel und skizzieren Sie die Parabel.</p>
+<ol type="a">
+<li><span class="math inline">\(y = x^2 + 4x\)</span></li>
+<li><span class="math inline">\(y = 3x^2 - 27x + 9\)</span></li>
+<li><span class="math inline">\(y = \frac{1}{2}x^2 - 5x - 1\)</span></li>
+<li><span class="math inline">\(y = -2x^2 + 4x - 18\)</span></li>
+<li><span class="math inline">\(y = 3 - \frac{1}{4}x^2\)</span></li>
+<li><span class="math inline">\(y = x^2 - \frac{1}{4}x + \frac{1}{2}\)</span></li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Zeichnen sie die Funktion z.B. mit Geogebra und kontrollieren sie so ihr Ergebnis</p>
+</div>
+</div>
+</div>
+<hr>
+<ol start="8" type="1">
+<li><p>Bestimmen Sie aus den gegebenen Informationen die Funktionsgleichung der quadratischen Funktion in allgemeiner Form <span class="math inline">\(f(x) = ax^2 + bx + c\)</span>.</p>
+<ol type="a">
+<li><span class="math inline">\(a = 2\)</span> und die Punkte <span class="math inline">\(A(1|-1)\)</span> und <span class="math inline">\(B(3|22)\)</span> liegen auf der Parabel.</li>
+<li><span class="math inline">\(b = 4\)</span> und die Punkte <span class="math inline">\(C(-1|-8)\)</span> und <span class="math inline">\(D(2|-5)\)</span> liegen auf der Parabel.</li>
+<li><span class="math inline">\(c = 2\)</span> und die Punkte <span class="math inline">\(E(2|8)\)</span> und <span class="math inline">\(F(-1|4)\)</span> liegen auf der Parabel.</li>
+<li>Die Punkte <span class="math inline">\(G(0|0)\)</span>, <span class="math inline">\(H(-2|33)\)</span> und <span class="math inline">\(P(10|795)\)</span> liegen auf der Parabel.</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><span class="math inline">\(f(x) = 2x^2 + 3.5x - 6.5\)</span></li>
+<li><span class="math inline">\(f(x) = -3x^2 + 4x + -1\)</span></li>
+<li><span class="math inline">\(f(x) = \frac{5}{3}x^2 - \frac{1}{3}x + 2\)</span></li>
+<li><span class="math inline">\(f(x) = 8x^2 -\frac{1}{2}x\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<ol start="9" type="1">
+<li><p>Die Leistung <span class="math inline">\(P\)</span> einer Turbine hängt von der Drehzahl <span class="math inline">\(n\)</span> ab. Die Funktionsgleichung <span class="math inline">\(P(n) = 300n - 0.8n^2\)</span> gibt die Leistung der Turbine in Watt (W) an.</p>
+<ol type="a">
+<li>Bei welcher Drehzahl <span class="math inline">\(n\)</span> hat die Turbine die maximale Leistung?</li>
+<li>Mit welcher Umdrehungszahl muss sich die Turbine drehen, damit sie eine Leistung von mindestens <span class="math inline">\(10'000W\)</span> erzielt?</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li>Maximale Leistung bei <span class="math inline">\(n = 187.5\)</span></li>
+<li><span class="math inline">\(P(n) \ge 10'000\)</span>: n muss zwischen <span class="math inline">\(37\)</span> und <span class="math inline">\(338\)</span> Umdrehungen liegen.</li>
+</ol>
+</div>
+</div>
+</div>
+<hr>
+<ol start="10" type="1">
+<li><p>Die Flugbahn eines Fußballs ist nahezu parabelförmig. Lenas Schuss kann durch die Parabel <span class="math inline">\(y = -0.00625x^2 + 0.25x\)</span> beschrieben werden. Dabei ist <span class="math inline">\(x\)</span> die horizontale Entfernung vom Abschusspunkt in Metern und <span class="math inline">\(y\)</span> die Höhe des Balles in Metern.</p>
+<ol type="a">
+<li>In welcher Höhe befindet sich der Ball, wenn er sich <span class="math inline">\(1m\)</span> in horizontaler Richtung bewegt hat?</li>
+<li>Welche Höhe erreicht der Ball bei diesem Schuss höchstens? Nach welcher Strecke (horizontal) hat er diese erreicht?</li>
+<li>Ein Spieler steht <span class="math inline">\(10m\)</span> entfernt. Kann er einen Kopfball versuchen?</li>
+<li>Nach welcher Strecke hat der Ball eine Höhe von <span class="math inline">\(2m\)</span> erreicht?</li>
+<li>Wie würde sich die Flugbahn des Balles ändern, wenn die Gleichung der zugehörigen Parabel <span class="math inline">\(y = -0.004x^2 + 0.2x\)</span> lautete?</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><span class="math inline">\(y(1) = 0.24m\)</span></li>
+<li>Maximale Höhe: <span class="math inline">\(2.5 m\)</span> bei <span class="math inline">\(20 m\)</span> Entfernung</li>
+<li><span class="math inline">\(y(10) = 1.875m\)</span>: Abhängig von seiner Sprungkraft: Ja, kann er.</li>
+<li><span class="math inline">\(y = 2\)</span> bei ca. <span class="math inline">\(11m\)</span> und <span class="math inline">\(29m\)</span></li>
+<li>Neue Parabel ist flacher, Ball fliegt weiter</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-aufgaben_optimierungsprobleme" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-aufgaben_optimierungsprobleme"><span class="header-section-number">2.4</span> Optimierungsprobleme</h2>
+<ol type="1">
+<li><p>Zahlenrätsel</p>
+<ol type="a">
+<li>Welche beiden Zahlen, deren Summe <span class="math inline">\(12\)</span> beträgt, haben das grösste Produkt?</li>
+<li>Welche beiden Zahlen, deren Diﬀerenz <span class="math inline">\(2\)</span> beträgt haben das kleinste Produkt.</li>
+<li>Für welche Zahl wird das Produkt aus dem Dreifachen und der um <span class="math inline">\(1\)</span> vergrösserten Zahl am kleinsten.</li>
+</ol></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li></li>
+</ol>
+<ul>
+<li><span class="math inline">\(x+y = 12 \rightarrow y=12-x\)</span></li>
+<li>Gesucht: Maximiere <span class="math inline">\(f(x)=x\cdot (12-x) = -x^2 + 12x\)</span></li>
+<li>Scheitelpunkt: <span class="math inline">\(x=\frac{-b}{2a} = \frac{-12}{2\cdot (-1)} = 6\)</span></li>
+<li><span class="math inline">\(y= 12-6 = 6\)</span></li>
+</ul>
+<p>Lösung: Die beiden gesuchten Zahlen sind <span class="math inline">\(6\)</span> und <span class="math inline">\(6\)</span>.</p>
+<hr>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<ul>
+<li><span class="math inline">\(x-y = 2 \rightarrow y=x-2\)</span></li>
+<li>Gesucht: Das minumum der Funktion <span class="math inline">\(f(x)=x(x-2) = x^2-2x\)</span></li>
+<li>Scheitelpunkt: <span class="math inline">\(x=\frac{-b}{2a} = \frac{2}{2} = 1\)</span></li>
+<li><span class="math inline">\(y = 1-2 = -1\)</span></li>
+</ul>
+<p>Lösung: Die beiden gesuchten Zahlen sind <span class="math inline">\(-1\)</span> und <span class="math inline">\(1\)</span></p>
+<hr>
+<ol start="3" type="a">
+<li></li>
+</ol>
+<ul>
+<li>Die gesuchte Zahl: x</li>
+<li>Gesucht: das Minumum von <span class="math inline">\(f(x) = 3x(x+1) = 3x^2 + 3x\)</span></li>
+<li>Scheitelpunkt: <span class="math inline">\(x=\frac{-b}{2a} = \frac{-1}{2\cdot 3} = -\frac{1}{2}\)</span></li>
+</ul>
+<p>Lösung: die gesuchte Zahl ist <span class="math inline">\(-\frac{1}{2}\)</span></p>
+</div>
+</div>
+</div>
+<hr>
+<ol start="2" type="1">
+<li><p>Judith will mit <span class="math inline">\(11m\)</span> Maschendraht einen rechteckigen Platz für ihren Hund einzäunen.</p>
+<ol type="a">
+<li>Sie benutzt die Wände von Garage und Haus. Für welche Abmessungen wird der Platz am grössten? Geben Sie den Flächeninhalt an.</li>
+<li>Wie hätte sie die Abmessungen wählen müssen, wenn sie eine <span class="math inline">\(3m\)</span> lange Mauer einbeziehen würde.</li>
+</ol></li>
+</ol>
+<p><img src="images/1_aufgabe_optimierung_2.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li></li>
+</ol>
+<ul>
+<li>Länge linke seite: <span class="math inline">\(a\)</span>, Länge untere Seite: <span class="math inline">\(b\)</span>, <span class="math inline">\(a+b=11m\)</span></li>
+<li><span class="math inline">\(A=a\cdot b \rightarrow f(a) = a\cdot (11-a) = 11a-a^2 = -a^2 + 11a\)</span></li>
+<li>Gesucht: Maximum der Funktion <span class="math inline">\(f(a)\)</span>, bzw. deren Scheitelpunkt</li>
+<li>Scheitelpunkt: <span class="math inline">\(a=\frac{11}{-2} = 5.5\)</span></li>
+<li><span class="math inline">\(a=5.5m\)</span>, <span class="math inline">\(b=5.5m\)</span></li>
+</ul>
+<p>Lösung: Der Zaun hat eine Länge von 5.5m und 5.5m</p>
+<hr>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<ul>
+<li>Zaunlänge <span class="math inline">\(11m = 2a+2b-3m\)</span></li>
+<li><span class="math inline">\(a+b=7 \rightarrow a = 7-a \rightarrow f(a) = -a^2 + 7a\)</span></li>
+<li>Gesucht: Maximum, bzw. Scheitelpunkt von <span class="math inline">\(f(a) \rightarrow a=\frac{7}{-2} = 3.5, b=7-35. = 3.5\)</span></li>
+</ul>
+<p>Lösung: Die maximale Fläche wird mit den Seitenlängen <span class="math inline">\(3.5m\)</span> und <span class="math inline">\(3.5m\)</span> erreicht.</p>
+</div>
+</div>
+</div>
+<hr>
+<ol start="3" type="1">
+<li>Ein quadratischer Tisch mit der Seiten länge <span class="math inline">\(2m\)</span> soll wie abgebildet mit zwei quadratischen Einlegearbeiten verziert werden. Aus Kostengründen soll dieser Flächenanteil möglichst klein werden. Welche Masse bieten sich für die Einlegearbeiten an?</li>
+</ol>
+<p><img src="images/1_aufgabe_optimierung_3.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösung">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösung
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Tischfläche: <span class="math inline">\(A=4m^2\)</span>, sei <span class="math inline">\(a\)</span> die Seitenlänge des kleineren und <span class="math inline">\(b\)</span> die Seitenlänge des grösseren Einlegequadrats. Die gesamte Fläche der Einlegequadrate beträgt: <span class="math inline">\(A=a^2 + b^2\)</span>. <span class="math inline">\(a+b=2\)</span></li>
+<li>Es gilt: <span class="math inline">\(b = 2-a\)</span> und somit folgt durch einsetzen: <span class="math inline">\(A=a^2 + (2-a)^2 = 2a^2 -4a +4\)</span></li>
+<li>Gesucht: Minimum der Funktion <span class="math inline">\(f(a)\rightarrow a=\frac{4}{4}=1\)</span></li>
+<li><span class="math inline">\(b = 2-a = 2-1 = 1\)</span></li>
+</ul>
+<p>Lösung: Die minimale Fläche der Einlegequadrate wird mit den identischen Seitenlänge beider Quadrate von <span class="math inline">\(a=1m\)</span> und <span class="math inline">\(b=1m\)</span> erreicht.</p>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./1_quad_funktionen.html" class="pagination-link" aria-label="Quadratische Funktionen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Quadratische Funktionen</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./2_quadratische_gleichungen.html" class="pagination-link" aria-label="Quadratische Gleichungen">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Quadratische Gleichungen</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,603 @@
+# Übungsaufgaben Quadratische Funktionen {#sec-aufgaben_quadratische_funktionen}
+
+## Rein quadratische Funktion {#sec-aufgaben_rein_quadratische_funktion}
+
+1. Welche der Punkte liegen auf der Parabel mit der Gleichung $y=2.5x^2$?
+* $A(2|10)$
+* $B(-2|10)$
+* $C(7|122)$
+* $D(4|40)$
+* $E(\sqrt{2}|5)$
+* $F(\sqrt{6.25}|-1)$
+* $G(0|2.5)$
+* $H(-\sqrt{3}|-22.5)$
+
+::: {.callout-important title="Lösung" collapse="true"}
+A, B, D, E
+:::
+
+
+---
+
+2. Bestimmen Sie die Funktionsgleichungen folgender Parabeln.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=7}
+library(ggplot2)
+library(dplyr)
+
+# Definitionsbereich
+x_vals <- seq(-5, 5, length.out = 200)
+
+# Sechs Funktionen definieren
+f1 <- function(x) -(5/2)*x^2
+f2 <- function(x) -x^2
+f3 <- function(x) sqrt(2)*x^2
+f4 <- function(x) -5*x^2
+f5 <- function(x) 10*x^2
+f6 <- function(x) 3*x^2
+
+# Datenframe mit allen Funktionswerten
+df <- data.frame(
+  x = x_vals,
+  f1 = f1(x_vals),
+  f2 = f2(x_vals),
+  f3 = f3(x_vals),
+  f4 = f4(x_vals),
+  f5 = f5(x_vals),
+  f6 = f6(x_vals)
+)
+
+# Daten in lange Form bringen
+df_long <- df |>
+  tidyr::pivot_longer(-x, names_to = "func", values_to = "y")
+
+# Farben manuell festlegen
+farben <- c(
+  "f1" = "black",
+  "f2" = "blue",
+  "f3" = "red",
+  "f4" = "green",
+  "f5" = "purple",
+  "f6" = "orange"
+)
+
+# Plot
+ggplot(df_long, aes(x = x, y = y, color = func)) +
+  geom_line(size = 1) +
+  scale_color_manual(values = farben) +
+  scale_x_continuous(breaks = seq(-5, 5, 1), limits = c(-5, 5)) +
+  scale_y_continuous(breaks = seq(-20, 20, 5), limits = c(-20, 20)) +
+  coord_cartesian(xlim = c(-5, 5), ylim = c(-20, 20), expand = FALSE) +
+  theme_minimal() +
+  theme(
+    panel.grid.major = element_line(color = "grey90"),
+    panel.grid.minor = element_line(color = "grey80", linetype = "dotted"),
+    legend.position = "none",  # keine Legende
+    axis.line = element_line(color = "grey80", size = 0.2),
+    axis.ticks = element_line(color = "black"),
+    panel.grid = element_blank()
+  ) +
+  labs(x = "x", y = "y") +
+  geom_hline(yintercept = 0, color = "black", size = 0.2) +
+  geom_vline(xintercept = 0, color = "black", size = 0.2)
+```
+
+::: {.callout-important title="Lösung" collapse="true"}
+* Schwarz: $f(x)=-\frac{5}{2} \cdot x^2$
+* Blau: $f(x)=-x^2$
+* Rot: $f(x)= \sqrt 2 \cdot x^2$    ODER    $f(x) = 1.4 \cdot x^2$
+* Grün: $f(x)= -5 \cdot x^2$
+* Violet: $f(x)= 10 \cdot x^2$
+* Orange: $f(x)= 3 \cdot x^2$
+:::
+
+
+---
+
+3. Der Punkt $P$ liegt jeweils auf dem Graphen der Funktion $f(x)=\frac{3}{4}x^2$. Bestimmen sie die Fehlende Koordinate.
+
+   a) $P(4|y)$
+   b) $P(x|3)$
+   c) $P(-1.5|y)$
+   d) $P(x|0)$
+   e) $P(x|27)$
+   f) $P(10|y)$
+
+::: {.callout-important title="Lösung" collapse="true"}
+a) $P(4|12)$
+b) $P(\pm 2|3)$
+c) $P(-1.5|1.69)$
+d) $P(0|0)$
+e) $P(\pm 6|27)$
+f) $P(10|75)$
+:::
+
+---
+
+4. Der Graph einer rein quadratischen Funktion verläuft durch den Punkt $P.$
+Bestimmen sie die Funktionsgleichung und zeichnen sie den Graphen.
+
+   a) $P(1|3)$
+   b) $P(2|-2)$
+   c) $P(-4|-5)$
+   d) $P(-3|27)$
+
+::: {.callout-important title="Lösung" collapse="true"}
+
+a) $f(x) = 3x^2$
+b) $f(x) = -0.5x^2$
+c) $f(x) = -0.3125x^2$
+d) $f(x) = 3x^2$
+:::
+
+
+
+
+## Allgemeine quadratische Funktion {#sec-aufgaben_allgemeine_quadratische_funktion}
+1. Bei der rein quadratischen Funktion haben wir gesehen, dass diese immer eine Nullstelle bei $x = 0$ hat. Wir möchten uns nun anschauen wie viele Nullstellen allgemeine quadratische Funktionen haben.
+
+   a) Überlegen Sie sich, wie viele Nullstellen quadratische Funktionen haben (verschiedene Fälle).
+   b) Skizzieren Sie ein Beispiel für eine quadratische (nicht rein quadratische) Funktion mit genau einer Nullstelle. Finden Sie auch eine mögliche Funktionsgleichung?
+   c) Skizzieren Sie ein Beispiel für eine quadratische Funktion ohne Nullstelle. Finden Sie auch eine mögliche Funktionsgleichung?
+   d) Skizzieren Sie ein Beispiel für eine quadratische Funktion mit zwei Nullstellen. Finden Sie auch eine mögliche Funktionsgleichung?
+   e) Skizzieren Sie ein Beispiel für eine quadratische Funktion mit unendlich vielen Nullstellen. Finden Sie auch eine mögliche Funktionsgleichung?
+   f) Finden Sie Bedingungen für die Parameter $a, u, v$ so, dass eine quadratische Funktion keine, eine oder zwei Nullstellen hat.
+
+::: {.callout-important title="Lösung" collapse="true"}
+a) Quadratische Funktionen können keine, genau eine oder 2 Nullstellen haben
+b) Beispiel: $f(x) = (x-1)^2$
+c) Beispiel: $f(x) = (x+1)^2 + 4$
+d) Beispiel: $f(x) = (x-3)^2 - 4$
+e) Unendlich viele Nullstellen sind nur bei der Nullfunktion $f(x) = 0$ möglich
+f) i) Zwei Nullstellen: $a \ne 0$, $v < 0$
+   ii) Eine Nullstelle: $a \ne 0$, $v = 0$
+   iii) Keine Nullstelle: $a \ne 0$, $v > 0$
+
+:::
+
+---
+
+2. Eine Parabel hat den Scheitel $S(2|3)$ und verläuft durch den Punkt $P(4|−5)$. Bestimmen Sie die Funktionsgleichung der Parabel.
+
+::: {.callout-important title="Lösung" collapse="true"}
+$f(x) = -2\cdot (x-2)^2 + 3$
+:::
+
+---
+
+3. Zeichnen Sie die Graphen der quadratischen Funktionen ohne Wertetabelle in ein Koordinatensystem.
+
+* $f(x)=(x-2)^2 - 1$
+* $g(x)=-2(x+1)^2 + 3$
+* $h(x)=\frac{1}{3}(x+3)^2 - 2$
+
+
+---
+
+4. Beschreiben Sie in Worten, wie die Parabel aus der Normparabel $(y=x^2)$ entstanden ist (Streckung, Stauchung, Verschiebung etc.)
+
+a) $y=2x^2 + 5$
+b) $y=\frac{2}{3}(x - 2)^2$
+c) $y=-3(x+2)^2 + 3$
+d) $y=\frac{2}{5}(x-\frac{1}{2})^2 -1$
+
+::: {.callout-important title="Lösung" collapse="true"}
+a) Streckung um Faktor $2$, Verschiebung um $+5$ in y-Richtung ($f(x)=2\cdot (x-0)^2 + 5$)
+b) Stauchung um Faktor $\frac{2}{3}$, Verschiebung um $+2$ in x-Richtung ($f(x)=\frac{2}{3}\cdot (x-2)^2 + 0$)
+c) Streckung um Faktor $-3$ (Spiegelung an x-Achse), Verschiebung um $-2$ in x-Richtung und $+3$ in y-Richtung ($f(x)=-3 \cdot (x+2)^2 + 3$)
+
+c) Stauchung um Faktor $\frac{2}{5}$ Verschiebung um $+\frac{1}{2}$ in x-Richtung und $-1$ in y-Richtung ($f(x)=\frac{2}{5} \cdot (x-0.5)^2 -1$)
+:::
+
+---
+
+5. Bestimmen Sie die Funktionsgleichungen der folgenden Parabeln
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=7}
+library(ggplot2)
+library(dplyr)
+
+# Definitionsbereich
+x_vals <- seq(-10, 10, length.out = 200)
+
+# Sechs Funktionen definieren
+f1 <- function(x) -(x-3)^2 +2
+f2 <- function(x) (x)^2 - 13
+f3 <- function(x) (x+sqrt(2))^2
+f4 <- function(x) -5*x^2
+f5 <- function(x) 2*x^2+10
+f6 <- function(x) -10*(x-5)^2+2
+
+# Datenframe mit allen Funktionswerten
+df <- data.frame(
+  x = x_vals,
+  f1 = f1(x_vals),
+  f2 = f2(x_vals),
+  f3 = f3(x_vals),
+  f4 = f4(x_vals),
+  f5 = f5(x_vals),
+  f6 = f6(x_vals)
+)
+
+# Daten in lange Form bringen
+df_long <- df |>
+  tidyr::pivot_longer(-x, names_to = "func", values_to = "y")
+
+# Farben manuell festlegen
+farben <- c(
+  "f1" = "black",
+  "f2" = "blue",
+  "f3" = "red",
+  "f4" = "green",
+  "f5" = "purple",
+  "f6" = "orange"
+)
+
+# Plot
+ggplot(df_long, aes(x = x, y = y, color = func)) +
+  geom_line(size = 1) +
+  scale_color_manual(values = farben) +
+  scale_x_continuous(breaks = seq(-10, 10, 1), limits = c(-8, 8)) +
+  scale_y_continuous(breaks = seq(-30, 30, 5), limits = c(-20, 25)) +
+  theme_minimal(base_size = 14) +
+  theme(
+    panel.grid.major = element_line(color = "grey80", linetype = "dotted"),
+    panel.grid.minor = element_line(color = "grey90", linetype = "dotted"),
+    legend.position = "none"  # keine Legende
+  ) +
+  labs(x = "x", y = "y")
+
+```
+
+::: {.callout-important title="Lösung" collapse="true"}
+* Schwarz: $f(x)=-(x-3)^2 +2$
+* Blau: $f(x)=(x)^2 - 13$
+* Rot: $f(x)=(x+\sqrt{2})^2$
+* Grün: $f(x)=-5 \cdot x^2$
+* Violet: $f(x)=2 \cdot x^2+10$
+* Orange: $f(x)=-10\cdot (x-5)^2+2$
+:::
+
+---
+
+6. Die Wertetabellen gehören zu quadratischen Funktionen. Bestimmen Sie die Funktionsgleichung.
+
+| $x$    | $-5$ | $-4$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
+|--------|------|------|------|------|------|-----|-----|-----|-----|-----|-----|
+| $f(x)$ | $10$ | $5$ | $2$ | $1$ | $2$ | $5$ | $10$ | $17$ | $26$ | $37$ | $50$ |
+| $g(x)$ | $59$ | $44$ | $31$ | $20$ | $11$ | $4$ | $-1$ | $-4$ | $-5$ | $-4$ | $-1$ |
+| $h(x)$ | $-27$ | $-13$ | $-3$ | $3$ | $5$ | $3$ | $-3$ | $-13$ | $-27$ | $-45$ | $-67$ |
+
+::: {.callout-important title="Lösung" collapse="true"}
+* $f(x) = (x+2)^2 + 1$
+* $g(x) = (x-3)^2 - 5$
+* $h(x) = -2(x+1)^2 + 5$
+:::
+
+---
+
+7. Der rote Graph im Koordinatensystem ist eine verschobene Parabel.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=7}
+library(ggplot2)
+library(dplyr)
+
+# Definitionsbereich
+x_vals <- seq(-30, 30, length.out = 2000)
+
+# Funktion
+f1 <- function(x) 2.5 * x^2
+
+# Datenframe mit Funktionswerten
+df <- data.frame(
+  x = x_vals,
+  f1 = f1(x_vals)
+)
+
+# In lange Form bringen
+df_long <- df |>
+  tidyr::pivot_longer(-x, names_to = "func", values_to = "y")
+
+# Blaue Punkte definieren
+punkte <- data.frame(
+  x = c(-15, 0, 5),
+  y = f1(c(-1.42, 2, -2.45)),
+  label = c("A", "B", "C")
+)
+
+# Plot
+ggplot(df_long, aes(x = x, y = y, color = func)) +
+  geom_line(size = 1) +
+  geom_point(data = punkte, aes(x = x, y = y), color = "blue", size = 3) +
+  geom_text(data = punkte, aes(x = x, y = y + 1, label = label),
+            color = "blue", size = 4, vjust = 0) +
+  scale_x_continuous(breaks = seq(-20, 20, 5), minor_breaks = seq(-20, 20, 0.5), limits = c(-20, 20)) +
+  scale_y_continuous(breaks = seq(-20, 20, 5), minor_breaks = seq(-20, 20, 0.5), limits = c(-20, 20)) +
+  coord_cartesian(xlim = c(-20, 15), ylim = c(-10, 20), expand = FALSE) +
+  theme_minimal() +
+  theme(
+    panel.grid.major = element_line(color = "grey60"),
+    panel.grid.minor = element_line(color = "grey90"),
+    legend.position = "none",
+    axis.line = element_line(color = "grey80", size = 0.2),
+    axis.ticks = element_line(color = "black"),
+    axis.title = element_blank(),
+    axis.text = element_blank(),
+    panel.grid = element_blank()
+  )
+```
+
+i) Bestimmen sie die Gleichung der Parabel, wenn der Ursprung im Punkt A, B, C liegt.
+ii) Wo liegt der Ursprung des Koordinatensystems, wenn die Funktionsgleichung der Parabel $y = 2(x−2)^2 − 2$ bzw. $y = 2(x + 3)^2 − 5$ lautet.
+
+
+::: {.callout-important title="Lösung" collapse="true"}
+TBD
+:::
+
+
+## Allgemeine Form der quadratischen Funktion {#sec-aufgaben_allgemeine_form_quadratische_funktion}
+Die allgemeine Form erhält man aus der Scheitelpunktform durch ausmultiplizieren und vereinfachen.
+
+---
+
+1. Wandeln Sie die Scheitelpunktform in die allgemeine Form um
+
+* $f(x) = 3(x-5)^2 -8$
+* $g(x) = -\frac{1}{4}(x+2)^2 + 6$
+
+::: {.callout-important title="Lösung" collapse="true"}
+* $f(x) = 3x^2 - 30x + 67$
+* $g(x) = -\frac{1}{4}x^2 - x + 5$
+:::
+
+---
+
+Die umwandlung der allgemeinen zur Scheitelpunktform ist nicht ganz so einfach. Man muss den Term quadratisch ergänzen, sodass man eine Binomische Formel anwenden kann.
+
+2. Ergänzen sie die Terme so, dass Sie eine bimonische Formel anwenden können und wenden Sie diese anschliessend an.
+
+   a) $x^2-6x+ \Box$
+   b) $s^2 +4s + \Box$
+   c) $z^2 + z + \Box$
+   d) $t^2 - 5t + \Box$
+   e) $h^2 - \frac{1}{3}h + \Box$
+   f) $u^2 + 1.6u + \Box$
+   g) $4x^2 - 4x + \Box$
+   h) $16c^2 +5c + \Box$
+
+::: {.callout-important title="Lösung" collapse="true"}
+a) $x^2 - 6x + 9$
+b) $s^2 + 4s + 4$
+c) $z^2 + z + \frac{1}{4}$
+d) $t^2 - 5t + 6.25$
+e) $h^2 - \frac{1}{3}h + \frac{1}{36}$
+f) $u^2 + 1.6u + 0.64$
+g) $4x^2 - 4x + 1$
+h) $16c^2 + 5c + \frac{25}{64}$
+:::
+
+---
+
+3. Wandeln sie folgende Funktionen von der allgemeinen in die Scheitelpunktform um.
+
+   a) $f(x) = x^2 - 4x + 4$
+   b) $f(x) = (x^2 + 4x + 4) + 3$
+   c) $f(x) = x^2 - 6x + 9 + 3$
+   d) $f(x) = x^2 - 6x + 14$
+   e) $f(x) = x^2 + 4x + 4 - 2$
+   f) $f(x) = x^2 + 4x + 2$
+   g) $f(x) = x^2 - 8x + 19$
+   h) $f(x) = x^2 - 10x + 17$
+   i) $f(x) = 3x^2 - 12x + 15$
+   j) $f(x) = 3x^2 + 6x - 1$
+   k) $f(x) = 2x^2 + 9x + 15$
+
+::: {.callout-important title="Lösung" collapse="true"}
+a) $f(x) = (x - 2)^2$
+b) $f(x) = (x + 2)^2 + 3$
+c) $f(x) = (x - 3)^2 + 3$
+d) $f(x) = (x - 3)^2 + 5$
+e) $f(x) = (x + 2)^2 - 2$
+f) $f(x) = (x + 2)^2 - 2$
+g) $f(x) = (x - 4)^2 + 3$
+h) $f(x) = (x - 5)^2 - 8$
+i) $f(x) = 3(x - 2)^2 + 3$
+j) $f(x) = 3(x + 1)^2 - 4$
+k) $f(x) = 2(x + \frac{9}{4})^2 + \frac{3}{8}$
+:::
+
+---
+
+4. Beschreiben Sie den Verlauf der Parabel, ohne sie zu zeichnen.
+
+   a) $y=-2(x+8)^2 + 5$
+   b) $y=x^2 -3x + 7$
+
+---
+
+5. Martina springt im Freibad vom Sprungturm. Ihre Flugbahn entspricht ungefähr einer Parabel der Form $h(x) = -5x^2 + 2x + 3$. $h$ entspricht der Höhe über dem Wasser in Meter und $x$ die horizontale Entfernung vom Absprungpunkt in Meter.
+
+   a) Von welcher Höhe ist Martina gesprungen?
+   b) Was ist Martinas höchste Höhe während des Flugs?
+   c) Wie weit springt Martina?
+   d) Geben Sie eine Funktionsgleichung in allgemeiner Form für einen Sprung aus Höhe k.
+
+::: {.callout-important title="Lösung" collapse="true"}
+a) 3m
+b) 3.2m
+c) 1m
+d) $h(x) = -5x^2 + 2x + k$
+:::
+
+---
+
+
+6. Beschreiben Sie den Verlauf der Parabel, ohne sie zu zeichnen.
+
+   a) $y = (x - 1)^2 + 3$
+   b) $y = -x^2 + 7$
+   c) $y = x^2 + 4x + 4$
+   d) $y = -x^2 + 4x + 10$
+   e) $y = 3x^2 + 24x + 11$
+   f) $y = -(x - 6)^2$
+
+::: {.callout-important title="Lösung" collapse="true"}
+Zeichnen sie die Funktion z.B. mit Geogebra und kontrollieren sie so ihr Ergebnis
+:::
+
+---
+
+
+7. Bestimmen Sie den Scheitel der Parabel und skizzieren Sie die Parabel.
+
+   a) $y = x^2 + 4x$
+   b) $y = 3x^2 - 27x + 9$
+   c) $y = \frac{1}{2}x^2 - 5x - 1$
+   d) $y = -2x^2 + 4x - 18$
+   e) $y = 3 - \frac{1}{4}x^2$
+   f) $y = x^2 - \frac{1}{4}x + \frac{1}{2}$
+
+::: {.callout-important title="Lösung" collapse="true"}
+Zeichnen sie die Funktion z.B. mit Geogebra und kontrollieren sie so ihr Ergebnis
+:::
+
+---
+
+8. Bestimmen Sie aus den gegebenen Informationen die Funktionsgleichung der quadratischen Funktion in allgemeiner Form
+   $f(x) = ax^2 + bx + c$.
+
+   a) $a = 2$ und die Punkte $A(1|-1)$ und $B(3|22)$ liegen auf der Parabel.
+   b) $b = 4$ und die Punkte $C(-1|-8)$ und $D(2|-5)$ liegen auf der Parabel.
+   c) $c = 2$ und die Punkte $E(2|8)$ und $F(-1|4)$ liegen auf der Parabel.
+   d) Die Punkte $G(0|0)$, $H(-2|33)$ und $P(10|795)$ liegen auf der Parabel.
+
+::: {.callout-important title="Lösung" collapse="true"}
+a) $f(x) = 2x^2 + 3.5x - 6.5$
+b) $f(x) = -3x^2 + 4x + -1$
+c) $f(x) = \frac{5}{3}x^2 - \frac{1}{3}x + 2$
+d) $f(x) = 8x^2 -\frac{1}{2}x$
+:::
+
+---
+
+
+9. Die Leistung $P$ einer Turbine hängt von der Drehzahl $n$ ab.
+   Die Funktionsgleichung $P(n) = 300n - 0.8n^2$ gibt die Leistung der Turbine in Watt (W) an.
+
+   a) Bei welcher Drehzahl $n$ hat die Turbine die maximale Leistung?
+   b) Mit welcher Umdrehungszahl muss sich die Turbine drehen, damit sie eine Leistung von mindestens $10'000W$ erzielt?
+
+::: {.callout-important title="Lösung" collapse="true"}
+a) Maximale Leistung bei $n = 187.5$
+b) $P(n) \ge 10'000$: n muss zwischen $37$ und $338$ Umdrehungen liegen.
+:::
+
+---
+
+10. Die Flugbahn eines Fußballs ist nahezu parabelförmig.
+   Lenas Schuss kann durch die Parabel $y = -0.00625x^2 + 0.25x$ beschrieben werden.
+   Dabei ist $x$ die horizontale Entfernung vom Abschusspunkt in Metern und $y$ die Höhe des Balles in Metern.
+
+    a) In welcher Höhe befindet sich der Ball, wenn er sich $1m$ in horizontaler Richtung bewegt hat?
+    b) Welche Höhe erreicht der Ball bei diesem Schuss höchstens? Nach welcher Strecke (horizontal) hat er diese erreicht?
+    c) Ein Spieler steht $10m$ entfernt. Kann er einen Kopfball versuchen?
+    d) Nach welcher Strecke hat der Ball eine Höhe von $2m$ erreicht?
+    e) Wie würde sich die Flugbahn des Balles ändern, wenn die Gleichung der zugehörigen Parabel $y = -0.004x^2 + 0.2x$ lautete?
+
+
+::: {.callout-important title="Lösung" collapse="true"}
+a) $y(1) = 0.24m$
+b) Maximale Höhe: $2.5 m$ bei $20 m$ Entfernung
+c) $y(10) = 1.875m$: Abhängig von seiner Sprungkraft: Ja, kann er.
+d) $y = 2$ bei ca. $11m$ und $29m$
+e) Neue Parabel ist flacher, Ball fliegt weiter
+:::
+
+
+
+## Optimierungsprobleme {#sec-aufgaben_optimierungsprobleme}
+
+1. Zahlenrätsel
+
+   a) Welche beiden Zahlen, deren Summe $12$ beträgt, haben das grösste Produkt?
+   b) Welche beiden Zahlen, deren Diﬀerenz $2$ beträgt haben das kleinste Produkt.
+   c) Für welche Zahl wird das Produkt aus dem Dreifachen und der um $1$ vergrösserten Zahl am
+kleinsten.
+
+::: {.callout-important title="Lösung" collapse="true"}
+a)
+* $x+y = 12 \rightarrow y=12-x$
+* Gesucht: Maximiere $f(x)=x\cdot (12-x) = -x^2 + 12x$
+* Scheitelpunkt: $x=\frac{-b}{2a} = \frac{-12}{2\cdot (-1)} = 6$
+* $y= 12-6 = 6$
+
+Lösung: Die beiden gesuchten Zahlen sind $6$ und $6$.
+
+---
+
+b)
+* $x-y = 2 \rightarrow y=x-2$
+* Gesucht: Das minumum der Funktion $f(x)=x(x-2) = x^2-2x$
+* Scheitelpunkt: $x=\frac{-b}{2a} = \frac{2}{2} = 1$
+* $y = 1-2 = -1$
+
+Lösung: Die beiden gesuchten Zahlen sind $-1$ und $1$
+
+---
+
+c)
+* Die gesuchte Zahl: x
+* Gesucht: das Minumum von $f(x) = 3x(x+1) = 3x^2 + 3x$
+* Scheitelpunkt: $x=\frac{-b}{2a} = \frac{-1}{2\cdot 3} = -\frac{1}{2}$
+
+Lösung: die gesuchte Zahl ist $-\frac{1}{2}$
+:::
+
+---
+
+2. Judith will mit $11m$ Maschendraht einen rechteckigen Platz für ihren Hund einzäunen.
+
+   a) Sie benutzt die Wände von Garage und Haus. Für welche Abmessungen wird der Platz am grössten? Geben Sie den Flächeninhalt an.
+   b) Wie hätte sie die Abmessungen wählen müssen, wenn sie eine $3m$ lange Mauer einbeziehen würde.
+
+![](images/1_aufgabe_optimierung_2.png)
+
+::: {.callout-important title="Lösung" collapse="true"}
+a)
+* Länge linke seite: $a$, Länge untere Seite: $b$, $a+b=11m$
+* $A=a\cdot b \rightarrow f(a) = a\cdot (11-a) = 11a-a^2 = -a^2 + 11a$
+* Gesucht: Maximum der Funktion $f(a)$, bzw. deren Scheitelpunkt
+* Scheitelpunkt: $a=\frac{11}{-2} = 5.5$
+* $a=5.5m$, $b=5.5m$
+
+Lösung: Der Zaun hat eine Länge von 5.5m und 5.5m
+
+---
+
+b)
+* Zaunlänge $11m = 2a+2b-3m$
+* $a+b=7 \rightarrow a = 7-a \rightarrow f(a) = -a^2 + 7a$
+* Gesucht: Maximum, bzw. Scheitelpunkt von $f(a) \rightarrow a=\frac{7}{-2} = 3.5, b=7-35. = 3.5$
+
+Lösung: Die maximale Fläche wird mit den Seitenlängen $3.5m$ und $3.5m$ erreicht.
+
+:::
+
+---
+
+3. Ein quadratischer Tisch mit der Seiten länge $2m$ soll wie abgebildet mit zwei quadratischen Einlegearbeiten verziert werden. Aus Kostengründen soll dieser Flächenanteil möglichst klein werden. Welche Masse bieten sich für die Einlegearbeiten an?
+
+![](images/1_aufgabe_optimierung_3.png)
+
+::: {.callout-important title="Lösung" collapse="true"}
+* Tischfläche: $A=4m^2$, sei $a$ die Seitenlänge des kleineren und $b$ die Seitenlänge des grösseren Einlegequadrats. Die gesamte Fläche der Einlegequadrate beträgt: $A=a^2 + b^2$. $a+b=2$
+* Es gilt: $b = 2-a$ und somit folgt durch einsetzen: $A=a^2 + (2-a)^2 = 2a^2 -4a +4$
+* Gesucht: Minimum der Funktion $f(a)\rightarrow a=\frac{4}{4}=1$
+* $b = 2-a = 2-1 = 1$
+
+Lösung: Die minimale Fläche der Einlegequadrate wird mit den identischen Seitenlänge beider Quadrate von $a=1m$ und $b=1m$ erreicht.
+
+:::
+
+

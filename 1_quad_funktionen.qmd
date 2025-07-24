@@ -1,19 +1,40 @@
-#  Quadratische Funktionen
+# Quadratische Funktionen
 
-## Lernziele {.unnumbered}
+## Lernziele
 
-- [ ] Ziel 1
-  - [ ] Ziel 1.1
-    - [ ] Ziel 1.1.1
-- [ ] Ziel 2
-
-
-## Recap Funktionen
-<!--
-{{< video https://www.youtube.com/watch?v=blY2qdFV4ag >}}
--->
+- [ ] **Funktionen**
+  - [ ] Ich kann grundlegende Eigenschaften von Funktionen beschreiben
+  - [ ] Ich verstehe, was die Parameter m und b in einer linearen Funktion bewirken beschreiben.
+  - [ ] Ich kann den Graphen anhand einer linearen Funktion in ein Koordinatensystem zeichnen.
+  - [ ] Ich kann aus gegebenen Punkten in einem Koordinatensystem eine lineare Funktion aufstellen.
+  - [ ] Ich kann die Begriffe 'Definitionsbereich', 'Wertebereich', 'Nullstelle' und 'Scheitelpunkt' erklären
 
 
+- [ ] **Rein quadratische Funktion**
+  - [ ] Ich kann anhand einer Funktionsgleichung der rein quadratischen Funktion erkennen, ob eine parabel nach unten oder oben geöffnet ist
+  - [ ] Ich kenne den einfluss des Parameters a
+  - [ ] ich kann den Graphen einer rein quadratischen Funktion zeichnen
+
+
+- [ ] **Allgemeine quadratische Funktion**
+  - [ ] Ich kann den Scheitelpunkt anhand einer gegebenen allgemeinen quadratischen Funktion bestimmen
+  - [ ] Ich kann den Graphen anhand einer allgemeinen quadratischen Funktion zeichnen
+  - [ ] Ich kann eine Funktionsgleichng aus gegebenen Punkten in einem Koordinatensystem aufstellen
+
+
+- [ ] **Allgemeine Form der quadratischen Funktion**
+  - [ ] Ich kann zwischen der Scheitelpunktform und der allgemeinen Form umwandeln
+  - [ ] Ich kann den Scheitelpunkt anhand der allgemeinen Form der quadatischen Funktion berechnen
+
+
+- [ ] **Optimierungsprobleme**
+  - [ ] Ich verstehe die Rolle der quadratische Funktionen zur Lösung von Optimierungsproblemen
+  - [ ] Ich verstehe den ansatz, wie man Optimierungsprobleme löst
+  - [ ] Ich kann ein Optimierungsproblem (z.b. Optimale Fläche oder Kostenverteilung) mit einer quadratischen Funktion lösen
+
+
+
+## Wiederholung Funktionen
 ### Was ist eine Funktion?
 
 Eine Funktion ordnet jedem Element einer Menge genau ein Element einer anderen Menge zu. In der Mathematik bedeutet das: jedes Element der *Definitionsmenge* bekommt genau ein Bild in der *Zielmenge* zugewiesen.
@@ -35,7 +56,7 @@ flowchart LR
   subgraph Zielmenge
     E[Ladina]
     F[Lennox]
-    G[Jasmin]
+    G[Bianca]
     H[Milo]
   end
 
@@ -50,7 +71,7 @@ In diesem Fall bekommt:
 
 * Ladina ein Fahrzeug,
 * Lennox zwei Fahrzeuge,
-* Jasmin ein Fahrzeug,
+* Bianca ein Fahrzeug,
 * Milo bekommt keines.
 
 Das ist in Ordnung für eine Funktion – denn jedes Fahrzeug wurde genau einer Person zugeordnet.
@@ -525,105 +546,11 @@ ggplot(df, aes(x = x)) +
 :::
 
 
-### Aufgaben
----
-
-1. Welche der Punkte liegen auf der Parabel mit der Gleichung $y=2.5x^2$?
-* $A(2|10)$
-* $B(-2|10)$
-* $C(7|122)$
-* $D(4|40)$
-* $E(\sqrt{2}|5)$
-* $F(\sqrt{6.25}|-1)$
-* $G(0|2.5)$
-* $H(-\sqrt{3}|-22.5)$
-
----
-
-2. Bestimmen Sie die Funktionsgleichungen folgender Parabeln.
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=7}
-library(ggplot2)
-library(dplyr)
-
-# Definitionsbereich
-x_vals <- seq(-5, 5, length.out = 200)
-
-# Sechs Funktionen definieren
-f1 <- function(x) -(5/2)*x^2
-f2 <- function(x) -x^2
-f3 <- function(x) sqrt(2)*x^2
-f4 <- function(x) -5*x^2
-f5 <- function(x) 10*x^2
-f6 <- function(x) 3*x^2
-
-# Datenframe mit allen Funktionswerten
-df <- data.frame(
-  x = x_vals,
-  f1 = f1(x_vals),
-  f2 = f2(x_vals),
-  f3 = f3(x_vals),
-  f4 = f4(x_vals),
-  f5 = f5(x_vals),
-  f6 = f6(x_vals)
-)
-
-# Daten in lange Form bringen
-df_long <- df |>
-  tidyr::pivot_longer(-x, names_to = "func", values_to = "y")
-
-# Farben manuell festlegen
-farben <- c(
-  "f1" = "black",
-  "f2" = "blue",
-  "f3" = "red",
-  "f4" = "green",
-  "f5" = "purple",
-  "f6" = "orange"
-)
-
-# Plot
-ggplot(df_long, aes(x = x, y = y, color = func)) +
-  geom_line(size = 1) +
-  scale_color_manual(values = farben) +
-  scale_x_continuous(breaks = seq(-5, 5, 1), limits = c(-5, 5)) +
-  scale_y_continuous(breaks = seq(-20, 20, 5), limits = c(-20, 20)) +
-  coord_cartesian(xlim = c(-5, 5), ylim = c(-20, 20), expand = FALSE) +
-  theme_minimal() +
-  theme(
-    panel.grid.major = element_line(color = "grey90"),
-    panel.grid.minor = element_line(color = "grey80", linetype = "dotted"),
-    legend.position = "none",  # keine Legende
-    axis.line = element_line(color = "grey80", size = 0.2),
-    axis.ticks = element_line(color = "black"),
-    panel.grid = element_blank()
-  ) +
-  labs(x = "x", y = "y") +
-  geom_hline(yintercept = 0, color = "black", size = 0.2) +
-  geom_vline(xintercept = 0, color = "black", size = 0.2)
-```
+::: {.callout-important title="Aufgaben lösen"}
+Lösen sie die Aufgaben zum Thema [Rein quadratische Funktion @sec-aufgaben_rein_quadratische_funktion]
+:::
 
 
-
-
----
-
-3. Der Punkt $P$ liegt jeweils auf dem Graphen der Funktion $f(x)=\frac{3}{4}x^2$. Bestimmen sie die Fehlende Koordinate.
-* $P(4|y)$
-* $P(x|3)$
-* $P(-1.5|y)$
-* $P(x|0)$
-* $P(x|27)$
-* $P(10|y)$
-
----
-
-4. Der Graph einer rein quadratischen Funktion verläuft durch den Punkt $P.$
-Bestimmen sie die Funktionsgleichung und zeichnen sie den Graphen.
-* $P(1|3)$
-* $P(2|-2)$
-* $P(-4|-5)$
-* $P(-3|27)$
 
 
 
@@ -706,7 +633,14 @@ iii) Die allgemeine quadratische Funktion hat die Funktionsgleichung $y=a(x-u)^2
 :::
 
 
-Verschiebt man eine Parabel mit der Gleichung $y=ax^2$ um $u$ Einheiten parallel zur $x$-Achse und um $v$ Einheiten parallel zur $y$-Achse, so erhält man eine Parabel mit der Gleichung $y=a(x-u)^2+v$ und Scheitelpunkt $S(u|v)$
+Verschiebt man eine Parabel mit der Gleichung $y=ax^2$ um $u$ Einheiten parallel zur $x$-Achse und um $v$ Einheiten parallel zur $y$-Achse, so erhält man eine Parabel mit der Gleichung
+$$
+y=a(x-u)^2+v
+$$
+und Scheitelpunkt
+$$
+S(u|v)
+$$
 
 
 ::: {.callout-caution title="Definition: allgemeine quadratische Funktion" icon=false}
@@ -722,164 +656,9 @@ Diese Form der Funktionsgleichung, bei welcher man den Scheitelpunkt direkt able
 
 :::
 
-
-### Aufgaben
-1. Bei der rein quadratischen Funktion haben wir gesehen, dass diese immer eine Nullstelle bei $x = 0$ hat. Wir möchten uns nun anschauen wie viele Nullstellen allgemeine quadratische Funktionen haben.
-
-  a) Überlegen Sie sich, wie viele Nullstellen quadratische Funktionen haben (verschiedene Fälle).
-  b) Skizzieren Sie ein Beispiel für eine quadratische (nicht rein quadratische) Funktion mit genau einer Nullstelle. Finden Sie auch eine mögliche Funktionsgleichung?
-  c) Skizzieren Sie ein Beispiel für eine quadratische Funktion ohne Nullstelle. Finden Sie auch eine mögliche Funktionsgleichung?
-  d) Skizzieren Sie ein Beispiel für eine quadratische Funktion mit zwei Nullstellen. Finden Sie auch eine mögliche Funktionsgleichung?
-  e) Skizzieren Sie ein Beispiel für eine quadratische Funktion mit unendlich vielen Nullstellen. Finden Sie auch eine mögliche Funktionsgleichung?
-  f) Finden Sie Bedingungen für die Parameter $a, u, v$ so, dass eine quadratische Funktion keine, eine oder zwei Nullstellen hat.
-
----
-
-2. Eine Parabel hat den Scheitel $S(2|3)$ und verläuft durch den Punkt $P(4|−5)$. Bestimmen Sie die Funktionsgleichung der Parabel.
-
----
-
-3. Zeichnen Sie die Graphen der quadratischen Funktionen ohne Wertetabelle in ein Koordinatensystem.
-
-* $f(x)=(x-2)^2 - 1$
-* $g(x)=-2(x+1)^2 + 3$
-* $h(x)=\frac{1}{3}(x+3)^2 - 2$
-
-
----
-
-4. Beschreiben Sie in Worten, wie die Parabel aus der Normparabel $(y=x^2)$ entstanden ist (Streckung, Stauchung, Verschiebung etc.)
-
-a) $y=2x^2 + 5$
-b) $y=\frac{2}{3}(x - 2)^2$
-c) $y=-3(x+2)^2 + 3$
-d) $y=\frac{2}{5}(x-\frac{1}{2})^2 -1$
-
----
-
-5. Bestimmen Sie die Funktionsgleichungen der folgenden Parabeln
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=7}
-library(ggplot2)
-library(dplyr)
-
-# Definitionsbereich
-x_vals <- seq(-10, 10, length.out = 200)
-
-# Sechs Funktionen definieren
-f1 <- function(x) -(x-3)^2 +2
-f2 <- function(x) (x)^2 - 13
-f3 <- function(x) (x+sqrt(2))^2
-f4 <- function(x) -5*x^2
-f5 <- function(x) 2*x^2+10
-f6 <- function(x) -10*(x-5)^2+2
-
-# Datenframe mit allen Funktionswerten
-df <- data.frame(
-  x = x_vals,
-  f1 = f1(x_vals),
-  f2 = f2(x_vals),
-  f3 = f3(x_vals),
-  f4 = f4(x_vals),
-  f5 = f5(x_vals),
-  f6 = f6(x_vals)
-)
-
-# Daten in lange Form bringen
-df_long <- df |>
-  tidyr::pivot_longer(-x, names_to = "func", values_to = "y")
-
-# Farben manuell festlegen
-farben <- c(
-  "f1" = "black",
-  "f2" = "blue",
-  "f3" = "red",
-  "f4" = "green",
-  "f5" = "purple",
-  "f6" = "orange"
-)
-
-# Plot
-ggplot(df_long, aes(x = x, y = y, color = func)) +
-  geom_line(size = 1) +
-  scale_color_manual(values = farben) +
-  scale_x_continuous(breaks = seq(-10, 10, 1), limits = c(-8, 8)) +
-  scale_y_continuous(breaks = seq(-30, 30, 5), limits = c(-20, 25)) +
-  theme_minimal(base_size = 14) +
-  theme(
-    panel.grid.major = element_line(color = "grey80", linetype = "dotted"),
-    panel.grid.minor = element_line(color = "grey90", linetype = "dotted"),
-    legend.position = "none"  # keine Legende
-  ) +
-  labs(x = "x", y = "y")
-
-```
-
----
-
-6. Die Wertetabellen gehören zu quadratischen Funktionen. Bestimmen Sie die Funktionsgleichung.
-
-| $x$    | $-5$ | $-4$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |
-|--------|------|------|------|------|------|-----|-----|-----|-----|-----|-----|
-| $f(x)$ | $10$ | $5$ | $2$ | $1$ | $2$ | $5$ | $10$ | $17$ | $26$ | $37$ | $50$ |
-| $g(x)$ | $59$ | $44$ | $31$ | $20$ | $11$ | $4$ | $-1$ | $-4$ | $-5$ | $-4$ | $-1$ |
-| $h(x)$ | $-27$ | $-13$ | $-3$ | $3$ | $5$ | $3$ | $-3$ | $-13$ | $-27$ | $-45$ | $-67$ |
-
----
-
-7. Der rote Graph im Koordinatensystem ist eine verschobene Parabel.
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=7}
-library(ggplot2)
-library(dplyr)
-
-# Definitionsbereich
-x_vals <- seq(-30, 30, length.out = 2000)
-
-# Funktion
-f1 <- function(x) 2.5 * x^2
-
-# Datenframe mit Funktionswerten
-df <- data.frame(
-  x = x_vals,
-  f1 = f1(x_vals)
-)
-
-# In lange Form bringen
-df_long <- df |>
-  tidyr::pivot_longer(-x, names_to = "func", values_to = "y")
-
-# Blaue Punkte definieren
-punkte <- data.frame(
-  x = c(-15, 0, 5),
-  y = f1(c(-1.42, 2, -2.45)),
-  label = c("A", "B", "C")
-)
-
-# Plot
-ggplot(df_long, aes(x = x, y = y, color = func)) +
-  geom_line(size = 1) +
-  geom_point(data = punkte, aes(x = x, y = y), color = "blue", size = 3) +
-  geom_text(data = punkte, aes(x = x, y = y + 1, label = label),
-            color = "blue", size = 4, vjust = 0) +
-  scale_x_continuous(breaks = seq(-20, 20, 5), minor_breaks = seq(-20, 20, 0.5), limits = c(-20, 20)) +
-  scale_y_continuous(breaks = seq(-20, 20, 5), minor_breaks = seq(-20, 20, 0.5), limits = c(-20, 20)) +
-  coord_cartesian(xlim = c(-20, 15), ylim = c(-10, 20), expand = FALSE) +
-  theme_minimal() +
-  theme(
-    panel.grid.major = element_line(color = "grey60"),
-    panel.grid.minor = element_line(color = "grey90"),
-    legend.position = "none",
-    axis.line = element_line(color = "grey80", size = 0.2),
-    axis.ticks = element_line(color = "black"),
-    axis.title = element_blank(),
-    axis.text = element_blank(),
-    panel.grid = element_blank()
-  )
-```
-
-i) Bestimmen sie die Gleichung der Parabel, wenn der Ursprung im Punkt A, B, C liegt.
-ii) Wo liegt der Ursprung des Koordinatensystems, wenn die Funktionsgleichung der Parabel $y = 2(x−2)^2 − 2$ bzw. $y = 2(x + 3)^2 − 5$ lautet.
+::: {.callout-important title="Aufgaben lösen"}
+Lösen sie die Aufgaben zum Thema [Allgemeine quadratische Funktion @sec-aufgaben_allgemeine_quadratische_funktion]
+:::
 
 
 
@@ -973,111 +752,9 @@ S\left(-\frac{b}{2a} \,\middle|\, \frac{4ac - b^2}{4a}\right)
 $$
 :::
 
-### Aufgaben
-Die allgemeine Form erhält man aus der Scheitelpunktform durch ausmultiplizieren und vereinfachen.
-
----
-
-1. Wandeln Sie die Scheitelpunktform in die allgemeine Form um
-
-* $f(x) = 3(x-5)^2 -8$
-* $g(x) = -\frac{1}{4}(x+2)^2 + 6$
-
----
-
-Die umwandlung der allgemeinen zur Scheitelpunktform ist nicht ganz so einfach. Man muss den Term quadratisch ergänzen, sodass man eine Binomische Formel anwenden kann.
-
-2. Ergänzen sie die Terme so, dass Sie eine bimonische Formel anwenden können und wenden Sie diese anschliessend an.
-
-  a) $x^2-6x+ \Box$
-  b) $s^2 +4s + \Box$
-  c) $z^2 + z + \Box$
-  d) $t^2 - 5t + \Box$
-  e) $h^2 - \frac{1}{3}h + \Box$
-  f) $u^2 + 1.6u + \Box$
-  g) $4x^2 - 4x + \Box$
-  h) $16c^2 +5c + \Box$
-
----
-
-3. Wandeln sie folgende Funktionen von der allgemeinen in die Scheitelpunktform um.
-  a) $f(x) = x^2 - 4x + 4$
-  b) $f(x) = (x^2 + 4x + 4) + 3$
-  c) $f(x) = x^2 - 6x + 9 + 3$
-  d) $f(x) = x^2 - 6x + 14$
-  e) $f(x) = x^2 + 4x + 4 - 2$
-  f) $f(x) = x^2 + 4x + 2$
-  g) $f(x) = x^2 - 8x + 19$
-  h) $f(x) = x^2 - 10x + 17$
-  i) $f(x) = 3x^2 - 12x + 15$
-  j) $f(x) = 3x^2 + 6x - 1$
-  k) $f(x) = 2x^2 + 9x + 15$
-
----
-
-4. Beschreiben Sie den Verlauf der Parabel, ohne sie zu zeichnen.
-  a) $y=-2(x+8)^2 + 5$
-  b) $y=x^2 -3x + 7$
-
----
-
-5. Martina springt im Freibad vom Sprungturm. Ihre Flugbahn entspricht ungefähr einer Parabel der Form $h(x) = -5x^2 + 2x + 3$. $h$ entspricht der Höhe über dem Wasser in Meter und $x$ die horizontale Entfernung vom Absprungpunkt in Meter.
-  a) Von welcher Höhe ist Martina gesprungen?
-  b) Was ist Martinas höchste Höhe während des Flugs?
-  c) Wie weit springt Martina?
-  d) Geben Sie eine Funktionsgleichung in allgemeiner Form für einen Sprung aus Höhe k.
-
-
----
-
-
-
-
-
-
-
-6. **Beschreiben Sie den Verlauf der Parabel, ohne sie zu zeichnen.**
-
-   a) $y = (x - 1)^2 + 3$
-   b) $y = -x^2 + 7$
-   c) $y = x^2 + 4x + 4$
-   d) $y = -x^2 + 4x + 10$
-   e) $y = 3x^2 + 24x + 11$
-   f) $y = -(x - 6)^2$
-
-7. **Bestimmen Sie den Scheitel der Parabel und skizzieren Sie die Parabel.**
-
-   a) $y = x^2 + 4x$
-   b) $y = 3x^2 - 27x + 9$
-   c) $y = \frac{1}{2}x^2 - 5x - 1$
-   d) $y = -2x^2 + 4x - 18$
-   e) $y = 3 - \frac{1}{4}x^2$
-   f) $y = x^2 - \frac{1}{4}x + \frac{1}{2}$
-
-8. **Bestimmen Sie aus den gegebenen Informationen die Funktionsgleichung der quadratischen Funktion in allgemeiner Form**
-   $f(x) = ax^2 + bx + c$.
-
-   a) $a = 2$ und die Punkte $A(1|-1)$ und $B(3|22)$ liegen auf der Parabel.
-   b) $b = 4$ und die Punkte $C(-1|-8)$ und $D(2|-5)$ liegen auf der Parabel.
-   c) $c = 2$ und die Punkte $E(2|8)$ und $F(-1|4)$ liegen auf der Parabel.
-   d) Die Punkte $G(0|0)$, $H(-2|33)$ und $P(10|795)$ liegen auf der Parabel.
-
-9. **Die Leistung $P$ einer Turbine hängt von der Drehzahl $n$ ab.**
-   Die Funktionsgleichung $P(n) = 300n - 0{,}8n^2$ gibt die Leistung der Turbine in Watt (W) an.
-
-   a) Bei welcher Drehzahl $n$ hat die Turbine die maximale Leistung?
-   b) Mit welcher Umdrehungszahl muss sich die Turbine drehen, damit sie eine Leistung von mindestens $10'000\,\text{W}$ erzielt?
-
-10. **Die Flugbahn eines Fußballs ist nahezu parabelförmig.**
-   Lenas Schuss kann durch die Parabel $y = -0{,}00625x^2 + 0{,}25x$ beschrieben werden.
-   Dabei ist $x$ die horizontale Entfernung vom Abschusspunkt in Metern und $y$ die Höhe des Balles in Metern.
-
-   a) In welcher Höhe befindet sich der Ball, wenn er sich $1\,\text{m}$ in horizontaler Richtung bewegt hat?
-   b) Welche Höhe erreicht der Ball bei diesem Schuss höchstens? Nach welcher Strecke (horizontal) hat er diese erreicht?
-   c) Ein Spieler steht $10\,\text{m}$ entfernt. Kann er den Ball köpfen?
-   d) Nach welcher Strecke hat der Ball eine Höhe von $2\,\text{m}$ erreicht?
-   e) Wie würde sich die Flugbahn des Balles ändern, wenn die Gleichung der zugehörigen Parabel $y = -0{,}004x^2 + 0{,}2x$ lautete?
-
+::: {.callout-important title="Aufgaben lösen"}
+Lösen sie die Aufgaben zum Thema [Allgemeine Form der quadratischen Funktion @sec-aufgaben_allgemeine_form_quadratische_funktion]
+:::
 
 
 
@@ -1147,66 +824,7 @@ aufstellen und Scheitel der zugehörigen Parabel bestimmen.
 Auf den Seiten eines Rechtecks $ABCD$ wird auf jeder Seite die Strecke $x$ abgetragen (s.Skizze). Es entsteht das Viereck $EFGH$. Für welche Länge $x$ ist der Flächeninhalt des Vierecks $EFGH$
 am kleinsten? Geben Sie den Flächeninhalt an.
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=5}
-library(ggplot2)
-
-# Parameter
-width <- 15
-height <- 7
-x <- 1  # Abstand für rote Strecken
-
-# Rechteckpunkte
-rechteck <- data.frame(
-  x = c(0, 0, width, width, 0),
-  y = c(-0.5, height, height, -0.5, -0.5),
-  label = c("A", "D", "C", "B", "A")
-)
-
-# Viereckpunkte
-poly <- data.frame(
-  x = c(0, width -x, width, x),
-  y = c(height - x, height, x, 0),
-  label = c("E", "H", "G", "F"),
-  hjust = c(1.2, 0.5, -0.2, 0),    # individuelle horizontale Justierung
-  vjust = c(1.5, -0.5, -0.5, 1.5)  # individuelle vertikale Justierung
-)
-
-# Rote Randsegmente: DE, AF, GB, HC
-rot_segments <- data.frame(
-  x = c(0, 0, width, width - x),
-  y = c(height, 0, 0, height),
-  xend = c(0, x, width, width),
-  yend = c(height - x, 0, x, height)
-)
-
-# Rote "x" mittig auf Strecken, leicht außerhalb
-x_marker <- data.frame(
-  x = c(-0.3, x/2, width+0.3, width-x/2),
-  y = c(height-x/2, -0.3, x/2, height+0.3),
-  label = rep("x", 4)
-)
-
-# Plot
-ggplot() +
-  # Rechteck
-  geom_rect(aes(xmin = 0, xmax = width, ymin = 0, ymax = height),
-            fill = "lightgreen", alpha = 0.3, color = "darkgreen", linewidth = 0.5) +
-  # Orange Fläche
-  geom_polygon(data = poly, aes(x, y), fill = "orange", alpha = 0.6, color = "darkorange", linewidth = 0.5) +
-  # Punkte beschriften
-  geom_text(data = rechteck[1:4, ], aes(x, y, label = label), vjust = -0.5, fontface = "bold") +
-  geom_text(data = poly, aes(x = x, y = y, label = label, hjust = hjust, vjust = vjust), fontface = "bold") +
-  # Maße
-  annotate("text", x = width / 2, y = height + 0.3, label = "15cm", size = 4) +
-  annotate("text", x = width + 0.3, y = height / 2, label = "7cm", angle = 270, size = 4) +
-  # Rote Linien
-  geom_segment(data = rot_segments, aes(x = x, y = y, xend = xend, yend = yend),
-               color = "red", linewidth = 1.2) +
-  # Rote "x"
-  geom_text(data = x_marker, aes(x = x, y = y), label = "x", color = "red", size = 5, fontface = "bold") +
-  coord_fixed() +
-  theme_void()
-```
+![](images/1_beispiel_7.png)
 :::
 
 
@@ -1219,112 +837,6 @@ b) ...die Mantelfläche maximal wird.
 :::
 
 
-### Aufgaben
-
-1. Zahlenrätsel
-
-  a) Welche beiden Zahlen, deren Summe $12$ beträgt, haben das grösste Produkt?
-  b) Welche beiden Zahlen, deren Diﬀerenz $2$ beträgt haben das kleinste Produkt.
-  c) Für welche Zahl wird das Produkt aus dem Dreifachen und der um $1$ vergrösserten Zahl am
-kleinsten.
-
----
-
-2. Judith will mit $11m$ Maschendraht einen rechteckigen Platz für ihren Hund einzäunen.
-
-  a) Sie benutzt die Wände von Garage und Haus. Für welche Abmessungen wird der Platz am grössten? Geben Sie den Flächeninhalt an.
-  b) Wie hätte sie die Abmessungen wählen müssen, wenn sie eine $3m$ lange Mauer einbeziehen würde.
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=5}
-library(ggplot2)
-
-# Koordinaten definieren
-rechteck <- data.frame(
-  x = c(0, 0, 15, 15, 0),
-  y = c(0, 7, 7, 0, 0),
-  label = c("A", "D", "C", "B", "A")
-)
-
-# Parallelogramm-Koordinaten
-x <- 1  # Länge der roten Strecke (x)
-parallelogramm <- data.frame(
-  x = c(x, 3, 13, 15 - x, x),
-  y = c(0, 1.5, 5.5, 7, 0),
-  label = c("F", "E", "H", "G", "F")
-)
-
-# Rechteck-Ränder
-rechteck_linie <- data.frame(
-  x = c(0, 0, 15, 15, 0),
-  y = c(0, 7, 7, 0, 0)
-)
-
-# Plot
-ggplot() +
-  # Rechteckfläche
-  geom_rect(aes(xmin = 0, xmax = 15, ymin = 0, ymax = 7), fill = "lightgreen", alpha = 0.4) +
-  # Parallelogrammfläche
-  geom_polygon(data = parallelogramm, aes(x, y), fill = "orange", alpha = 0.6, color = "darkorange") +
-  # Rechteck-Ränder
-  geom_path(data = rechteck_linie, aes(x, y), color = "darkgreen", linewidth = 1) +
-  # Punkte beschriften
-  geom_text(data = rechteck, aes(x, y, label = label), vjust = -0.5, fontface = "bold") +
-  geom_text(data = parallelogramm[-5, ], aes(x, y, label = label), vjust = -0.5, fontface = "bold") +
-  # Längenbeschriftung 15cm
-  annotate("text", x = 7.5, y = 7.3, label = "15 cm", size = 4) +
-  # Längenbeschriftung 7cm
-  annotate("text", x = 15.3, y = 3.5, label = "7 cm", angle = 270, size = 4) +
-  # x-Markierungen an vier Seiten
-  annotate("text", x = c(0.2, 0.2, 14.8, 0.8), y = c(6.5, 0.5, 0.5, -0.3), label = "x", color = "red", size = 5) +
-  coord_fixed() +
-  theme_void()
-```
-
----
-
-3. Ein quadratischer Tisch mit der Seiten länge $2m$ soll wie rechts abgebildet mit zwei quadratischen Einlegearbeiten verziert werden. Aus Kostengründen soll dieser Flächenanteil möglichst klein werden. Welche Masse bieten sich für die Einlegearbeiten an?
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE, fig.width=7, fig.height=5}
-library(ggplot2)
-
-# Koordinaten definieren
-rechteck <- data.frame(
-  x = c(0, 0, 15, 15, 0),
-  y = c(0, 7, 7, 0, 0),
-  label = c("A", "D", "C", "B", "A")
-)
-
-# Parallelogramm-Koordinaten
-x <- 1  # Länge der roten Strecke (x)
-parallelogramm <- data.frame(
-  x = c(x, 3, 13, 15 - x, x),
-  y = c(0, 1.5, 5.5, 7, 0),
-  label = c("F", "E", "H", "G", "F")
-)
-
-# Rechteck-Ränder
-rechteck_linie <- data.frame(
-  x = c(0, 0, 15, 15, 0),
-  y = c(0, 7, 7, 0, 0)
-)
-
-# Plot
-ggplot() +
-  # Rechteckfläche
-  geom_rect(aes(xmin = 0, xmax = 15, ymin = 0, ymax = 7), fill = "lightgreen", alpha = 0.4) +
-  # Parallelogrammfläche
-  geom_polygon(data = parallelogramm, aes(x, y), fill = "orange", alpha = 0.6, color = "darkorange") +
-  # Rechteck-Ränder
-  geom_path(data = rechteck_linie, aes(x, y), color = "darkgreen", linewidth = 1) +
-  # Punkte beschriften
-  geom_text(data = rechteck, aes(x, y, label = label), vjust = -0.5, fontface = "bold") +
-  geom_text(data = parallelogramm[-5, ], aes(x, y, label = label), vjust = -0.5, fontface = "bold") +
-  # Längenbeschriftung 15cm
-  annotate("text", x = 7.5, y = 7.3, label = "15 cm", size = 4) +
-  # Längenbeschriftung 7cm
-  annotate("text", x = 15.3, y = 3.5, label = "7 cm", angle = 270, size = 4) +
-  # x-Markierungen an vier Seiten
-  annotate("text", x = c(0.2, 0.2, 14.8, 0.8), y = c(6.5, 0.5, 0.5, -0.3), label = "x", color = "red", size = 5) +
-  coord_fixed() +
-  theme_void()
-```
+::: {.callout-important title="Aufgaben lösen"}
+Lösen sie die Aufgaben zum Thema [Optimierungsprobleme @sec-aufgaben_optimierungsprobleme]
+:::

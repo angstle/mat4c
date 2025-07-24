@@ -1,17 +1,54 @@
-# Preface {.unnumbered}
+# Einleitung {.unnumbered}
 
-Welcome!
+Dies ist das Mathematikskript für ihr Schuljahr. Der Unterricht basiert auf diesem Skript. Wenn sie das Fenster etwas vergrössern finden sie auf der linken Seite eine Übersicht über alle Themen. auf der Rechten Seite sind jeweils die Kapitel aufgelistet.
 
 ## Inhalt
 
-## Script
-Im Script treffen Sie auf Kästchen:
+Wir werden folgende Themen behandeln:
+
+* Quadratische Funktionen
+* Quadratische Gleichungen
+* Vektoren
+* Trigonometrie
+* Potenz- und Wurzelfunktionen
+* Exponentialfunktion und Logarithmus
+
+Jedes Kapitel hat ein zusatzkapitel *Übungsaufgaben*. Hier finden sie Übungsaufgaben und Lösungen zum entsprechenden Thema und Hinweise zu weiterführenden Übungen aus dem DMK Buch oder anderen Quellen.
 
 
-Einige Hinweiskästchen sind eingeklappt.Mit einem Klick auf das Kästchen wird dieses aufgeklappt.
+
+## Prüfungen
+Jedes Kapitel beinhaltet am Anfang die Lehrziele.
+Die Prüfung wird sich an diesen Lehrzielen orientieren. Sollten die Lehrziele an der Prüfung abweichen wird das entsprechend frühzeitig im Unterricht, sowie via Teams kommuniziert und die Lehrziele auf der Seite angepasst.
+Grundsätzlich sollten Sie in der Lage sein, die Theorie in ihren eigenen Worten wiedergeben zu können und die Übungsaufgaben selbstständig und ohne Hilfsmittel (ausser Taschenrechner Ti30Pro o.ä.) zu lösen.
+Es ist möglich, dass an der Prüfung jeweils eine Aufgabe zu einem zuvor behandelten Thema gibt.
+
+An den Prüfungen sind keine Formelsammlungen gestattet.
+
+
+### Prüfungsdaten
+An folgenden Daten finden Prüfungen statt:
+
+* 1.1.25
+* 2.1.25
+* 3.1.25
+* 4.1.25
+* 5.1.25
+* 6.1.25
+
+
+
+## Wie ist das Skript aufgebaut
+Das Skript beinhaltet die Theorie der jeweiligen Gebieten und einige Übungsaufgaben. Im Unterricht werden weitere Übungsaufgaben, z.B. DMK, bekannt gegeben.
+
+Das Skript beinhaltet Videos, Bilder, Webseiten und interaktive Kästchen.
+
+Im Skript treffen Sie auch auf Kästchen:
+
+Einige Hinweiskästchen sind eingeklappt. Mit einem Klick auf das Kästchen wird dieses aufgeklappt.
 
 ::: {.callout-tip title="Ich bin aufklappbar!" collapse="true" icon="false"}
-Und mit einem weiteren klick, kann man mich wieder schliessen.
+Und mit einem weiteren klick kann man mich wieder schliessen.
 :::
 
 
@@ -28,3 +65,12 @@ So werden Definitionen oder weitere wichtige Infos behandelt
 ::: {.callout-note title="Interatktives / Ergänzendes"}
 Interaktives oder weiterführende Infos findest du in diesen Kästchen
 :::
+
+::: {.callout-important title="Aufgaben lösen / Lösungen"}
+Dieser Hinweis zeigt, dass jetzt der Zeitpunkt gekommen ist, um selbstständig oder nach anweisung die angegebenen Aufgaben zu lösen.
+
+In den Übungsaufgaben finden sie hier eingeklappt die Lösungen. Es liegt in ihrer Eigenen verantwortung sicher zu stellen, dass sie die Aufgaben ohne Hilfe der Lösungen lösen können.
+:::
+
+
+

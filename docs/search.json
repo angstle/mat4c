@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Skript Mathematik 4c",
+    "title": "Einleitung",
     "section": "",
     "text": "Einleitung\nDies ist das Mathematikskript für ihr Schuljahr. Der Unterricht basiert auf diesem Skript. Wenn sie das Fenster etwas vergrössern finden sie auf der linken Seite eine Übersicht über alle Themen. auf der Rechten Seite sind jeweils die Kapitel aufgelistet.",
     "crumbs": [
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#inhalt",
     "href": "index.html#inhalt",
-    "title": "Skript Mathematik 4c",
+    "title": "Einleitung",
     "section": "Inhalt",
     "text": "Inhalt\nWir werden folgende Themen behandeln:\n\nQuadratische Funktionen\nQuadratische Gleichungen\nVektoren\nTrigonometrie\nPotenz- und Wurzelfunktionen\nExponentialfunktion und Logarithmus\n\nJedes Kapitel hat ein zusatzkapitel Übungsaufgaben. Hier finden sie Übungsaufgaben und Lösungen zum entsprechenden Thema und Hinweise zu weiterführenden Übungen aus dem DMK Buch oder anderen Quellen.",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#prüfungen",
     "href": "index.html#prüfungen",
-    "title": "Skript Mathematik 4c",
+    "title": "Einleitung",
     "section": "Prüfungen",
     "text": "Prüfungen\nJedes Kapitel beinhaltet am Anfang die Lehrziele. Die Prüfung wird sich an diesen Lehrzielen orientieren. Sollten die Lehrziele an der Prüfung abweichen wird das entsprechend frühzeitig im Unterricht, sowie via Teams kommuniziert und die Lehrziele auf der Seite angepasst. Grundsätzlich sollten Sie in der Lage sein, die Theorie in ihren eigenen Worten wiedergeben zu können und die Übungsaufgaben selbstständig und ohne Hilfsmittel (ausser Taschenrechner Ti30Pro o.ä.) zu lösen. Es ist möglich, dass an der Prüfung jeweils eine Aufgabe zu einem zuvor behandelten Thema gibt.\nAn den Prüfungen sind keine Formelsammlungen gestattet.\n\nPrüfungsdaten\nAn folgenden Daten finden Prüfungen statt:\n\n1.1.25\n2.1.25\n3.1.25\n4.1.25\n5.1.25\n6.1.25",
     "crumbs": [
@@ -32,9 +32,9 @@
   {
     "objectID": "index.html#wie-ist-das-skript-aufgebaut",
     "href": "index.html#wie-ist-das-skript-aufgebaut",
-    "title": "Skript Mathematik 4c",
+    "title": "Einleitung",
     "section": "Wie ist das Skript aufgebaut",
-    "text": "Wie ist das Skript aufgebaut\nDas Skript beinhaltet die Theorie der jeweiligen Gebieten und einige Übungsaufgaben. Im Unterricht werden weitere Übungsaufgaben, z.B. DMK, bekannt gegeben.\nDas Skript beinhaltet Videos, Bilder, Webseiten und interaktive Kästchen.\nIm Skript treffen Sie auch auf Kästchen:\nEinige Hinweiskästchen sind eingeklappt. Mit einem Klick auf das Kästchen wird dieses aufgeklappt.\n\n\n\n\n\n\nIch bin aufklappbar!\n\n\n\n\n\nUnd mit einem weiteren klick kann man mich wieder schliessen.\n\n\n\n\n\n\n\n\n\nBeispielaufgaben\n\n\n\nIn solchen Kästchen stehen Beispielaufgaben zu aktuellen Themen. Diese werden wir entweder direkt in Plenum oder zuerst selbstständig bearbeiten und dann im direkten Anschluss besprechen.\n\n\n\n\n\n\n\n\nDefinition / Eigenschaften\n\n\n\nSo werden Definitionen oder weitere wichtige Infos behandelt\n\n\n\n\n\n\n\n\nInteratktives / Ergänzendes\n\n\n\nInteraktives oder weiterführende Infos findest du in diesen Kästchen\n\n\n\n\n\n\n\n\nAufgaben lösen / Lösungen\n\n\n\nDieser Hinweis zeigt, dass jetzt der Zeitpunkt gekommen ist, um selbstständig oder nach anweisung die angegebenen Aufgaben zu lösen.\nIn den Übungsaufgaben finden sie hier eingeklappt die Lösungen. Es liegt in ihrer Eigenen verantwortung sicher zu stellen, dass sie die Aufgaben ohne Hilfe der Lösungen lösen können.",
+    "text": "Wie ist das Skript aufgebaut\nDas Skript beinhaltet die Theorie der jeweiligen Gebieten und einige Übungsaufgaben. Im Unterricht werden weitere Übungsaufgaben, z.B. DMK, bekannt gegeben.\nDas Skript beinhaltet Videos, Bilder, Webseiten und interaktive Kästchen.\nIm Skript treffen Sie auch auf Kästchen:\nEinige Hinweiskästchen sind eingeklappt. Mit einem Klick auf das Kästchen wird dieses aufgeklappt.\n\n\n\n\n\n\nIch bin aufklappbar!\n\n\n\n\n\nUnd mit einem weiteren klick kann man mich wieder schliessen.\n\n\n\n\n\n\n\n\n\nBeispielaufgaben\n\n\n\nIn solchen Kästchen stehen Beispielaufgaben zu aktuellen Themen. Diese werden wir entweder direkt in Plenum oder zuerst selbstständig bearbeiten und dann im direkten Anschluss besprechen.\n\n\n\n\n\n\n\n\nDefinition / Eigenschaften\n\n\n\nSo werden Definitionen oder weitere wichtige Infos behandelt\n\n\n\n\n\n\n\n\nInteratktives / Ergänzendes\n\n\n\nInteraktives oder weiterführende Infos finden sie in diesen Kästchen\n\n\n\n\n\n\n\n\nAufgaben lösen / Lösungen\n\n\n\nDieser Hinweis zeigt, dass jetzt der Zeitpunkt gekommen ist, um selbstständig oder nach anweisung die angegebenen Aufgaben zu lösen.\nIn den Übungsaufgaben finden sie hier eingeklappt die Lösungen. Es liegt in ihrer Eigenen verantwortung sicher zu stellen, dass sie die Aufgaben ohne Hilfe der Lösungen lösen können.",
     "crumbs": [
       "Einleitung"
     ]
@@ -170,33 +170,13 @@
     ]
   },
   {
-    "objectID": "2_quadratische_gleichungen.html",
-    "href": "2_quadratische_gleichungen.html",
-    "title": "3  Quadratische Gleichungen",
-    "section": "",
-    "text": "In Arbeit…",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Quadratische Gleichungen</span>"
-    ]
-  },
-  {
     "objectID": "3_vektoren.html",
     "href": "3_vektoren.html",
     "title": "4  Vektoren",
     "section": "",
-    "text": "In Arbeit…",
+    "text": "(ev.) (Skalar- und Vektorprodukt / oder Skalaprodukt und Geraden (Parametergleichungen))",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Vektoren</span>"
-    ]
-  },
-  {
-    "objectID": "4_trigo.html",
-    "href": "4_trigo.html",
-    "title": "5  Trigonometrie",
-    "section": "",
-    "text": "In Arbeit…",
-    "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Trigonometrie</span>"
     ]
   },
   {
@@ -204,19 +184,9 @@
     "href": "5_potenz_wurzelfunktionen.html",
     "title": "6  Potenz- / Wurzelfunktionen",
     "section": "",
-    "text": "In Arbeit…",
+    "text": "Negative Exponenten\nRationale Exponenten",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Potenz- / Wurzelfunktionen</span>"
-    ]
-  },
-  {
-    "objectID": "6_exponential_logarithmus.html",
-    "href": "6_exponential_logarithmus.html",
-    "title": "7  Exponentialfunktion / Logarithmus",
-    "section": "",
-    "text": "In Arbeit…",
-    "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Exponentialfunktion / Logarithmus</span>"
     ]
   }
 ]

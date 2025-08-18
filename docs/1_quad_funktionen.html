@@ -322,7 +322,7 @@ Merke:
 </div>
 </div>
 <p>Stellen sie sich das mit einem Beispiel aus der Physik vor: Sie laufen eine Strecke und haben dabei immer die selbe Geschwindigkeit von exakt <span class="math inline">\(1\frac{m}{s}\)</span>. Betrachten sie die Strecke, welche sie in einer gewissen Zeit zurücklegen, werden sie feststellen, dass jeder Milimeter ihres Weges einer Zeit zugeordnet werden kann. Nach <span class="math inline">\(1\)</span> Sekunde befinden sie sich <span class="math inline">\(1\)</span> Meter vom Start entfernt. Nach <span class="math inline">\(2\)</span> Sekunden <span class="math inline">\(2\)</span> Meter entfernt vom Start etc. Es wird allerdings nie vorkommen, dass sie nach z.B. <span class="math inline">\(10\)</span> Sekunden sowohl <span class="math inline">\(10\)</span> Meter, als auch <span class="math inline">\(5\)</span> Meter vom Start entfernt sind - sie können sich nicht an <span class="math inline">\(2\)</span> Orten zur selben Zeit befinden! (In diesem Beispiel handelt es sich übrigens um eine <em>lineare Funktion</em>).</p>
-<p>Was hingegen möglich ist, sind <span class="math inline">\(2\)</span> Positionen zu verschiedenen Zeiten: Entscheiden sie sich nach <span class="math inline">\(10\)</span> Sekunden spontan umzukehren, befinden sie sich sowohl nach <span class="math inline">\(10\)</span> Sekunden, als auch nach <span class="math inline">\(30\)</span> Sekunden <span class="math inline">\(10\)</span> Meter vom Start entfernt.</p>
+<p>Was hingegen möglich ist, sind <span class="math inline">\(2\)</span> Positionen zu verschiedenen Zeiten: Entscheiden sie sich nach <span class="math inline">\(20\)</span> Sekunden spontan umzukehren, befinden sie sich sowohl nach <span class="math inline">\(10\)</span> Sekunden, als auch nach <span class="math inline">\(30\)</span> Sekunden <span class="math inline">\(10\)</span> Meter vom Start entfernt.</p>
 <p>Hier ist das graphisch dargestellt:</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -351,7 +351,7 @@ Definition Definitionsbereich
 </div>
 </div>
 <p>Nehmen wir das Beispiel mit der gelaufenen Strecke in abhängigkeit der Zeit von voher. Der Definitionsbereich entspricht der Zeit. Die Zeit kann in beliebig kurzen Einheiten gemessen werden. Unsere Funktion umfasst Werte zwischen <span class="math inline">\(0\)</span> und <span class="math inline">\(40\)</span>. Es gilt: <span class="math display">\[
-D = [0, 40] \in \mathbb{R}
+D = [0, 40] \subset \mathbb{R}
 \]</span></p>
 <p>Achtung: Verwechseln die den Definitionsbereich nicht mit dem Wertebereich!</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Wertebereich">
@@ -368,7 +368,7 @@ Definition Wertebereich
 </div>
 </div>
 <p>In unserem Beispiel laufen wir bei <span class="math inline">\(0\)</span> Meter los und kehren nach 20 Metern wieder um. Somit umfasst unser Wertebereich nur Zahlen von <span class="math inline">\(0\)</span> bis <span class="math inline">\(20\)</span>. Es gilt: <span class="math display">\[
-W = [0, 20] \in \mathbb{R}
+W = [0, 20] \subset \mathbb{R}
 \]</span></p>
 <p>Nun, hier handelt es sich um ein Beispiel aus der Physik. Hier im Mathematikunterricht haben sie durchwegs definierte Funktionen kennengelernt, nämlich die <em>lineare Funktion</em></p>
 </section>
@@ -416,13 +416,13 @@ m=\frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 0.1">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel Funktionsgleichung">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 0.1
+Beispiel Funktionsgleichung
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -432,13 +432,13 @@ Beispiel 0.1
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 0.2">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel Definitions- und Wertebereich">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 0.2
+Beispiel Definitions- und Wertebereich
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -467,13 +467,13 @@ Beispiel 0.2
 <p>Sollten Sie sich nicht sicher sein wie hoch der Sprungturm ist und ihr:e Kolleg:in ist genug mutig um vor ihnen zu springen, können sie in einem ersten Schritt die Zeit vom Absprung bis zum auftreffen auf der Wasseroberfläche stoppen. (In der Physik werden sie das Beispiel bestimmt genauer behandeln). Annähern kann man die Fallhöhe mit der Formel <span class="math display">\[
 s(t) = 5\cdot t^2
 \]</span> Dabei entsprechen die Fallhöhe in Meter <span class="math inline">\(s\)</span> und die Zeit in Sekunden bis zum Aufprall <span class="math inline">\(t\)</span>.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 1">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel Fallhöhe">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 1
+Beispiel Fallhöhe
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -486,13 +486,13 @@ Beispiel 1
 </div>
 </div>
 <p>Für eine Funktion kann man eine Wertetabelle erstellen, oder in einem Koordinatensystem einen Funktionsgraphen zeichnen.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 2">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel Freifall">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 2
+Beispiel Freifall
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -587,13 +587,13 @@ Definition
 <p>Den Graphen einer rein quadratischen Funktion nennt man eine <span class="math inline">\(Parabel\)</span></p>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 3">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel rein quadratische Funktion">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 3
+Beispiel rein quadratische Funktion
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -663,13 +663,13 @@ Eigenschaften
 </ul>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 4a">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel Graph zeichnen">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 4a
+Beispiel Graph zeichnen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -704,13 +704,13 @@ Beispiel 4a
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 4b">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel Punkte auf Parabel">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 4b
+Beispiel Punkte auf Parabel
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -720,13 +720,13 @@ Beispiel 4b
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 4c">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel Funktionsgleichung bestimmen">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 4c
+Beispiel Funktionsgleichung bestimmen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -768,13 +768,13 @@ y=mx+b
 y= ax^2
 \]</span> Mit variation von <span class="math inline">\(a\)</span> verändern wir die Öffnung der Parabel, aber haben keine Werkzeuge, um die Parabel “frei” im Raum zu platzieren. Der Scheitelpunkt der rein quadratischen Funktion liegt <strong>immer</strong> im Koordinatenursprung <span class="math inline">\((0|0)\)</span>.</p>
 <p>Zunächst werden wir folgende quadratische Funktionen mit dem Streckfaktor <span class="math inline">\(a=1\)</span> betrachten.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 5a - Scheitelpunkt auf der y-Achse">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Scheitelpunkt auf der y-Achse">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 5a - Scheitelpunkt auf der y-Achse
+Beispiel: Scheitelpunkt auf der y-Achse
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -795,13 +795,13 @@ Beispiel 5a - Scheitelpunkt auf der y-Achse
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 5b - Scheitelpunkt auf der x-Achse">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Scheitelpunkt auf der x-Achse">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 5b - Scheitelpunkt auf der x-Achse
+Beispiel: Scheitelpunkt auf der x-Achse
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -822,13 +822,13 @@ Beispiel 5b - Scheitelpunkt auf der x-Achse
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 5c - Allgemeiner Scheitelpunkt">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Allgemeiner Scheitelpunkt">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 5c - Allgemeiner Scheitelpunkt
+Beispiel: Allgemeiner Scheitelpunkt
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -849,13 +849,13 @@ Beispiel 5c - Allgemeiner Scheitelpunkt
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 5d - Streckung der Parabel">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Streckung der Parabel">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 5d - Streckung der Parabel
+Beispiel: Streckung der Parabel
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -979,13 +979,13 @@ Interaktiv: allgemeine quadratische Funktion
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 6">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Scheitelpunktform ablesen">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 6
+Beispiel: Scheitelpunktform ablesen
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1125,13 +1125,13 @@ Optomierungsprobleme lösen
 </section>
 <section id="beispiele" class="level3" data-number="1.7.3">
 <h3 data-number="1.7.3" class="anchored" data-anchor-id="beispiele"><span class="header-section-number">1.7.3</span> Beispiele</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 7">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Rechteck optimieren">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 7
+Beispiel: Rechteck optimieren
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1142,13 +1142,13 @@ Beispiel 7
 </div>
 </div>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel 8">
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Quadratische Säule optimieren">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Beispiel 8
+Beispiel: Quadratische Säule optimieren
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>

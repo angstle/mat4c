@@ -184,14 +184,17 @@ window.Quarto = {
   </ul></li>
   <li><a href="#einleitung" id="toc-einleitung" class="nav-link" data-scroll-target="#einleitung"><span class="header-section-number">1.3</span> Einleitung</a></li>
   <li><a href="#rein-quadratische-funktionen" id="toc-rein-quadratische-funktionen" class="nav-link" data-scroll-target="#rein-quadratische-funktionen"><span class="header-section-number">1.4</span> Rein quadratische Funktionen</a></li>
-  <li><a href="#scheitelpunktform" id="toc-scheitelpunktform" class="nav-link" data-scroll-target="#scheitelpunktform"><span class="header-section-number">1.5</span> Scheitelpunktform</a></li>
-  <li><a href="#nullstellenform" id="toc-nullstellenform" class="nav-link" data-scroll-target="#nullstellenform"><span class="header-section-number">1.6</span> Nullstellenform</a></li>
-  <li><a href="#allgemeine-form-der-quadratischen-funktion" id="toc-allgemeine-form-der-quadratischen-funktion" class="nav-link" data-scroll-target="#allgemeine-form-der-quadratischen-funktion"><span class="header-section-number">1.7</span> Allgemeine Form der quadratischen Funktion</a></li>
-  <li><a href="#optimierungsprobleme" id="toc-optimierungsprobleme" class="nav-link" data-scroll-target="#optimierungsprobleme"><span class="header-section-number">1.8</span> Optimierungsprobleme</a>
+  <li><a href="#formen-der-quadratischen-funktion" id="toc-formen-der-quadratischen-funktion" class="nav-link" data-scroll-target="#formen-der-quadratischen-funktion"><span class="header-section-number">1.5</span> Formen der quadratischen Funktion</a>
   <ul class="collapse">
-  <li><a href="#einführungsbeispiel" id="toc-einführungsbeispiel" class="nav-link" data-scroll-target="#einführungsbeispiel"><span class="header-section-number">1.8.1</span> Einführungsbeispiel</a></li>
-  <li><a href="#schrittweises-vorgehen" id="toc-schrittweises-vorgehen" class="nav-link" data-scroll-target="#schrittweises-vorgehen"><span class="header-section-number">1.8.2</span> Schrittweises Vorgehen</a></li>
-  <li><a href="#beispiele" id="toc-beispiele" class="nav-link" data-scroll-target="#beispiele"><span class="header-section-number">1.8.3</span> Beispiele</a></li>
+  <li><a href="#allgemeine-quadratische-form-scheitelpunktform" id="toc-allgemeine-quadratische-form-scheitelpunktform" class="nav-link" data-scroll-target="#allgemeine-quadratische-form-scheitelpunktform"><span class="header-section-number">1.5.1</span> Allgemeine quadratische Form (Scheitelpunktform)</a></li>
+  <li><a href="#allgemeine-quadratische-form-nullstellenform" id="toc-allgemeine-quadratische-form-nullstellenform" class="nav-link" data-scroll-target="#allgemeine-quadratische-form-nullstellenform"><span class="header-section-number">1.5.2</span> Allgemeine quadratische Form (Nullstellenform)</a></li>
+  <li><a href="#allgemeine-form-der-quadratischen-funktion" id="toc-allgemeine-form-der-quadratischen-funktion" class="nav-link" data-scroll-target="#allgemeine-form-der-quadratischen-funktion"><span class="header-section-number">1.5.3</span> Allgemeine Form der quadratischen Funktion</a></li>
+  </ul></li>
+  <li><a href="#optimierungsprobleme" id="toc-optimierungsprobleme" class="nav-link" data-scroll-target="#optimierungsprobleme"><span class="header-section-number">1.6</span> Optimierungsprobleme</a>
+  <ul class="collapse">
+  <li><a href="#einführungsbeispiel" id="toc-einführungsbeispiel" class="nav-link" data-scroll-target="#einführungsbeispiel"><span class="header-section-number">1.6.1</span> Einführungsbeispiel</a></li>
+  <li><a href="#schrittweises-vorgehen" id="toc-schrittweises-vorgehen" class="nav-link" data-scroll-target="#schrittweises-vorgehen"><span class="header-section-number">1.6.2</span> Schrittweises Vorgehen</a></li>
+  <li><a href="#beispiele" id="toc-beispiele" class="nav-link" data-scroll-target="#beispiele"><span class="header-section-number">1.6.3</span> Beispiele</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -235,9 +238,11 @@ window.Quarto = {
 <li><label><input type="checkbox">Ich kenne den einfluss des Parameters a</label></li>
 <li><label><input type="checkbox">ich kann den Graphen einer rein quadratischen Funktion zeichnen</label></li>
 </ul></li>
-<li><label><input type="checkbox"><strong>Allgemeine quadratische Funktion</strong></label>
+<li><label><input type="checkbox"><strong>Allgemeine quadratische Funktion (Scheitelpunktform &amp; Nullstellenform)</strong></label>
 <ul class="task-list">
 <li><label><input type="checkbox">Ich kann den Scheitelpunkt anhand einer gegebenen allgemeinen quadratischen Funktion bestimmen</label></li>
+<li><label><input type="checkbox">Ich kann die Nullstellen einer Funktion aus der Nullstellenform ablesen</label></li>
+<li><label><input type="checkbox">Ich kann den Scheitelpunkt aus der Nullstellenform bestimmen</label></li>
 <li><label><input type="checkbox">Ich kann den Graphen anhand einer allgemeinen quadratischen Funktion zeichnen</label></li>
 <li><label><input type="checkbox">Ich kann eine Funktionsgleichng aus gegebenen Punkten in einem Koordinatensystem aufstellen</label></li>
 </ul></li>
@@ -790,10 +795,12 @@ Aufgaben lösen
 <p>Lösen sie die Aufgaben zum Thema <a href="1_1_quadratische_funktionen_aufgaben.html#sec-aufgaben_rein_quadratische_funktion" class="quarto-xref">Rein quadratische Funktion&nbsp;<span>2.1</span></a></p>
 </div>
 </div>
-<p>##&nbsp;Formen der quadratischen Funktion Die quadratische Funktion lässt sich in 3 verschiedenen Formen schreiben, jede hat ihre eigenen Eigenschaften und Vor- sowie Nachteile.</p>
 </section>
-<section id="scheitelpunktform" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="scheitelpunktform"><span class="header-section-number">1.5</span> Scheitelpunktform</h2>
+<section id="formen-der-quadratischen-funktion" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="formen-der-quadratischen-funktion"><span class="header-section-number">1.5</span> Formen der quadratischen Funktion</h2>
+<p>Die quadratische Funktion lässt sich in 3 verschiedenen Formen schreiben, jede hat ihre eigenen Eigenschaften und Vor- sowie Nachteile.</p>
+<section id="allgemeine-quadratische-form-scheitelpunktform" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="allgemeine-quadratische-form-scheitelpunktform"><span class="header-section-number">1.5.1</span> Allgemeine quadratische Form (Scheitelpunktform)</h3>
 <p>Wir erinnern uns, die Form der linearen Funktion lautet <span class="math display">\[
 y=mx+b
 \]</span> Mit variation von <span class="math inline">\(m\)</span> und <span class="math inline">\(b\)</span> können wir die Kurve beliebig im Koordinatensystem platzieren.</p>
@@ -1012,12 +1019,12 @@ Aufgaben lösen
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Lösen sie die Aufgaben zum Thema <a href="1_1_quadratische_funktionen_aufgaben.html#sec-aufgaben_allgemeine_quadratische_funktion" class="quarto-xref">Allgemeine quadratische Funktion&nbsp;<span>2.2</span></a></p>
+<p>Lösen sie die Aufgaben zum Thema <a href="1_1_quadratische_funktionen_aufgaben.html#sec-aufgaben_allgemeine_quadratische_funktion" class="quarto-xref">Allgemeine quadratische Funktion&nbsp;<span>2.2.1</span></a></p>
 </div>
 </div>
 </section>
-<section id="nullstellenform" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="nullstellenform"><span class="header-section-number">1.6</span> Nullstellenform</h2>
+<section id="allgemeine-quadratische-form-nullstellenform" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="allgemeine-quadratische-form-nullstellenform"><span class="header-section-number">1.5.2</span> Allgemeine quadratische Form (Nullstellenform)</h3>
 <p>Eine weitere nützliche Form der quadratischen Funktion ist die Nullstellenform. Wie es der Name bereits sagt, könnnen wir in dieser Form die Nullstellen (als die Schnittpunkte mit der x-Achse) direkt ablesen.</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition: Nullstellenform">
 <div class="callout-header d-flex align-content-center">
@@ -1087,12 +1094,12 @@ Aufgaben lösen
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Lösen sie die Aufgaben zum Thema <a href="1_1_quadratische_funktionen_aufgaben.html#sec-aufgaben_nullstellenform" class="quarto-xref">Nullstellenform der quadratischen Funktion&nbsp;<span>2.2.1</span></a></p>
+<p>Lösen sie die Aufgaben zum Thema <a href="1_1_quadratische_funktionen_aufgaben.html#sec-aufgaben_nullstellenform" class="quarto-xref">Nullstellenform der quadratischen Funktion&nbsp;<span>2.2.2</span></a></p>
 </div>
 </div>
 </section>
-<section id="allgemeine-form-der-quadratischen-funktion" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="allgemeine-form-der-quadratischen-funktion"><span class="header-section-number">1.7</span> Allgemeine Form der quadratischen Funktion</h2>
+<section id="allgemeine-form-der-quadratischen-funktion" class="level3" data-number="1.5.3">
+<h3 data-number="1.5.3" class="anchored" data-anchor-id="allgemeine-form-der-quadratischen-funktion"><span class="header-section-number">1.5.3</span> Allgemeine Form der quadratischen Funktion</h3>
 <p>Wir haben vorhin die Scheitelpunktform und die Nullstellenform der quadratischen Funktion kenenngelernt.</p>
 <p><span class="math display">\[
 f(x) = a\cdot (x-u)^2 + v
@@ -1263,15 +1270,16 @@ Aufgaben lösen
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Lösen sie die Aufgaben zum Thema <a href="1_1_quadratische_funktionen_aufgaben.html#sec-aufgaben_allgemeine_form_quadratische_funktion" class="quarto-xref">Allgemeine Form der quadratischen Funktion&nbsp;<span>2.2.2</span></a></p>
+<p>Lösen sie die Aufgaben zum Thema <a href="1_1_quadratische_funktionen_aufgaben.html#sec-aufgaben_allgemeine_form_quadratische_funktion" class="quarto-xref">Allgemeine Form der quadratischen Funktion&nbsp;<span>2.2.3</span></a></p>
 </div>
 </div>
 </section>
-<section id="optimierungsprobleme" class="level2" data-number="1.8">
-<h2 data-number="1.8" class="anchored" data-anchor-id="optimierungsprobleme"><span class="header-section-number">1.8</span> Optimierungsprobleme</h2>
+</section>
+<section id="optimierungsprobleme" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="optimierungsprobleme"><span class="header-section-number">1.6</span> Optimierungsprobleme</h2>
 <p>Häufige Probleme in der Mathematik (oder im Alltag) sind Probleme, bei denen man herausfinden möchte, wie man unter gewissen Bedingungen einen Wert maximieren/minimieren kann. Wie kann man zum Beispiel bei einer bestimmten Oberfläche das grösstmögliche Volumen erreichen (wenig Verpackung für viel Inhalt). Wir möchten uns nun anschauen wie wir im Fall von Grössen, die durch quadratischeFunktionenbeschriebenwerden,solche Probleme lösen können. Dazu brauchen wir jeweils den Scheitel von Parabeln, da dies der höchste resp. tiefste Punkt der quadratischen Funktion ist.</p>
-<section id="einführungsbeispiel" class="level3" data-number="1.8.1">
-<h3 data-number="1.8.1" class="anchored" data-anchor-id="einführungsbeispiel"><span class="header-section-number">1.8.1</span> Einführungsbeispiel</h3>
+<section id="einführungsbeispiel" class="level3" data-number="1.6.1">
+<h3 data-number="1.6.1" class="anchored" data-anchor-id="einführungsbeispiel"><span class="header-section-number">1.6.1</span> Einführungsbeispiel</h3>
 <p>Mit einem <span class="math inline">\(12m\)</span> langen Zaun soll an einer Hauswand ein Rechteck eingezäunt werden. Wie müssen die Seiten des Rechtecks gewählt werden, damit sein Flächeninhalt möglichst gross wird?</p>
 <p><strong>Schritt 1: Verstehen der Aufgabe</strong></p>
 <ul>
@@ -1298,8 +1306,8 @@ Aufgaben lösen
 <li>Antwortsatz: Der Flächeninhalt wird für die Seiten senkrecht zum Haus von <span class="math inline">\(3m\)</span> und diejenige parallel zum Haus <span class="math inline">\(6m\)</span> maximal und beträgt <span class="math inline">\(18m^2\)</span></li>
 </ul>
 </section>
-<section id="schrittweises-vorgehen" class="level3" data-number="1.8.2">
-<h3 data-number="1.8.2" class="anchored" data-anchor-id="schrittweises-vorgehen"><span class="header-section-number">1.8.2</span> Schrittweises Vorgehen</h3>
+<section id="schrittweises-vorgehen" class="level3" data-number="1.6.2">
+<h3 data-number="1.6.2" class="anchored" data-anchor-id="schrittweises-vorgehen"><span class="header-section-number">1.6.2</span> Schrittweises Vorgehen</h3>
 <p>Das Vorgehen lässt sich wie folgt zusammenfassen:</p>
 <div class="callout callout-style-default callout-caution no-icon callout-titled" title="Optomierungsprobleme lösen">
 <div class="callout-header d-flex align-content-center">
@@ -1320,8 +1328,8 @@ Optomierungsprobleme lösen
 </div>
 </div>
 </section>
-<section id="beispiele" class="level3" data-number="1.8.3">
-<h3 data-number="1.8.3" class="anchored" data-anchor-id="beispiele"><span class="header-section-number">1.8.3</span> Beispiele</h3>
+<section id="beispiele" class="level3" data-number="1.6.3">
+<h3 data-number="1.6.3" class="anchored" data-anchor-id="beispiele"><span class="header-section-number">1.6.3</span> Beispiele</h3>
 <div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Rechteck optimieren">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">

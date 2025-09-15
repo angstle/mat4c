@@ -1294,11 +1294,21 @@ Aufgaben lösen
 </ol>
 <p><strong>Schritt 3: Durchführen eines Plans</strong></p>
 <ol type="1">
-<li>Einführen der Variablen: Die Seiten senkrecht zur Hauswand haben Länge <span class="math inline">\(x\)</span> und diejenige par- allel zur Hauswand <span class="math inline">\(12−2x\)</span>.</li>
-<li>Aufstellen der Gleichung: Der Flächeninhalt ist das Produkt der zwei unterschiedlich langen Seiten: <span class="math inline">\(A(x) = x\cdot (12−2x) = 12x−2x^2 =−2x^2 + 12x\)</span></li>
-<li>Bestimmung des Scheitels: Wir formen die allgemeine Form in die Scheitelpunktform um: <span class="math inline">\(A(x) =
-−2(x2 − 6x) =−2(x2 − 6x + 9) + 18 =−2(x−3)2 + 18\)</span> Der Scheitel ist somit <span class="math inline">\(S(3|18)\)</span>. Alternativ verwenden wir die Formel für die <span class="math inline">\(x\)</span>-Koordinate des Schwerpunkts: <span class="math inline">\(s_x =−\frac{b}{2a}=-\frac{12}{2\cdot(-2)}\)</span> Die <span class="math inline">\(y\)</span>-Koordinate finden wir durch einsetzen <span class="math inline">\(A(3) =−2\cdot3^2 + 12\cdot 3 =−18 + 36 = 18\)</span>.</li>
+<li><p>Einführen der Variablen: Die Seiten senkrecht zur Hauswand haben Länge <span class="math inline">\(x\)</span> und diejenige parallel zur Hauswand <span class="math inline">\(12−2x\)</span>.</p></li>
+<li><p>Aufstellen der Gleichung: Der Flächeninhalt ist das Produkt der zwei unterschiedlich langen Seiten: <span class="math display">\[
+A(x) = x\cdot (12−2x) = 12x−2x^2 =−2x^2 + 12x
+\]</span></p></li>
+<li><p>Bestimmung des Scheitels: Wir formen die allgemeine Form in die Scheitelpunktform durch quadratisch ergänzen um: <span class="math display">\[
+A(x) = −2(x^2 − 6x) =−2(x^2 − 6x + 9) + 18 = −2(x−3)^2 + 18
+\]</span></p></li>
 </ol>
+<p>Der Scheitel liegt somit bei <span class="math display">\[
+S(3|18)
+\]</span></p>
+<p>Alternativ verwenden wir die Formel für die <span class="math inline">\(x\)</span>-Koordinate des Scheitelpunkts: <span class="math display">\[
+S_x =−\frac{b}{2a}=-\frac{12}{2\cdot(-2)} = 3
+\]</span></p>
+<p>Die <span class="math inline">\(y\)</span>-Koordinate finden wir durch einsetzen <span class="math inline">\(A(3) =−2\cdot3^2 + 12\cdot 3 =−18 + 36 = 18\)</span>.</p>
 <p><strong>Schritt 4: Überprüfung</strong></p>
 <ul>
 <li><em>Kann das Ergebnis richtig sein?</em> Die Parabel ist nach unten geöﬀnet. Der Scheitel ist also der höchste Punkt.</li>
@@ -1330,25 +1340,14 @@ Optomierungsprobleme lösen
 </section>
 <section id="beispiele" class="level3" data-number="1.6.3">
 <h3 data-number="1.6.3" class="anchored" data-anchor-id="beispiele"><span class="header-section-number">1.6.3</span> Beispiele</h3>
-<div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Rechteck optimieren">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Beispiel: Rechteck optimieren
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-35" class="callout-35-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Auf den Seiten eines Rechtecks <span class="math inline">\(ABCD\)</span> wird auf jeder Seite die Strecke <span class="math inline">\(x\)</span> abgetragen (s.Skizze). Es entsteht das Viereck <span class="math inline">\(EFGH\)</span>. Für welche Länge <span class="math inline">\(x\)</span> ist der Flächeninhalt des Vierecks <span class="math inline">\(EFGH\)</span> am kleinsten? Geben Sie den Flächeninhalt an.</p>
-<p><img src="images/1_beispiel_7.png" class="img-fluid"></p>
-</div>
-</div>
-</div>
+<!-- ::: {.callout-tip title="Beispiel: Rechteck optimieren"  collapse="true"}
+Auf den Seiten eines Rechtecks $ABCD$ wird auf jeder Seite die Strecke $x$ abgetragen (s.Skizze). Es entsteht das Viereck $EFGH$. Für welche Länge $x$ ist der Flächeninhalt des Vierecks $EFGH$
+am kleinsten? Geben Sie den Flächeninhalt an.
+
+![](images/1_beispiel_7.png)
+::: -->
 <div class="callout callout-style-default callout-tip callout-titled" title="Beispiel: Quadratische Säule optimieren">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -1357,9 +1356,9 @@ Beispiel: Quadratische Säule optimieren
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-36" class="callout-36-contents callout-collapse collapse">
+<div id="callout-35" class="callout-35-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Die Summe aller Kanten einer quadratischen Säule (Quader mit quadratische Grundfläche) misst <span class="math inline">\(24cm\)</span>. Berechnen Sie die Kanten so, dass..</p>
+<p>Die Summe aller Kanten einer quadratischen Säule (Quader mit quadratischer Grundfläche) misst <span class="math inline">\(24cm\)</span>. Berechnen Sie die Kanten so, dass..</p>
 <ol type="a">
 <li>…die Oberfläche maximal wird.</li>
 <li>…die Mantelfläche maximal wird.</li>

@@ -31,3 +31,8 @@ tbody tr:hover {background: rgba(66, 165, 245, 0.2);}
   src: url("font/FiraCode-Regular.ttf");
 }
 */
+
+.small-table {
+  font-size: 0.5em;
+}
+

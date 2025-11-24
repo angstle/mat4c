@@ -1,0 +1,2490 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Dieses Buch umfasst den Unterrichtsstoff für das Jahr 2025/26">
+
+<title>3&nbsp; Potenzen und Potenzfunktionen</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./2_1_quadratische_gleichungen_aufgaben.html" rel="prev">
+<link href="./favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b53751a350365c71b6c909e95f209ed1.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-022c32add0b373e1d671bbeace80d355.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-8636f0b93bb1e90f67bd5734d6d07bdf.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="custom.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./5_potenz_wurzelfunktionen.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Potenzen und Potenzfunktionen</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./logo_4.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Einleitung</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_quad_funktionen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Quadratische Funktionen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./1_1_quadratische_funktionen_aufgaben.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übungsaufgaben Quadratische Funktionen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_quadratische_gleichungen.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Quadratische Gleichungen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./2_1_quadratische_gleichungen_aufgaben.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Übungsaufgaben Quadratische Gleichungen</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./5_potenz_wurzelfunktionen.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Potenzen und Potenzfunktionen</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#potenzen-mit-ganzzahligen-exponenten" id="toc-potenzen-mit-ganzzahligen-exponenten" class="nav-link active" data-scroll-target="#potenzen-mit-ganzzahligen-exponenten"><span class="header-section-number">3.1</span> Potenzen mit ganzzahligen Exponenten</a>
+  <ul class="collapse">
+  <li><a href="#definition" id="toc-definition" class="nav-link" data-scroll-target="#definition"><span class="header-section-number">3.1.1</span> Definition</a></li>
+  <li><a href="#wissenschaftliche-schreibweise" id="toc-wissenschaftliche-schreibweise" class="nav-link" data-scroll-target="#wissenschaftliche-schreibweise"><span class="header-section-number">3.1.2</span> Wissenschaftliche Schreibweise</a></li>
+  </ul></li>
+  <li><a href="#potenzen-mit-rationalen-exponenten" id="toc-potenzen-mit-rationalen-exponenten" class="nav-link" data-scroll-target="#potenzen-mit-rationalen-exponenten"><span class="header-section-number">3.2</span> Potenzen mit rationalen Exponenten</a>
+  <ul class="collapse">
+  <li><a href="#verallgemeinerung-der-wurzel" id="toc-verallgemeinerung-der-wurzel" class="nav-link" data-scroll-target="#verallgemeinerung-der-wurzel"><span class="header-section-number">3.2.1</span> Verallgemeinerung der Wurzel</a></li>
+  <li><a href="#potenzen-mit-brüchen-im-exponenten" id="toc-potenzen-mit-brüchen-im-exponenten" class="nav-link" data-scroll-target="#potenzen-mit-brüchen-im-exponenten"><span class="header-section-number">3.2.2</span> Potenzen mit Brüchen im Exponenten</a></li>
+  <li><a href="#reelle-exponenten" id="toc-reelle-exponenten" class="nav-link" data-scroll-target="#reelle-exponenten"><span class="header-section-number">3.2.3</span> Reelle Exponenten</a></li>
+  </ul></li>
+  <li><a href="#gleichungen-mit-potenzen" id="toc-gleichungen-mit-potenzen" class="nav-link" data-scroll-target="#gleichungen-mit-potenzen"><span class="header-section-number">3.3</span> Gleichungen mit Potenzen</a>
+  <ul class="collapse">
+  <li><a href="#potenzgleichungen" id="toc-potenzgleichungen" class="nav-link" data-scroll-target="#potenzgleichungen"><span class="header-section-number">3.3.1</span> Potenzgleichungen</a></li>
+  <li><a href="#exponentialgleichungen" id="toc-exponentialgleichungen" class="nav-link" data-scroll-target="#exponentialgleichungen"><span class="header-section-number">3.3.2</span> Exponentialgleichungen</a></li>
+  <li><a href="#negative-und-rationale-exponenten" id="toc-negative-und-rationale-exponenten" class="nav-link" data-scroll-target="#negative-und-rationale-exponenten"><span class="header-section-number">3.3.3</span> Negative und rationale Exponenten</a></li>
+  </ul></li>
+  <li><a href="#potenzfunktionen" id="toc-potenzfunktionen" class="nav-link" data-scroll-target="#potenzfunktionen"><span class="header-section-number">3.4</span> Potenzfunktionen</a>
+  <ul class="collapse">
+  <li><a href="#allgemeine-definition" id="toc-allgemeine-definition" class="nav-link" data-scroll-target="#allgemeine-definition"><span class="header-section-number">3.4.1</span> Allgemeine Definition</a></li>
+  <li><a href="#potenzfunktionen-mit-ganzzahligen-exponenten" id="toc-potenzfunktionen-mit-ganzzahligen-exponenten" class="nav-link" data-scroll-target="#potenzfunktionen-mit-ganzzahligen-exponenten"><span class="header-section-number">3.4.2</span> Potenzfunktionen mit Ganzzahligen Exponenten</a></li>
+  <li><a href="#potenzfunktionen-mit-rationalen-exponenten" id="toc-potenzfunktionen-mit-rationalen-exponenten" class="nav-link" data-scroll-target="#potenzfunktionen-mit-rationalen-exponenten"><span class="header-section-number">3.4.3</span> Potenzfunktionen mit rationalen Exponenten</a></li>
+  </ul></li>
+  <li><a href="#umkehrfunktionen" id="toc-umkehrfunktionen" class="nav-link" data-scroll-target="#umkehrfunktionen"><span class="header-section-number">3.5</span> Umkehrfunktionen</a>
+  <ul class="collapse">
+  <li><a href="#definition-1" id="toc-definition-1" class="nav-link" data-scroll-target="#definition-1"><span class="header-section-number">3.5.1</span> Definition</a></li>
+  <li><a href="#umkehrfunktion-bestimmen" id="toc-umkehrfunktion-bestimmen" class="nav-link" data-scroll-target="#umkehrfunktion-bestimmen"><span class="header-section-number">3.5.2</span> Umkehrfunktion bestimmen</a></li>
+  <li><a href="#aufgaben-2" id="toc-aufgaben-2" class="nav-link" data-scroll-target="#aufgaben-2"><span class="header-section-number">3.5.3</span> Aufgaben</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Potenzen und Potenzfunktionen</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><img src="images/potenzfunktionen/5_title_potenzen.png" class="img-fluid"></p>
+<section id="potenzen-mit-ganzzahligen-exponenten" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="potenzen-mit-ganzzahligen-exponenten"><span class="header-section-number">3.1</span> Potenzen mit ganzzahligen Exponenten</h2>
+<p>Bisher haben wir nur Potenzen betrachtet mit natürlichen Zahlen oder der Zahl <span class="math inline">\(0\)</span> als Exponent. In verschiedenen Anwendungsbereichen der Mathematik ist es aber hilfreich auch andere Zahlen im Exponenten zu erlauben. Deshalb möchten wir uns anschauen, was eine negative Zahl, ein Bruch oder gar eine irrationale Zahl als Exponent bedeutet.</p>
+<section id="definition" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="definition"><span class="header-section-number">3.1.1</span> Definition</h3>
+<p>Als Repetition möchten wir uns anschauen, wie eine Potenz definiert ist. Wir beginnen bei den Grundoperationen und betrachten, wie die Addition mit der Multiplikation zusammenhängt.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Multiplikation und Addition">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Multiplikation und Addition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<!-- $$
+a + a + a + a =  4a
+$$ -->
+<p><br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+<p>Die Multiplikation ist entsprechend die Kurzform für eine Addition mit identischen Summanden. In selber weise hängen auch die Multiplikation und Potenz zusammen.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Potenz und Multiplikation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Potenz und Multiplikation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<!-- $$
+a \cdot a \cdot a \cdot a =  a^4
+$$ -->
+<p><br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+<p>Die Potenz entspricht also der Kurzform einer Multiplikation mit identischen Faktoren. Wir kennen Spezialfälle:</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Spezialfälle">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Spezialfälle
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<!-- $$
+a^1 = a
+$$
+
+$$
+a^0 = 1
+$$ -->
+<p><br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+<p>Mit der Idee der Potenz als wiederholte Multiplikation können wir keine negativen oder gar Bruchzahlen im Exponenten haben. Es ist nicht möglich eine Zahl <span class="math inline">\(a\)</span> <span class="math inline">\((−5)\)</span> mal mit sich selbst zu multiplizieren und schon gar nicht die Zahl <span class="math inline">\(a\)</span> ein Drittel Mal mit sich selbst zu multiplizieren.</p>
+<p>Wir benötigen also ein anderes Verständnis für die Potenz. Betrachten wir folgende Zahlenreihe</p>
+<ul>
+<li><span class="math inline">\(5^4 = 625\)</span></li>
+<li><span class="math inline">\(5^3 = 125\)</span></li>
+<li><span class="math inline">\(5^2 = 25\)</span></li>
+<li><span class="math inline">\(5^1 = 5\)</span></li>
+<li><span class="math inline">\(5^0 = 1\)</span></li>
+<li><span class="math inline">\(5^{-1} = ?\)</span></li>
+<li><span class="math inline">\(5^{-2} = ?\)</span></li>
+<li><span class="math inline">\(5^{-3} = ?\)</span></li>
+<li><span class="math inline">\(5^{-4} = ?\)</span></li>
+</ul>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="Zahlenreihe fortsetzen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Zahlenreihe fortsetzen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Überlegen sie sich, wie man die Zahlenreihe logisch fortsetzen könnte.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Repetition: Potenzgesetze">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Repetition: Potenzgesetze
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Multiplikation und Division mit gleicher Basis:</strong> <span class="math display">\[
+a^m \cdot a^n = a^{m+n} \qquad \frac{a^m}{a^n} = a^{m-n}
+\]</span></p>
+<p><strong>Multiplikation und Division mit gleichen Exponenten</strong> <span class="math display">\[
+a^n \cdot b^n = (a\cdot b)^n \qquad \frac{a^n}{b^n} = \left(\frac{a}{b}\right)^n
+\]</span></p>
+<p><strong>Mehrfaches Potenzieren</strong> <span class="math display">\[
+(a^n)^m = a^{n\cdot m}
+\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition: Negative Exponenten">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition: Negative Exponenten
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wir definieren für <span class="math inline">\(a \neq 0\)</span>: <span class="math display">\[
+a^{-n} = \frac{1}{a^n}
+\]</span></p>
+<p>Insbesondere gilt: <span class="math display">\[
+a^{-1} = \frac{1}{a}
+\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben ">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Notieren Sie als einzelne Potenz.</p>
+<ol type="a">
+<li><span class="math inline">\(k^4 \cdot k^2\)</span></li>
+<li><span class="math inline">\((m^3)^t\)</span></li>
+<li><span class="math inline">\((3^s)^s\)</span></li>
+<li><span class="math inline">\(\frac{z^7}{z^{4t}}\)</span></li>
+<li><span class="math inline">\(w^{7p} : w^5\)</span></li>
+<li><span class="math inline">\(4\cdot 2^n\)</span></li>
+<li><span class="math inline">\((2^{x+1})^2\)</span></li>
+<li><span class="math inline">\(\frac{a^{-n}}{a^{2+n}}\)</span></li>
+</ol>
+<div class="callout callout-style-default callout-important callout-titled" title="Lösungen">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Lösungen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="a">
+<li><span class="math inline">\(k^6\)</span><br>
+</li>
+<li><span class="math inline">\(m^{3t}\)</span><br>
+</li>
+<li><span class="math inline">\(3^{s^2}\)</span><br>
+</li>
+<li><span class="math inline">\(z^{7-4t}\)</span><br>
+</li>
+<li><span class="math inline">\(w^{7p-5}\)</span><br>
+</li>
+<li><span class="math inline">\(2^{n+2}\)</span><br>
+</li>
+<li><span class="math inline">\(2^{2x+2}\)</span><br>
+</li>
+<li><span class="math inline">\(a^{-2-2n}\)</span></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="wissenschaftliche-schreibweise" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="wissenschaftliche-schreibweise"><span class="header-section-number">3.1.2</span> Wissenschaftliche Schreibweise</h3>
+<p>Wenn wir sehr grosse Zahlen oder auch Zahlen sehr nahe bei Null als Dezimalzahl notieren, so haben diese Zahlen sehr viele Nullen und sind deshalb schwer zu lesen. Aus diesem Grund schreibt man diese Zahlen oft kompakter mit Hilfe von Zehnerpotenzen. Man nennt diese Schreibweise auch wissenschaftliche Schreibweise.</p>
+<ul>
+<li>grosse Zahl: Lichtgeschwindigkeit <span class="math inline">\(c=299'800'000 \frac{m}{s}\)</span></li>
+<li>kleine Zahl: Atommradius von Kohlenstoff <span class="math inline">\(r_C=0.000'000'000'17m\)</span></li>
+</ul>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition: Wissenschaftliche Schreibweise">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition: Wissenschaftliche Schreibweise
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In der wissenschaftlichen Schreibweise von Zahlen wird eine Zahl amit Hilfe von Zehnerpotenzen so notiert, dass genau eine Ziﬀer vor dem Dezimalpunkt zu stehen kommt:</p>
+<p><span class="math display">\[
+a=n\cdot 10^z \qquad \text{ mit } 1\leq n &lt; 10 \text{ und } z\in \mathbb{Z}
+\]</span></p>
+<p>Die Zahl vor der Zehnerpotenz nennt man <em>Mantisse</em>. Alle Ziﬀern der Mantisse werden als <em>signifikante Ziﬀern</em> bezeichnet und geben in der Regel die <em>Messgenauigkeit</em> des Resultats an.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Erddurchmesser:<br>
+<span class="math inline">\(12'742\text{ km} = 1.2742 \cdot 10^4\text{ km}\)</span></p></li>
+<li><p>Durchmesser eines Atoms:<br>
+<span class="math inline">\(0.000\,000\,000\,1\text{ m} = 1 \cdot 10^{-10}\text{ m}\)</span></p></li>
+<li><p>Bevölkerungszahl der Erde:<br>
+<span class="math inline">\(8'000'000'000 = 8 \cdot 10^9\)</span></p></li>
+<li><p>Masse eines Protons:<br>
+<span class="math inline">\(0.000\,000\,000\,000\,000\,000\,000\,00167\text{ kg} = 1.67 \cdot 10^{-27}\text{ kg}\)</span></p></li>
+</ul>
+</div>
+</div>
+<section id="si-präfixe" class="level4" data-number="3.1.2.1">
+<h4 data-number="3.1.2.1" class="anchored" data-anchor-id="si-präfixe"><span class="header-section-number">3.1.2.1</span> SI-Präfixe</h4>
+<p>In den Naturwissenschaften, wie z.B. in der Physik, verwendet man anstelle der Zehnerpotenzen oft sogenannte Präfixe für Zahlen. Einige davon kennt man auch aus dem Alltag, wie der <em>Kilometer</em> (<span class="math inline">\(1km= 1\cdot 10^3m= 1'000m\)</span>) oder auch das <em>Gigabyte</em> für Speicherplatz z.B. bei euren Laptops oder Tablets. In der Tabelle unten finden Sie eine Auflistung dieser SI-Präfixe:</p>
+<div class="small-table">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 6%">
+<col style="width: 13%">
+<col style="width: 1%">
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 27%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Zahl</th>
+<th style="text-align: center;">Wert</th>
+<th style="text-align: right;">Präfix</th>
+<th>|</th>
+<th style="text-align: left;">Präfix</th>
+<th style="text-align: left;">Wert</th>
+<th style="text-align: left;">Zahl</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">10</td>
+<td style="text-align: center;">10¹</td>
+<td style="text-align: right;">da (Deka)</td>
+<td>|</td>
+<td style="text-align: left;">d (Dezi)</td>
+<td style="text-align: left;">10⁻¹</td>
+<td style="text-align: left;">0.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">100</td>
+<td style="text-align: center;">10²</td>
+<td style="text-align: right;">h (Hekto)</td>
+<td>|</td>
+<td style="text-align: left;">c (Zenti)</td>
+<td style="text-align: left;">10⁻²</td>
+<td style="text-align: left;">0.01</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1 000</td>
+<td style="text-align: center;">10³</td>
+<td style="text-align: right;">k (Kilo)</td>
+<td>|</td>
+<td style="text-align: left;">m (Milli)</td>
+<td style="text-align: left;">10⁻³</td>
+<td style="text-align: left;">0.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1 000 000</td>
+<td style="text-align: center;">10⁶</td>
+<td style="text-align: right;">M (Mega)</td>
+<td>|</td>
+<td style="text-align: left;">µ (Mikro)</td>
+<td style="text-align: left;">10⁻⁶</td>
+<td style="text-align: left;">0.000 001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1 000 000 000</td>
+<td style="text-align: center;">10⁹</td>
+<td style="text-align: right;">G (Giga)</td>
+<td>|</td>
+<td style="text-align: left;">n (Nano)</td>
+<td style="text-align: left;">10⁻⁹</td>
+<td style="text-align: left;">0.000 000 001</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1 000 000 000 000</td>
+<td style="text-align: center;">10¹²</td>
+<td style="text-align: right;">T (Tera)</td>
+<td>|</td>
+<td style="text-align: left;">p (Piko)</td>
+<td style="text-align: left;">10⁻¹²</td>
+<td style="text-align: left;">0.000 000 000 001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1 000 000 000 000 000</td>
+<td style="text-align: center;">10¹⁵</td>
+<td style="text-align: right;">P (Peta)</td>
+<td>|</td>
+<td style="text-align: left;">f (Femto)</td>
+<td style="text-align: left;">10⁻¹⁵</td>
+<td style="text-align: left;">0.000 000 000 000 001</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1 000 000 000 000 000 000</td>
+<td style="text-align: center;">10¹⁸</td>
+<td style="text-align: right;">E (Exa)</td>
+<td>|</td>
+<td style="text-align: left;">a (Atto)</td>
+<td style="text-align: left;">10⁻¹⁸</td>
+<td style="text-align: left;">0.000 000 000 000 000 001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">1 000 000 000 000 000 000 000</td>
+<td style="text-align: center;">10²¹</td>
+<td style="text-align: right;">Z (Zetta)</td>
+<td>|</td>
+<td style="text-align: left;">z (Zepto)</td>
+<td style="text-align: left;">10⁻²¹</td>
+<td style="text-align: left;">0.000 000 000 000 000 000 001</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1 000 000 000 000 000 000 000 000</td>
+<td style="text-align: center;">10²⁴</td>
+<td style="text-align: right;">Y (Yotta)</td>
+<td>|</td>
+<td style="text-align: left;">y (Yokto)</td>
+<td style="text-align: left;">10⁻²⁴</td>
+<td style="text-align: left;">0.000 000 000 000 000 000 000 001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+<section id="potenzen-mit-rationalen-exponenten" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="potenzen-mit-rationalen-exponenten"><span class="header-section-number">3.2</span> Potenzen mit rationalen Exponenten</h2>
+<p>Bevor wir uns anschauen, was eine rationale Zahl wie z.B. <span class="math inline">\(\frac{1}{3}\)</span> im Exponenten einer Potenz bedeuten, möchten wir uns in Erinnerung rufen, wie die (Quadrat-)Wurzel definiert wurde und diese Definition verallgemeinern als Umkehrung einer allgemeinen Potenz.</p>
+<section id="verallgemeinerung-der-wurzel" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="verallgemeinerung-der-wurzel"><span class="header-section-number">3.2.1</span> Verallgemeinerung der Wurzel</h3>
+<p>Wir haben die Wurzel einer Zahl <span class="math inline">\(a\)</span> definiert als die Umkehrung für des Quadrierens. Analog kennen wir die Subtraktion als Umkehrung der Addition und die Division als Umkehrung der Multiplikation.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Grundoperationen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Grundoperationen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Umkehrung allgemeine Potenz">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Umkehrung allgemeine Potenz
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Doch wie sieht die Umkehrung einer allgemeinen Potenz aus? Dazu betrachten wir die Gleichung: <span class="math display">\[
+x^4 = 81
+\]</span></p>
+</div>
+</div>
+<p>Daraus finden wir folgende Definition:</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition $n$-te Wurzel">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition <span class="math inline">\(n\)</span>-te Wurzel
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die <span class="math inline">\(n\)</span>-te Wurzel einer nicht-negativen Zahl aist definiert als die nicht-negative Zahl <span class="math inline">\(x\)</span>, deren <span class="math inline">\(n\)</span>-te Potenz <span class="math inline">\(a\)</span> ergibt: <span class="math display">\[
+\sqrt[n]{a} = b \qquad \rightleftarrows \qquad b^n = a
+\]</span></p>
+<p>Die natürliche Zahl <span class="math inline">\(n\)</span> heisst <em>Wurzelexponent</em> und die Zahl <span class="math inline">\(a\)</span> heisst <em>Radikand</em>.</p>
+<p><strong>Sonderfall:</strong> Für <span class="math inline">\(n = 2\)</span> ist <span class="math inline">\(\sqrt[2]{a} = \sqrt{a}\)</span> die bereits bekannte Quadratwurzel.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Aus der Definition folgt direkt, dass <span class="math inline">\((\sqrt[n]{a})^n = a\)</span> und <span class="math inline">\(\sqrt[n]{b^n} = b \quad \forall \quad a,b\geq 0\)</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<!-- - $\sqrt[4]{81} = 3$, denn $3^4 = 81$  
+- $\sqrt[3]{125} = 5$, denn $5^3 = 125$  
+- $\sqrt[5]{1} = 1$, denn $1^5 = 1$  
+- $\sqrt[3]{0} = 0$  
+- $\sqrt[2]{49} = \sqrt{49} = 7$ -->
+<p><br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+<section id="wurzelgesetze" class="level4" data-number="3.2.1.1">
+<h4 data-number="3.2.1.1" class="anchored" data-anchor-id="wurzelgesetze"><span class="header-section-number">3.2.1.1</span> Wurzelgesetze</h4>
+<p>Die Wurzelgesetze, die wir bereits bei der Quadratwurzel kennengelernt haben gelten auch weiterhin für die verallgemeinerte Definition der <span class="math inline">\(n\)</span>-ten Wurzel.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Verallgemeinerte Wurzelgesetze">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Verallgemeinerte Wurzelgesetze
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Multiplikation und Division mit gleichem Wurzelexponenten: <span class="math display">\[
+\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{a\cdot b}
+\]</span></p>
+<p>Mehrfaches Wurzelziehen: <span class="math display">\[
+\sqrt[n]{\sqrt[m]{a}} = \sqrt[n\cdot m]{a}
+\]</span></p>
+<p>Vertauschen von Potenz und Wurzel: <span class="math display">\[
+\sqrt[n]{a^m} = (\sqrt[n]{a})^m
+\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Auch für die <span class="math inline">\(n\)</span>-te Wurzel gilt die oft vergessene (aber wichtige) Regel:</p>
+</div>
+</div>
+</section>
+</section>
+<section id="potenzen-mit-brüchen-im-exponenten" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="potenzen-mit-brüchen-im-exponenten"><span class="header-section-number">3.2.2</span> Potenzen mit Brüchen im Exponenten</h3>
+<p>Wie bei den negativen Exponenten sollen auch für Brüche im Exponent die Potenzgesetze weiter gelten. Anhand dieser möchten wir uns nun herleiten, was ein Bruch im Exponent bedeutet.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Herleitung Bruch im Exponent">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Herleitung Bruch im Exponent
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<!-- Wir erinnern uns an die folgenden Potenzgesetze:
+
+- $a^{m \cdot n} = (a^m)^n$
+- $a^1 = a$
+
+Nun betrachten wir die Frage:  
+Was bedeutet $a^{\frac{1}{n}}$?
+
+Wir suchen eine Zahl $x$, sodass
+
+$$ x^n = a $$
+
+Damit muss gelten:
+
+$$ a^{\frac{1}{n}} = x = \sqrt[n]{a} $$
+
+Für einen allgemeinen Bruchexponenten folgt mit dem Potenzgesetz:
+
+$$
+a^{\frac{m}{n}} = (a^{\frac{1}{n}})^m = \left(\sqrt[n]{a}\right)^m = \sqrt[n]{a^m}
+$$ -->
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+<p>Wir finden die Verallgemeinerung: <span class="math display">\[
+a^{\frac{1}{n}} = \sqrt[n]{a}
+\]</span></p>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgabe">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgabe
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Notieren sie <span class="math display">\[
+a^{\frac{3}{7}}
+\]</span></p>
+<p>mit den bekannten Operatoren</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Rationaler Exponent">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Rationaler Exponent
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Hat eine Potenz <span class="math inline">\(a^k \quad (a\geq 0)\)</span> einen rationalen Exponenten <span class="math inline">\(k= \frac{m}{n}\)</span>, so definieren wir:</p>
+<p><span class="math display">\[
+a^{\frac{m}{n}} = \sqrt[n]{a^m} = (\sqrt[n]{a}
+)^m
+\]</span></p>
+<p>Insbesondere gilt für <span class="math inline">\(m= 1\)</span>: <span class="math display">\[
+a^{\frac{1}{n}} = \sqrt[n]{a}
+\]</span></p>
+<p>Mit einem rationalen Exponenten werden also die <span class="math inline">\(n\)</span>-ten Wurzeln beschrieben. Somit sind (ähnlich wie bei den Wurzeln) die rationalen Exponenten nur für nicht-negative Basen <span class="math inline">\(a\)</span> definiert.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Die allgemeinen Potenzgesetzte gelten auch für rationale Exponenten.</li>
+<li>Die Exponenten dürfen auch als Dezimalzahlen geschrieben sowie erweitert oder gekürzt werden.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<!-- - $16^{1/2} = \sqrt{16} = 4$
+- $27^{1/3} = \sqrt[3]{27} = 3$
+- $8^{2/3} = (\sqrt[3]{8})^2 = 2^2 = 4$
+- $81^{3/4} = (\sqrt[4]{81})^3 = 3^3 = 27$
+- $5^{0.5} = \sqrt{5}$
+- $49^{-1/2} = \frac{1}{\sqrt{49}} = \frac{1}{7}$ -->
+<p><br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Notieren Sie als einzelne Potenz mit möglichst kleiner Basis.</p>
+<ol type="a">
+<li><span class="math inline">\(\sqrt[3]{7}\)</span></li>
+<li><span class="math inline">\(\frac{4}{\sqrt{2}}\)</span></li>
+<li><span class="math inline">\(2\cdot \sqrt[3]{2}\)</span></li>
+<li><span class="math inline">\(49^{1.5}\)</span></li>
+<li><span class="math inline">\(\frac{7}{\sqrt[7]{49}}\)</span></li>
+<li><span class="math inline">\(\sqrt[6]{16}\)</span></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="reelle-exponenten" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="reelle-exponenten"><span class="header-section-number">3.2.3</span> Reelle Exponenten</h3>
+<p>Es liegt nahe festzulegen, dass alle Potenzgesetze weiter gelten, selbst wenn im Exponenten reelle Zahlen vorkommen. Es dürfen also im Exponenten auch irrationale Zahlen, wie z.B. <span class="math inline">\(\sqrt{2}\)</span>, vorkommen. In diesem Fall ist es aber nicht mehr so einfach den Wert der Potenz zu bestimmen.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(\left(a^{\sqrt{2}}\right)^{\sqrt{18}}\)</span></li>
+<li><span class="math inline">\(a^{\sqrt{2}} \cdot a^{\sqrt{18}}\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Was versteht man unter $3^\sqrt{2}$?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was versteht man unter <span class="math inline">\(3^\sqrt{2}\)</span>?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wir kommen der unbekannten <span class="math inline">\(3^\sqrt{2}\)</span> immer näher, wenn man <span class="math inline">\(\sqrt{2}\)</span> durch rationale untere und obere Schranken immer enger einschränkt:</p>
+</div>
+</div>
+<p>Es ist also sinnvoll <span class="math inline">\(3^\sqrt{2}\)</span> also jede Zahl zu festzulegen, die zwischen allen Zahlen <span class="math inline">\(3^x\)</span> mit rationalem <span class="math inline">\(x&lt;\sqrt{2}\)</span> und allen Zahlen <span class="math inline">\(3^y\)</span> mit rationalem <span class="math inline">\(y&gt;\sqrt{2}\)</span> liegt.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Reeller Exponent">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Reeller Exponent
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sei <span class="math inline">\(a\geq 0\)</span> und <span class="math inline">\(r\in \mathbb{R}\)</span>, so definieren wir:</p>
+<p><span class="math inline">\(a^r\)</span> ist diejenige Zahl, die zwischen allen Zahlen <span class="math inline">\(a^x\)</span> und <span class="math inline">\(a^y\)</span> liegt mit <span class="math inline">\(x&lt;r,\ y&gt;r\)</span> und <span class="math inline">\(x,y\in \mathbb{Q}\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Es lässt sich beweisen, dass es in jedem Fall genau eine solche Zahl gibt und <span class="math inline">\(a^r\)</span> somit eindeutig ist. Ausserdem kann man zeigen, dass es mit dieser Definition für <span class="math inline">\(r \in \mathbb{Q}\)</span> dieselbe Zahl herauskommt wie mit der bisherigen Definition für rationale Exponenten.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="gleichungen-mit-potenzen" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="gleichungen-mit-potenzen"><span class="header-section-number">3.3</span> Gleichungen mit Potenzen</h2>
+<p>Als erste Anwendung möchten wir uns noch einige einfache Gleichungen mit Potenzen anschauen, bei denen entweder die Basis oder der Exponent einer Potenz gesucht sind.</p>
+<section id="potenzgleichungen" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="potenzgleichungen"><span class="header-section-number">3.3.1</span> Potenzgleichungen</h3>
+<p>Einer ersten Potenzgleichung sind wir schon mehrfach begegnet - die rein quadratische Gleichung. Dabei kam die Lösungsvariable (meist <span class="math inline">\(x\)</span>) nur mit Potenz <span class="math inline">\(2\)</span> (also im Quadrat) vor, nicht aber mit anderen Exponenten (oder linear).</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(x^2 = 64\)</span></li>
+<li><span class="math inline">\(x^2−4 = 0\)</span></li>
+<li><span class="math inline">\(x^2 =−81\)</span></li>
+<li><span class="math inline">\(x^2 + 25 = 0\)</span></li>
+</ul>
+</div>
+</div>
+<p>Ähnlich wie bei der rein quadratischen Gleichung kommt bei einer Potenzgleichung die Lösungsvariable (meist x) nur mit einem Exponenten n vor, nicht aber noch mit anderen Exponenten m.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Potenzgleichungen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Potenzgleichungen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine Potenzgleichung kann immer in die folgende Form gebraucht werden: <span class="math display">\[
+x^n = b \text{ mit } n\in \mathbb{N} \text{ und } b \in \mathbb{R}
+\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(x^5 = 32 \quad\Rightarrow\quad x = \sqrt[5]{32} = 2\)</span></li>
+<li><span class="math inline">\(x^4 = 625 \quad\Rightarrow\quad x = \pm \sqrt[4]{625} = \pm 5\)</span></li>
+<li><span class="math inline">\(x^3 = -27 \quad\Rightarrow\quad x = -3\)</span></li>
+<li><span class="math inline">\(x^6 = 1 \quad\Rightarrow\quad x = \pm 1\)</span></li>
+<li><span class="math inline">\(x^7 = 0 \quad\Rightarrow\quad x = 0\)</span><br>
+<br>
+<br>
+<br>
+<br>
+</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Potenzgleichungen mit geraden Exponenten">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Potenzgleichungen mit geraden Exponenten
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(x^6 = 64\)</span></li>
+<li><span class="math inline">\(x^4 = -16\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine Potenzgleichung <span class="math inline">\(x^n = b\)</span> mit geradem Exponenten (<span class="math inline">\(n\in \mathbb{N}\)</span>) und <span class="math inline">\(b\in \mathbb{R}\)</span> kann keine, eine oder zwei Lösungen besitzen. Wir unterscheiden die Fälle:</p>
+<ul>
+<li><span class="math inline">\(b&lt;0\)</span> keine Lösung</li>
+<li><span class="math inline">\(b= 0\)</span> eine Lösung, nämlich <span class="math inline">\(x= 0\)</span></li>
+<li><span class="math inline">\(b&gt;0\)</span> zwei Lösungen, nämlich <span class="math inline">\(x_1 =\sqrt[n]{b}\)</span> und <span class="math inline">\(x_2 =-\sqrt[n]{b}\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Potenzgleichungen mit ungeraden Exponenten">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Potenzgleichungen mit ungeraden Exponenten
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>x^3 = 216</li>
+<li>x^5 = -32</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine Potenzgleichung <span class="math inline">\(x^n = b\)</span> mit ungeradem Exponenten <span class="math inline">\((n \in \mathbb{N})\)</span> und <span class="math inline">\(b \in \mathbb{R}\)</span> besitzt immer genau eine Lösung. Wir unterscheiden die Fälle:</p>
+<ul>
+<li><span class="math inline">\(b&lt;0\)</span> Lösung: <span class="math inline">\(x=−\sqrt[n]{|b|}\)</span></li>
+<li><span class="math inline">\(b= 0\)</span> Lösung: <span class="math inline">\(x= 0\)</span></li>
+<li><span class="math inline">\(b&gt;0\)</span> Lösung: <span class="math inline">\(x=\sqrt[n]{b}\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Weitere Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Weitere Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(8x^3 = x^3 -7\)</span></li>
+<li><span class="math inline">\(3(−x^3 + 5) =−9 −6x^3\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="exponentialgleichungen" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="exponentialgleichungen"><span class="header-section-number">3.3.2</span> Exponentialgleichungen</h3>
+<p>Exponentialgleichungen sind Gleichungen bei denen die Lösungsvariable (meist <span class="math inline">\(x\)</span>) im Exponent einer Potenz vorkommt. Solche Gleichungen werden wir später noch genauer anschauen und eine allgemeine Lösungsmethode kennenlernen. Wir möchten aber bereits jetzt eine Lösungsmethode anschauen, mit der wir bestimmte Exponentialgleichungen bereits lösen können.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(3^x = 81\)</span></li>
+<li><span class="math inline">\(9^5 = 3^{x-5}\)</span></li>
+</ul>
+</div>
+</div>
+<p>Wir können Exponentialgleichungen nur dann lösen, wenn wir auf beiden Seiten der Gleichung eine Potenz mit gleicher Basis haben. In diesem Fall lösen wir die Gleichung durch einen <strong>Vergleich der Exponenten</strong>. Damit die Potenz bei gleicher Basis den gleichen Wert hat, muss auch ihr Exponent gleich sein. Um eine Exponentialgleichung zu lösen, vereinfachen wir die Potenzen, um eine möglichst kleine natüriche Zahl als Basis zu erhalten. Falls diese Basis auf beiden Seiten dieselbe ist, setzten anschliessend die Exponenten gleich und lösen die so erhaltene Gleichung nach der Lösungsvariable auf.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(5^3 + 2^x = 157\)</span></li>
+<li><span class="math inline">\(3\cdot 2^x = 120 - 6\cdot 2^{x+1}\)</span></li>
+<li><span class="math inline">\(3\cdot 4^x = 6\cdot 2^{x+5}\)</span></li>
+<li><span class="math inline">\(8^{x+2} \cdot 2^{x-1} = 4^{x+5}\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="negative-und-rationale-exponenten" class="level3" data-number="3.3.3">
+<h3 data-number="3.3.3" class="anchored" data-anchor-id="negative-und-rationale-exponenten"><span class="header-section-number">3.3.3</span> Negative und rationale Exponenten</h3>
+<p>In Gleichungen mit Potenzen, bei denen die Lösungsvariable in der Basis oder auch im Exponenten vorkommt können auch rationale Exponenten auftreten. Wir möchten dazu einige Beispiele anschauen. Die Lösungsideen sind dieselben wie im Fall von natürlichen Exponenten.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Negative Exponenten und Lösungsvariable in der Basis">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Negative Exponenten und Lösungsvariable in der Basis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(x^3 =27^{-2}\)</span></li>
+<li><span class="math inline">\(x^{-5} = 32\)</span></li>
+<li><span class="math inline">\(x^{-4} = \frac{16}{81}\)</span></li>
+<li><span class="math inline">\(x^{-2} = 9\cdot 10^{-12}\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Negative Exponenten und Lösungsvariable im Exponenten">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Negative Exponenten und Lösungsvariable im Exponenten
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(3^{x-5} = 3^2\)</span></li>
+<li><span class="math inline">\(2^4 + 3^{5-x} = 5^2\)</span></li>
+<li><span class="math inline">\(2^{-3} \cdot 2^{2-x} = 2^{-5}\)</span></li>
+<li><span class="math inline">\(2^x \cdot 8^3 = 4^{x-1} \cdot 16\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Rationale Exponenten und Lösungsvariable in der Basis">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Rationale Exponenten und Lösungsvariable in der Basis
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(\sqrt[3]{x} = 6\)</span></li>
+<li><span class="math inline">\(\frac{2}{\sqrt[5]{x}} = \frac{5}{\sqrt[3]{x}}\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Rationale Exponenten und Lösungsvariable im Exponenten">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Rationale Exponenten und Lösungsvariable im Exponenten
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><span class="math inline">\(32 = 4^x\)</span></li>
+<li><span class="math inline">\(3^{2x+1} = 81\)</span></li>
+<li><span class="math inline">\(5^x = \frac{1}{\sqrt[]{}}\)</span></li>
+<li><span class="math inline">\(3^{\sqrt{2}} = 9^{x+1}\)</span></li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgaben">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgaben
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Lösen Sie die Potenzgleichungen.</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(5 + 4x^3 = 113\)</span></li>
+<li><span class="math inline">\(7−6x^4 = 5x^4 - 13^2\)</span></li>
+<li><span class="math inline">\(\frac{2^3 - x^5}{2^2} = 10\)</span></li>
+</ol>
+<ol start="2" type="1">
+<li>Lösen Sie die Potenzgleichungen.</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(5x^3 = 135\)</span></li>
+<li><span class="math inline">\(3x^4 = x^4 + 2^5\)</span></li>
+</ol>
+<ol start="3" type="1">
+<li>Lösen Sie die Gleichungen.</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(4x^3 + 108 = 0\)</span></li>
+<li><span class="math inline">\(6x^4 = 2x^4 + 2^2\)</span></li>
+<li><span class="math inline">\(x^{-2} = \frac{36}{49}\)</span></li>
+<li><span class="math inline">\(x^{−1} : (27^{−2}) = x^{−4}\)</span></li>
+</ol>
+<ol start="4" type="1">
+<li>Lösen Sie die Exponentialgleichungen</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(2^4 + 9\cdot 3^x = 7 + 4\cdot 3^{x+1}\)</span></li>
+<li><span class="math inline">\(9\cdot 3^x = 27\cdot 9^{x−2}\)</span></li>
+</ol>
+<ol start="5" type="1">
+<li>Lösen Sie die Exponentialgleichungen.</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(125^{x−1}\cdot 5^{x−1} = 25^{x+5}\)</span></li>
+<li><span class="math inline">\(2^{x−5}\cdot 48 = 3\cdot 4^{x−2}\)</span></li>
+<li><span class="math inline">\(2^5 + 5\cdot 3^x = 2\cdot 3^{x+1} + 5\)</span></li>
+</ol>
+<ol start="6" type="1">
+<li>Lösen Sie die Gleichungen.</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(3^{x−2} = 12\)</span></li>
+<li><span class="math inline">\(3 + x^{−2} = 12\)</span></li>
+<li><span class="math inline">\(2^{x−8}\cdot 32 = 4^x\)</span></li>
+<li><span class="math inline">\(3^x = 81\cdot 3^{−x}\)</span></li>
+<li><span class="math inline">\(3^x + 3^{3−x} = 12\)</span></li>
+<li><span class="math inline">\(2^x + 2^{6−x} = 20\)</span></li>
+</ol>
+<ol start="7" type="1">
+<li>Lösen Sie die Gleichungen.</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(x^4 = (\sqrt{5})^3\)</span></li>
+<li><span class="math inline">\(16^x\cdot 2^4 = 2^x\)</span></li>
+<li><span class="math inline">\(4\cdot 2^x\cdot 32 = 4^x\)</span></li>
+<li><span class="math inline">\(\frac{x}{\sqrt[3]{x}} = \frac{6}{\sqrt[6]{x}}\)</span></li>
+<li><span class="math inline">\(16^x + 2^4 = 10\cdot 4^x\)</span></li>
+<li><span class="math inline">\(4\cdot 2^x + 32 = 4^x\)</span></li>
+</ol>
+<ol start="8" type="1">
+<li>Lösen Sie die Gleichungen.</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(4^{x−1} = \frac{4}{\sqrt[4]{4}}\)</span></li>
+<li><span class="math inline">\(\frac{3}{\sqrt[4]{x}} = \frac{8}{\sqrt[5]{x}}\)</span></li>
+<li><span class="math inline">\(9^{x+4}\cdot 3^4 = \frac{27^{x−1}}{81}\)</span></li>
+<li><span class="math inline">\(4^\sqrt{2} = 4^{x+\sqrt{2}}\)</span></li>
+<li><span class="math inline">\(x^2 = (\sqrt{6})^{−4}\)</span></li>
+<li><span class="math inline">\(x^{0.3} = 3\)</span></li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="potenzfunktionen" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="potenzfunktionen"><span class="header-section-number">3.4</span> Potenzfunktionen</h2>
+<section id="allgemeine-definition" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="allgemeine-definition"><span class="header-section-number">3.4.1</span> Allgemeine Definition</h3>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Potenzfunktion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Potenzfunktion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine Funktion <span class="math inline">\(f\)</span> mit Funktionsgleichung <span class="math inline">\(f(x) = x^p\)</span> und <span class="math inline">\(p\in \mathbb{R}\)</span> heisst Potenzfunktion.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Spezialfälle">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Spezialfälle
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(p=0\rightarrow f(x) = x^0\)</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+<p><span class="math inline">\(p=1 \rightarrow f(x) = x^1\)</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Asymptote">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Asymptote
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine Gerade, an welche sich der Graph einer Funktion annähert, dies aber nie erreicht wird, bezeichnet man als <em>Asymptote</em>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Beispiel Tangens">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiel Tangens
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Die Funktion <span class="math inline">\(f(x) = \frac{1}{x}\)</span> hat zum Beispiel eine Asymptote bei <span class="math inline">\(x=0\)</span> (klar, durch Null kann nicht geteilt werden, der Wert strebt gegen <span class="math inline">\(y=\infty\)</span>)</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="potenzfunktionen-mit-ganzzahligen-exponenten" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="potenzfunktionen-mit-ganzzahligen-exponenten"><span class="header-section-number">3.4.2</span> Potenzfunktionen mit Ganzzahligen Exponenten</h3>
+<p>Wir betrachten zunächst lediglich Potenzfunktionen mit ganzzahligen Exponenten der Form <span class="math inline">\(f(x) = x^n\)</span>, wobei <span class="math inline">\(n\in \mathbb{Z}\)</span>. Diese Potenzfunktionen lassen sich in vier Klassen unterteilen abhängig von ihren Exponenten. Eine diese Klassen sollen Sie nun genauer untersuchen und anschliessend Ihren Mitschüler:innen präsentieren und diese anschliessend vergleichen.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Parabel">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Parabel
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Den Graphen einer Potenzfunktion mit natürlichem Exponenten <span class="math inline">\(n&gt;1\)</span> nennt man Parabel <span class="math inline">\(n\)</span>-ter Ordnung.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Hyperbel">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Hyperbel
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Den Graphen einer Potenzfunktion mit negativem ganzzahligem Exponenten n nennt man Hyperbel <span class="math inline">\(n\)</span>-ter Ordnung.</p>
+</div>
+</div>
+<section id="auftrag" class="level4" data-number="3.4.2.1">
+<h4 data-number="3.4.2.1" class="anchored" data-anchor-id="auftrag"><span class="header-section-number">3.4.2.1</span> Auftrag</h4>
+<p>Zeichnen Sie die jeweils gegebenen Potenzfunktionen mit Geogebra in ein Koordinatensystem und suchen Sie gemeinsame Eigenschaften der Funktionen (Symmetrie, spezielle Punkte, Asymptoten,…).</p>
+<p>Skizzieren Sie im Koordinatensystem jeweils zwei der Graphen und notieren Sie Definitionsmenge, Wertemenge sowie die gefundenen Eigenschaften.</p>
+<ul>
+<li><span class="math inline">\(n\)</span> ist eine positive gerade Zahl: <span class="math inline">\(f(x) = x^n \quad n= 2,4,8,20,100\)</span></li>
+<li><span class="math inline">\(n\)</span> ist eine positive ungerade Zahl: <span class="math inline">\(f(x) = x^n \quad n= 3,5,9,25,99\)</span></li>
+<li><span class="math inline">\(n\)</span> ist eine negative gerade Zahl: <span class="math inline">\(f(x) = x^n \quad n=−2,−4,−8,−20,−100\)</span></li>
+<li><span class="math inline">\(n\)</span> ist eine negative ungerade Zahl: <span class="math inline">\(f(x) = x^n \quad n=−1,−3,−5,−9,−25,−99\)</span></li>
+</ul>
+</section>
+<section id="zusammenfassung-eigenschaften-potenzfunktionen-mit-ganzzahligen-exponenten" class="level4" data-number="3.4.2.2">
+<h4 data-number="3.4.2.2" class="anchored" data-anchor-id="zusammenfassung-eigenschaften-potenzfunktionen-mit-ganzzahligen-exponenten"><span class="header-section-number">3.4.2.2</span> Zusammenfassung Eigenschaften Potenzfunktionen mit ganzzahligen Exponenten</h4>
+</section>
+<section id="transformation-von-funktionsgraphen" class="level4" data-number="3.4.2.3">
+<h4 data-number="3.4.2.3" class="anchored" data-anchor-id="transformation-von-funktionsgraphen"><span class="header-section-number">3.4.2.3</span> Transformation von Funktionsgraphen</h4>
+<p>Wir wir bereits bei quadratischen Funktionen gesehen haben, können auch allgemeine Potenzfunktionen verschoben, gestreckt und gespiegelt werden. Die Funktion <span class="math inline">\(f(x) = a\cdot (x−b)^n + c\)</span> ist gegenüber der Funktion <span class="math inline">\(f(x) = x^n\)</span>:</p>
+<ul>
+<li>mit Faktor <span class="math inline">\(a\)</span> in <span class="math inline">\(y\)</span>-Richtung gestreckt</li>
+<li>um <span class="math inline">\(b\)</span> Einheiten in positive <span class="math inline">\(x\)</span>-Richtung (nach rechts) verschoben</li>
+<li>um <span class="math inline">\(c\)</span> Einheiten in positive <span class="math inline">\(y\)</span>-Richtung (nach oben) verschoben</li>
+</ul>
+</section>
+<section id="spiegelungen" class="level4" data-number="3.4.2.4">
+<h4 data-number="3.4.2.4" class="anchored" data-anchor-id="spiegelungen"><span class="header-section-number">3.4.2.4</span> Spiegelungen</h4>
+<p>Skizzieren Sie die Funktion <span class="math inline">\(f(x) = (x−2)^3 + 1\)</span> im Koordinatensysten unten. Skizzieren Sie ebenfalls die Spiegelung der Funktion…</p>
+<ol type="i">
+<li>…an der <span class="math inline">\(x\)</span>-Achse</li>
+<li>…an der <span class="math inline">\(y\)</span>-Achse</li>
+<li>…am Ursprung und geben Sie die entsprechende Funktionsgleichung an.</li>
+</ol>
+<p>Wir betrachten nun die allgemeine Funktion der Form <span class="math inline">\(f(x) = a(x−b)^n + c\)</span>. Dann lautet die neue Funktionsgleichung bei:</p>
+<ul>
+<li>Spiegelung an der <span class="math inline">\(x\)</span>-Achse:______________</li>
+<li>Spiegelung an der <span class="math inline">\(y\)</span>-Achse:______________</li>
+<li>Spiegelung am Urpsrung:______________</li>
+</ul>
+</section>
+<section id="aufgaben" class="level4" data-number="3.4.2.5">
+<h4 data-number="3.4.2.5" class="anchored" data-anchor-id="aufgaben"><span class="header-section-number">3.4.2.5</span> Aufgaben</h4>
+<ol type="1">
+<li>Geogebra Funktionsgleichung bestimmen, Funktionsgraphen zuordnen (Zusatzblatt)</li>
+<li>Wie ändert sich der Funktionswert, wenn man den Wert für <span class="math inline">\(x\)</span> verdoppelt (halbiert)?</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(f(x) = 4x^4\)</span></li>
+<li><span class="math inline">\(f(x) = 5x^{−4}\)</span></li>
+<li><span class="math inline">\(f(x) =−5x^2\)</span></li>
+<li><span class="math inline">\(f(x) = 4x^{−2}\)</span></li>
+<li><span class="math inline">\(f(x) =−\frac{3}{2}x^{10}\)</span></li>
+<li><span class="math inline">\(f(x) =−x^{−10}\)</span></li>
+<li><span class="math inline">\(f(x) = \frac{1}{2\pi}x^3\)</span></li>
+<li><span class="math inline">\(f(x) = 2x^3\)</span></li>
+</ol>
+<ol start="3" type="1">
+<li>Bestimmen Sie jeweils die Gleichung einer Potenzfunktion vierten Grades, deren Graph durch den Punkt <span class="math inline">\(P\)</span> verläuft.</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(P(4 |4)\)</span></li>
+<li><span class="math inline">\(P(−2 |80)\)</span></li>
+<li><span class="math inline">\(P(10 |−10)\)</span></li>
+<li><span class="math inline">\(P(−0.5 |−2)\)</span></li>
+</ol>
+<ol start="4" type="1">
+<li>Der Graph der Funktion <span class="math inline">\(f(x) = a\cdot x^{−4}\)</span> verläfut durch den Punkt <span class="math inline">\(P(2 |−1)\)</span>.</li>
+</ol>
+<ol type="a">
+<li>Bestimmen Sie den Wert von <span class="math inline">\(a\)</span>.</li>
+<li>Prüfen Sie, ob auch die Punkte <span class="math inline">\(Q(−1 |16)\)</span> und <span class="math inline">\(R(0.5 |−256)\)</span> auf dem Graphen von <span class="math inline">\(f\)</span> liegen.</li>
+</ol>
+</section>
+</section>
+<section id="potenzfunktionen-mit-rationalen-exponenten" class="level3" data-number="3.4.3">
+<h3 data-number="3.4.3" class="anchored" data-anchor-id="potenzfunktionen-mit-rationalen-exponenten"><span class="header-section-number">3.4.3</span> Potenzfunktionen mit rationalen Exponenten</h3>
+<p>Wir möchten uns nun noch anschauen, was geschieht wenn im Zähler nicht eine ganze Zahl sondern ein Bruch steht. Bevor wir uns aber Potenzfunktionen <span class="math inline">\(f(x) = x^q\)</span> mit gebrochenen Exponenten <span class="math inline">\(q\in \mathbb{Q} \backslash \mathbb{Z}\)</span> anschauen, betrachten wir nur Stammbrüche als Exponenten und erhalten so die Wurzelfunktionen.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Wurzelfunktion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Wurzelfunktion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine Funktion <span class="math inline">\(f\)</span> mit Funktionsgleichung <span class="math inline">\(f(x) = x^\frac{1}{n} = \sqrt[n]{x}\)</span> und <span class="math inline">\(n\in \mathbb{N},\quad n&gt;1\)</span> heisst <em>Wurzelfunkion</em>. Die natürliche Zahl <span class="math inline">\(n\)</span> nennt man auch den <em>Wurzelexponenten</em>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Wurzelfunktionen sind nur definiert für positive Argumente <span class="math inline">\(x\geq 0\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Auftrag">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Auftrag
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Zeichnen Sie mit Geogebra die Wurzelfunktionen <span class="math inline">\(f(x) =\sqrt[n]{x}\)</span> für <span class="math inline">\(n = 2,3,5,6,10,15\)</span>. Skizzieren Sie im Koordinatensystem zwei dieser Funktionen und notieren Sie Eigenschaften der Wurzelfunktionen.</p>
+<p>Was fällt Ihnen auf im Vergleich zu den Potenzfunktionen mit natürlichen Exponenten?</p>
+</div>
+</div>
+<p>Wir betrachten nun noch allgemeinere Exponenten.</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definitionsbereich Potenzfunktion mit echt gebrochenen Exponenten">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definitionsbereich Potenzfunktion mit echt gebrochenen Exponenten
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Eine Funktion <span class="math inline">\(f\)</span> mit Funktionsgleichung <span class="math inline">\(f(x) = x^q\)</span> mit <span class="math inline">\(q \in \mathbb{Q} \backslash \mathbb{Z}\)</span> hat den Definitionsberech <span class="math display">\[
+D = \mathbb{R_+} \backslash 0 \text{ für } q&gt;0
+\]</span> bzw. <span class="math display">\[
+D= \mathbb{R_+} \text{ für } q&lt;0
+\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkung">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkung
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Dies gilt ebenfalls für irrationale Exponenten <span class="math inline">\(q \in \mathbb{R} \backslash \mathbb{Q}\)</span>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Auftrag">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Auftrag
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Zeichnen Sie mit Geogebra die Potenzfunktionen <span class="math inline">\(f(x) = x^q\)</span> für <span class="math inline">\(q= \frac{2}{3}, \frac{3}{2}, -\frac{2}{3}, -\frac{3}{2}, \frac{8}{5}, \pi, \frac{2}{11}, -\sqrt{5}, -\frac{8}{9}\)</span></p>
+<p>Skizzieren Sie im Koordinatensystem einige dieser Funktionen und beschreiben Sie den Einfluss des Exponenten auf die Form des Graphen. Was haben alle Funktionen gemeinsam? Notieren Sie die Eigenschaften.</p>
+</div>
+</div>
+<section id="transformationen-und-spiegelungen" class="level4" data-number="3.4.3.1">
+<h4 data-number="3.4.3.1" class="anchored" data-anchor-id="transformationen-und-spiegelungen"><span class="header-section-number">3.4.3.1</span> Transformationen und Spiegelungen</h4>
+<p>Analog zu Potenzfunktion mit ganzzahligen Exponenten kann man auch Potenzfunktoinen mit rationalen und reellen Exponenten verschieben, strecken und spiegeln. Die allgemeine Funktionsgleichung lautet dann: <span class="math display">\[
+f(x) = a\cdot (x−b)^q + c \quad \text{mit} \quad q\in \mathbb{R}
+\]</span></p>
+</section>
+<section id="aufgaben-1" class="level4" data-number="3.4.3.2">
+<h4 data-number="3.4.3.2" class="anchored" data-anchor-id="aufgaben-1"><span class="header-section-number">3.4.3.2</span> Aufgaben</h4>
+<ol type="1">
+<li><p>Um wie viel muss man den Graphen der Funktion <span class="math inline">\(f(x) = \sqrt{x}\)</span> nach oben/unten und rechts/links schieben, damit die neue Funktionskurve durch <span class="math inline">\(P(2 |5)\)</span> und <span class="math inline">\(Q(12 |7)\)</span> geht? Wie lautet die neue Funktionsgleichung?</p></li>
+<li><p>Nach Newton ist die Gravitationskraft zweier Körper umgekehrt proportional zum Quadrat des Abstandes (der beiden Massenmittelpunkte).</p>
+<ol type="a">
+<li>Welche Potenzfunktion beschreibt folglich die Gravitationskraft?</li>
+<li>Der passende Funktionsgraph soll durch <span class="math inline">\((r|F)\)</span> = <span class="math inline">\((2 |5)\)</span> gehen. Welche Funktionsgleichung erhalten wir?</li>
+</ol></li>
+<li><p>Gegeben ist die Funktion <span class="math inline">\(f(x) = x^3\)</span> und der Punkt <span class="math inline">\(P(4 |8)\)</span>.</p>
+<ol type="a">
+<li>Um wie viele Einheiten muss man den Funktionsgraphen von <span class="math inline">\(f\)</span> parallel zur <span class="math inline">\(x\)</span>-Achse (nach rechts oder links?) schieben, damit er durch <span class="math inline">\(P\)</span> geht?</li>
+<li>Um wie viele Einheiten muss man den Funktionsgraphen von f parallel zur <span class="math inline">\(y\)</span>-Achse (nach oben oder unten?) schieben, damit er durch <span class="math inline">\(P\)</span>$ geht?</li>
+<li>Mit welchem Faktora muss man den Graphen von <span class="math inline">\(f\)</span> strecken, damit er durch <span class="math inline">\(P\)</span> geht?</li>
+</ol></li>
+<li><p>Skizzieren Sie für <span class="math inline">\(x&gt;0\)</span> die Funktionsgraphen von <span class="math inline">\(f(x) = \frac{1}{\sqrt{x}}\)</span> und <span class="math inline">\(g(x) = \frac{1}{\sqrt[3]{x}}\)</span>. Stellen Sie genau dar, welche Kurve näher an der <span class="math inline">\(x\)</span>-Achse liegt.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="umkehrfunktionen" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="umkehrfunktionen"><span class="header-section-number">3.5</span> Umkehrfunktionen</h2>
+<section id="definition-1" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="definition-1"><span class="header-section-number">3.5.1</span> Definition</h3>
+<div class="callout callout-style-default callout-note callout-titled" title="Einstiegsbeispiel">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Einstiegsbeispiel
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Um mit dem Handy miteinander zu kommunizieren, wird jedem von uns eine Telefonnummer zugeordnet. Als Funktion interpretiert:</p>
+<p>………..</p>
+<p>Nun kommt es auch vor, dass wir angerufen werden und die Nummer nicht kennen. Wir interessieren uns in diesem Fall also für die umgekehrte Zuordnung.</p>
+<p>………..</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Auftrag">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Auftrag
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bestimmen Sie, welche der folgenden Funktionen umkehrbar sind. Formulieren Sie dann eine Voraussetzung, die eine Funktion erfüllen muss, damit sie umkehrbar ist.</p>
+<div class="{.tbl-colwidths=&quot;[10,40,10,40]&quot;}">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 55%">
+<col style="width: 6%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">x</th>
+<th><span class="math inline">\(\longmapsto\)</span></th>
+<th style="text-align: left;">y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a)</td>
+<td style="text-align: right;">Kunde einer bestimmten Bank</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">Kontobetrag</td>
+</tr>
+<tr class="even">
+<td>b)</td>
+<td style="text-align: right;">erwachsener Arbeitnehmer in der Schweiz</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">AHV-Nummer</td>
+</tr>
+<tr class="odd">
+<td>c)</td>
+<td style="text-align: right;">Gewicht eines Pakets</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">Inlandportokosten</td>
+</tr>
+<tr class="even">
+<td>d)</td>
+<td style="text-align: right;">erreichte Punktzahl in der Prüfung</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">Prüfungsnote</td>
+</tr>
+<tr class="odd">
+<td>e)</td>
+<td style="text-align: right;">Anzahl gekaufter Tafeln Schokolade</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">Preis</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Umkehrfunktion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Umkehrfunktion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ist die Umkehrzuordnung einer Funktion <span class="math inline">\(f\)</span> wieder eine Funktion, so ist die Funktion <span class="math inline">\(f\)</span> <em>umkehrbar</em>. Ihre Umkehrzuordnung heisst <em>Umkehrfunktion</em> <span class="math inline">\(f^{−1}\)</span> oder <em>inverse Funktion</em>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkungen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkungen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Eine Funktion ist genau dann umkehrbar, wenn jedem Element aus der Zielmenge genau ein Element aus der Definitionsmenge zugeordnet wird.</li>
+<li>Die Umkehrfunktion ist nicht zu verwechseln mit einer Potenz mit negativem Exponenten.</li>
+<li>Für jedes <span class="math inline">\(x\in \mathbb{D}\)</span> gilt: <span class="math inline">\(f(f^{−1}(x)) = x\)</span> und <span class="math inline">\(f^{−1}(f(x)) = x\)</span>.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgabe Pfeildiagramme">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgabe Pfeildiagramme
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Entscheiden Sie bei den folgenden Pfeildiagrammen jeweils, ob des sich um eine Funktion handelt und ob diese umkehrbar ist. Begründen Sie jeweils kurz.</p>
+<p><img src="images/potenzfunktionen/5_fkt_umkehrfkt.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgabe Graphen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgabe Graphen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Entscheiden Sie, ob es sich bei den folgenden Graphen um umkehrbare Funktionen handelt. Begründen Sie jeweils kurz.</p>
+<p><img src="images/potenzfunktionen/5_graphen.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Merkregeln Funktionen und Umkehrfunktionen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Merkregeln Funktionen und Umkehrfunktionen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Vertikalentest</li>
+</ul>
+<p><br>
+<br>
+<br>
+<br>
+</p>
+<ul>
+<li>Horizontalentest</li>
+</ul>
+<p><br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+</div>
+</section>
+<section id="umkehrfunktion-bestimmen" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="umkehrfunktion-bestimmen"><span class="header-section-number">3.5.2</span> Umkehrfunktion bestimmen</h3>
+<p>Wir schauen uns nun noch an, wie man die Umkehrfunktion graphisch bzw. algebraisch bestimmen kann.</p>
+<section id="graphische-bestimmung" class="level4" data-number="3.5.2.1">
+<h4 data-number="3.5.2.1" class="anchored" data-anchor-id="graphische-bestimmung"><span class="header-section-number">3.5.2.1</span> Graphische Bestimmung</h4>
+<p>Zeichnen Sie die Graphen und ihre inverse Funktion in dasselbe Koordinatensystem. Was fällt Ihnen dabei auf?</p>
+<p><span class="math inline">\(f:\)</span> <span class="math display">\[
+\mathbb{R}^+_0 \rightarrow \mathbb{R}^+_0 \qquad x \mapsto x^2
+\]</span></p>
+<p><span class="math inline">\(f^{-1}\)</span>: <span class="math display">\[
+\mathbb{R}^+_0 \rightarrow \mathbb{R}^+_0 \qquad x \mapsto \sqrt{x}
+\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+<p><span class="math inline">\(g:\)</span> <span class="math display">\[
+\mathbb{R} \rightarrow \mathbb{R} \qquad x \mapsto 0.5x + 1
+\]</span></p>
+<p><span class="math inline">\(g^{-1}\)</span>: <span class="math display">\[
+\mathbb{R} \rightarrow \mathbb{R} \qquad x \mapsto 2x-2
+\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkungen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkungen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Die Wertetabelle von <span class="math inline">\(f^{−1}\)</span> erhält man aus der Wertetabelle von <span class="math inline">\(f\)</span> durch Tauschen der Zeilen. Demnach gilt auch <span class="math inline">\(D(f^{−1}) = W(f)\)</span> und <span class="math inline">\(W(f^{−1}) = D(f)\)</span></li>
+<li>Für jeden Punkt <span class="math inline">\(P = (a |b)\)</span> auf dem Graphen von <span class="math inline">\(f\)</span> ergibt sich also durch vertauschen der Koordinaten ein der Punkt <span class="math inline">\(P'(b|a)\)</span> auf dem Graphen der Umkehrfunktion <span class="math inline">\(f^{−1}\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="algebraische-bestimmung" class="level4" data-number="3.5.2.2">
+<h4 data-number="3.5.2.2" class="anchored" data-anchor-id="algebraische-bestimmung"><span class="header-section-number">3.5.2.2</span> Algebraische Bestimmung</h4>
+<p>Um die Umkehrfunktion algebraisch zu bestimmen geht man wie folgt vor:</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Bestimmung der Funktionsgleichung der Umkehrfunktion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bestimmung der Funktionsgleichung der Umkehrfunktion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Funktiongleichung von <span class="math inline">\(f\)</span> nach <span class="math inline">\(x\)</span> auflösen.</li>
+<li><span class="math inline">\(x\)</span> und <span class="math inline">\(y\)</span> vertauschen: <span class="math inline">\(x\)</span> ist nun der Funktionswert der Umkehrfunktion <span class="math inline">\(f^{−1}\)</span></li>
+<li>Umkehrfunktion mit Definitions- und Wertebereich angeben.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Beispiel 1: <span class="math inline">\(f(x) = \frac{1}{2}x -\frac{1}{2}\)</span> für <span class="math inline">\(x\in \mathbb{R}\)</span>. Bestimmen Sie <span class="math inline">\(f^{−1}\)</span>.</p>
+<p>Beispiel 2: <span class="math inline">\(f(x) = \frac{5x+6}{3-x}\)</span> für <span class="math inline">\(x\in \mathbb{R} \backslash \{3\}\)</span>. Bestimmen Sie <span class="math inline">\(f^{−1}\)</span>.</p>
+<p>Beispiel 3: $f(x) = 2- $ für <span class="math inline">\(x\in \mathbb{R} \backslash \{0\}\)</span>. Bestimmen Sie <span class="math inline">\(f^{−1}\)</span>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="aufgaben-2" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="aufgaben-2"><span class="header-section-number">3.5.3</span> Aufgaben</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgabe Graphen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgabe Graphen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Untersuchen Sie die folgenden Funktionen auf Umkehrbarkeit. Schränken Sie gegebenenfalls den Definitionsbereich ein, so dass die Funktion umkehrbar wird.</p>
+<ol type="a">
+<li><span class="math inline">\(f(x) =−x^2 + 3\)</span> mit <span class="math inline">\(x\in \mathbb{R}_{&gt;1}\)</span></li>
+<li><span class="math inline">\(f(x) =−x^2 + 5\)</span> mit <span class="math inline">\(x\in \mathbb{R}\)</span></li>
+<li><span class="math inline">\(f(x) = \frac{1}{x^2}\)</span> mit <span class="math inline">\(x\in \mathbb{R}\backslash \{0\}\)</span></li>
+</ol></li>
+<li><p>Bestimmen Sie die Umkehrfunktion sowie den Definitions- und Wertebereich.</p>
+<ol type="a">
+<li><span class="math inline">\(f(x) = 3x−6\)</span> mit <span class="math inline">\(x\in \mathbb{R}\)</span></li>
+<li><span class="math inline">\(f(x) = \frac{4}{x-2}\)</span> mit <span class="math inline">\(x\in \mathbb{R}\backslash \{2\}\)</span></li>
+<li><span class="math inline">\(f(x) = 4-\frac{x}{6}\)</span> mit <span class="math inline">\(x\in \mathbb{R}\backslash \{0\}\)</span></li>
+<li><span class="math inline">\(f(x) = (x−3)^2\)</span> mit <span class="math inline">\(x\in \mathbb{R}_{\geq 3}\)</span></li>
+<li><span class="math inline">\(f(x) = x^3\)</span> mit <span class="math inline">\(x\in \mathbb{R}_0^+\)</span></li>
+<li><span class="math inline">\(f(x) = \sqrt{x+2}\)</span> mit <span class="math inline">\(x\in \mathbb{R}_{\geq -2}\)</span></li>
+</ol></li>
+<li><p>Gegeben ist die Funktion <span class="math inline">\(f(x) = \frac{1}{2}x^2 − x − 1\)</span></p>
+<ol type="a">
+<li>Bestimmen Sie die grösstmögliche Definitionsmenge, für welche <span class="math inline">\(f\)</span> umkehrbar ist.</li>
+<li>Bestimmen Sie die Umkehrfunktion und zeichnen Sie die beiden Graphen in dasselbe Koordinatensystem.</li>
+<li>Wodurch ist an den obigen beiden Graphen erkennbar, dass die zugrundeliegenden Funktionen invers sind?</li>
+</ol></li>
+<li><p>Der Zusammenhang von Geschwindigkeit <span class="math inline">\(v\)</span> in <span class="math inline">\(km/h\)</span> und Bremsweg <span class="math inline">\(s\)</span> in <span class="math inline">\(m\)</span> beim Autofahren wird näherungsweise durch eine quadratische Funktion <span class="math inline">\(s(v) = k\cdot v^2\)</span> beschrieben. Der Parameter <span class="math inline">\(k\)</span> wird experimentell bestimmt. Für die Rekonstruktion von Unfällen stellt sich oft die Frage, wie gross die Geschwindigkeit bei gegebenem Bremsweg war. Bestimmen Sie die Funktion, mit der aus dem Bremsweg die Geschwindigkeit berechnet werden kann.</p></li>
+</ol>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./2_1_quadratische_gleichungen_aufgaben.html" class="pagination-link" aria-label="Übungsaufgaben Quadratische Gleichungen">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Übungsaufgaben Quadratische Gleichungen</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

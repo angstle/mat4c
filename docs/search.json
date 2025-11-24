@@ -154,7 +154,7 @@
     "href": "2_quadratische_gleichungen.html#definitionen",
     "title": "2  Quadratische Gleichungen",
     "section": "",
-    "text": "2.1.1 Rein quadratische Gleichung\n\n\n\n\n\n\nDefinition rein quadratische Gleichung\n\n\n\nEine rein quadratische Gleichung besitzt genau eine Lösungsvariable mit der Potenz \\(2\\). Es kommen keine Summanden mit anderen Potenzen vor (Bsp. \\(x^1\\)).\nEine rein quadratische Gleichung kann immer in folgende Form gebracht werden: \\[\nax^2 = d\n\\]\nmit\n\\[\na\\neq 0 \\text{ und } a,d \\in \\mathbb{R}\n\\]\n\n\n\n\n\n\n\n\nBeispiel rein quadratische Gleichung\n\n\n\n\n\nBestimmen Sie die Lösungsmenge folgender Gleichungen\n\n\\(x^2 = 36\\)\n\\(3x^2 + 48 = 0\\)\n\\(10 - x^2 = 10\\)\n\\(2x^2 + 5.8 = 9 - 3x^2\\)\n\n\nLösungen\n\n\\(x = \\pm 6\\)\nkeine Reelle Lösung\n\\(x = 0\\)\n\\(x = \\pm 0.8\\)\n\n\n\n\n\n\n\n\n\n\nLösungsmenge\n\n\n\n\n\nDie Lösungsmenge einer rein quadratischen Gleichung lässt sich durch radizieren finden.\nDie Lösungsmenge kann keine, genau eine, oder zwei Elemente beinhalten.\n\nKeine Lösung: \\(\\frac{d}{a} &lt; 0\\) (negativ)\nEine Lösung: \\(x=0 \\text{ für } d = 0\\)\nZwei Lösungen: \\(x=\\pm \\sqrt{\\frac{d}{a}} \\text{ für } \\frac{d}{a} &gt; 0\\) (positiv)\n\n\n\n\nDie Lösungsmenge einer quadratischen Gleichung müsste ihnen bekannt vorkommen. Wir kennen das als die Nullstellen einer quadratischen Funktion!\nBetrachten wir die Nullstellen einer Funktion \\(f(x) = ax^2 - d\\), können wir das Resultat auch grafisch visualisieren.\n\n\n\n\n\n\n\n\n\n\n\n2.1.2 Allgemeine quadratische Gleichung\n\n\n\n\n\n\nDefinition: Allgemeine quadratische Gleichung\n\n\n\nEine allgemeine quadratische Gleichung ist eine Gleichung, bei der die Lösungsvariable (meist \\(x\\)) nicht nur im Quadrat sondern auch linear (mit Potenz 1) vorkommen kann.\nEine allgemeine quadratische Gleichungen kann immer in die folgenden zwei Formen gebracht werden:\n\nAllgemeine Form: \\(ax^2 + bx + c = 0\\) mit \\(a \\neq 0\\) und \\(a, b, c \\in \\mathbb{R}\\)\nNormalform: \\(x^2 + px + q = 0\\) mit \\(p, q \\in \\mathbb{R}\\)\n\n\n\n\n\n\n\n\n\nBeispiele: allgemeine quadratische Gleichung\n\n\n\n\n\nBestimmen Sie die Lösungsmenge folgender Gleichungen\n\n\\(x^2 + 6x + 9 = 0\\)\n\\(-2x^2 + 4x -2 = 3\\)\n\\(6x^2 - 18x = 0\\)\n\\(2x^2 + 3x -2 = 9 - 3x^2 + 4x\\)\n\n\nLösungen\n\n\\((x+3)^2 \\rightarrow \\mathbb{L} = \\{-3\\}\\)\n\\(\\mathbb{L} = \\{\\}\\)\n\\(6x(x-3) \\rightarrow \\mathbb{L} = \\{0, 3\\}\\)\nnoch nicht lösbar: \\(\\mathbb{L} = \\{\\frac{1 \\pm \\sqrt{221}}{10}\\}\\)\n\n\n\n\n\n\n\n\n\n\nLösungsmenge: Allgemeine quadratische Gleichung\n\n\n\nDie Lösungsmenge einer quadratischen Gleichung können wir noch nicht bestimmen.\nWir können hingegen in einigen Fällen die quadratische Gleichung zu \\(=0\\) umformen und die linke Seite Faktorisieren.\nWir wissen, sobald in einem Produkt einer der Faktoren \\(=0\\) ist, wird das Produkt den Wert Null annehmen.\n\\[\na\\cdot b = 0\n\\]\n\\[\na=0 \\text{ oder } b=0\n\\]\n\n\n\n\n\n\n\n\nWeitere Beispiele: allgemeine quadratische Gleichung\n\n\n\n\n\nBestimmen Sie die Lösungsmenge, sowohl durch berechnen, als auch graphisch mit Geogebra.\n\n\\((x+5)(3x-9) = 0\\)\n\\(x^2 - 9x = 10\\)\n\\(3x^2 = -5x\\)\n\n\nLösungen\n\n\\(\\mathbb{L} = \\{-5, 3\\}\\)\n\\(\\mathbb{L} = \\{-1, 10\\}\\)\n\\(\\mathbb{L} = \\{0, -5/3\\}\\)\n\n\n\n\n\n\n2.1.3 Quadrierte Gleichungen\nQuadrierte Gleichungen kennen wir im allgemeinen bereits.\n\n\n\n\n\n\nDefinition: Quadrierte Gleichung\n\n\n\nBei einer quadrierten Gleichung steht auf beiden Seiten ein Quadrat eines Terms.\nEine quadrierte Gleichung hat immer die Form: \\[\nA^2 = B^2\n\\]\nWobei \\(A\\) und \\(B\\) Terme sind.\n\n\n\n\n\n\n\n\nBeispiele: quadrierte Gleichungen\n\n\n\n\n\nBestimmen Sie die Lösungsmenge folgender Gleichungen\n\n\\(x^2 = 144\\)\n\\((2x-3)^2 = 64\\)\n\\((x+2)^2 = (5x-1)^2\\)\n\n\nLösungen\n\n\\(\\mathbb{L} = \\{-12, 12\\}\\)\n\\(\\mathbb{L} = \\{-\\frac{5}{2}, \\frac{11}{2}\\}\\)\n\\(\\mathbb{L} = \\{-\\frac{1}{6}, \\frac{3}{4}\\}\\)\n\n\n\n\n\n\n\n\n\n\nLösungsmenge von quadrierten Gleichungen\n\n\n\nQuadrierte Gleichungen können wir lösen, indem wir die zwei darin enthaltenen Gleichungen \\(A= B\\) und \\(A=−B\\) lösen. Diese erfüllen beide die Gleichung \\[\nA^2 = B^2\n\\]\nDie Lösungsmenge einer quadrierten Gleichung der Form \\(A^2 = B^2\\) ist somit die Vereinigung der Lösungsmengen der Gleichungen\n\\[\nA = B \\text{ und } A=−B\n\\]\n\n\n\n\n\n\n\n\nAufgaben lösen\n\n\n\nLösen sie die Aufgaben zum Thema Gemischte Aufgaben 3.1",
+    "text": "2.1.1 Rein quadratische Gleichung\n\n\n\n\n\n\nDefinition rein quadratische Gleichung\n\n\n\nEine rein quadratische Gleichung besitzt genau eine Lösungsvariable mit der Potenz \\(2\\). Es kommen keine Summanden mit anderen Potenzen vor (Bsp. \\(x^1\\)).\nEine rein quadratische Gleichung kann immer in folgende Form gebracht werden: \\[\nax^2 = d\n\\]\nmit\n\\[\na\\neq 0 \\text{ und } a,d \\in \\mathbb{R}\n\\]\n\n\n\n\n\n\n\n\nBeispiel rein quadratische Gleichung\n\n\n\n\n\nBestimmen Sie die Lösungsmenge folgender Gleichungen\n\n\\(x^2 = 36\\)\n\\(3x^2 + 48 = 0\\)\n\\(10 - x^2 = 10\\)\n\\(2x^2 + 5.8 = 9 - 3x^2\\)\n\n\nLösungen\n\n\\(x = \\pm 6\\)\nkeine Reelle Lösung\n\\(x = 0\\)\n\\(x = \\pm 0.8\\)\n\n\n\n\n\n\n\n\n\n\nLösungsmenge\n\n\n\n\n\nDie Lösungsmenge einer rein quadratischen Gleichung lässt sich durch radizieren finden.\nDie Lösungsmenge kann keine, genau eine, oder zwei Elemente beinhalten.\n\nKeine Lösung: \\(\\frac{d}{a} &lt; 0\\) (negativ)\nEine Lösung: \\(x=0 \\text{ für } d = 0\\)\nZwei Lösungen: \\(x=\\pm \\sqrt{\\frac{d}{a}} \\text{ für } \\frac{d}{a} &gt; 0\\) (positiv)\n\n\n\n\nDie Lösungsmenge einer quadratischen Gleichung müsste ihnen bekannt vorkommen. Wir kennen das als die Nullstellen einer quadratischen Funktion!\nBetrachten wir die Nullstellen einer Funktion \\(f(x) = ax^2 - d\\), können wir das Resultat auch grafisch visualisieren.\n\n\n\n\n\n\n\n\n\n\n\n2.1.2 Allgemeine quadratische Gleichung\n\n\n\n\n\n\nDefinition: Allgemeine quadratische Gleichung\n\n\n\nEine allgemeine quadratische Gleichung ist eine Gleichung, bei der die Lösungsvariable (meist \\(x\\)) nicht nur im Quadrat sondern auch linear (mit Potenz 1) vorkommen kann.\nEine allgemeine quadratische Gleichungen kann immer in die folgenden zwei Formen gebracht werden:\n\nAllgemeine Form: \\(ax^2 + bx + c = 0\\) mit \\(a \\neq 0\\) und \\(a, b, c \\in \\mathbb{R}\\)\nNormalform: \\(x^2 + px + q = 0\\) mit \\(p, q \\in \\mathbb{R}\\)\n\n\n\n\n\n\n\n\n\nBeispiele: allgemeine quadratische Gleichung\n\n\n\n\n\nBestimmen Sie die Lösungsmenge folgender Gleichungen\n\n\\(x^2 + 6x + 9 = 0\\)\n\\(-2x^2 + 4x -2 = 3\\)\n\\(6x^2 - 18x = 0\\)\n\\(2x^2 + 3x -2 = 9 - 3x^2 + 4x\\)\n\n\nLösungen\n\n\\((x+3)^2 \\rightarrow \\mathbb{L} = \\{-3\\}\\)\n\\(\\mathbb{L} = \\{\\}\\)\n\\(6x(x-3) \\rightarrow \\mathbb{L} = \\{0, 3\\}\\)\nnoch nicht lösbar: \\(\\mathbb{L} = \\{\\frac{1 \\pm \\sqrt{221}}{10}\\}\\)\n\n\n\n\n\n\n\n\n\n\nLösungsmenge: Allgemeine quadratische Gleichung\n\n\n\nDie Lösungsmenge einer quadratischen Gleichung können wir noch nicht bestimmen.\nWir können hingegen in einigen Fällen die quadratische Gleichung zu \\(=0\\) umformen und die linke Seite Faktorisieren.\nWir wissen, sobald in einem Produkt einer der Faktoren \\(=0\\) ist, wird das Produkt den Wert Null annehmen.\n\\[\na\\cdot b = 0\n\\]\n\\[\na=0 \\text{ oder } b=0\n\\]\n\n\n\n\n\n\n\n\nWeitere Beispiele: allgemeine quadratische Gleichung\n\n\n\n\n\nBestimmen Sie die Lösungsmenge, sowohl durch berechnen, als auch graphisch mit Geogebra.\n\n\\((x+5)(3x-9) = 0\\)\n\\(x^2 - 9x = 10\\)\n\\(3x^2 = -5x\\)\n\n\nLösungen\n\n\\(\\mathbb{L} = \\{-5, 3\\}\\)\n\\(\\mathbb{L} = \\{-1, 10\\}\\)\n\\(\\mathbb{L} = \\{0, -5/3\\}\\)\n\n\n\n\n\n\n2.1.3 Quadrierte Gleichungen\nQuadrierte Gleichungen kennen wir im allgemeinen bereits.\n\n\n\n\n\n\nDefinition: Quadrierte Gleichung\n\n\n\nBei einer quadrierten Gleichung steht auf beiden Seiten ein Quadrat eines Terms.\nEine quadrierte Gleichung hat immer die Form: \\[\nA^2 = B^2\n\\]\nWobei \\(A\\) und \\(B\\) Terme sind.\n\n\n\n\n\n\n\n\nBeispiele: quadrierte Gleichungen\n\n\n\n\n\nBestimmen Sie die Lösungsmenge folgender Gleichungen\n\n\\(x^2 = 144\\)\n\\((2x-3)^2 = 64\\)\n\\((x+2)^2 = (5x-1)^2\\)\n\n\nLösungen\n\n\\(\\mathbb{L} = \\{-12, 12\\}\\)\n\\(\\mathbb{L} = \\{-\\frac{5}{2}, \\frac{11}{2}\\}\\)\n\\(\\mathbb{L} = \\{-\\frac{1}{6}, \\frac{3}{4}\\}\\)\n\n\n\n\n\n\n\n\n\n\nLösungsmenge von quadrierten Gleichungen\n\n\n\nQuadrierte Gleichungen können wir lösen, indem wir die zwei darin enthaltenen Gleichungen \\(A= B\\) und \\(A=−B\\) lösen. Diese erfüllen beide die Gleichung \\[\nA^2 = B^2\n\\]\nDie Lösungsmenge einer quadrierten Gleichung der Form \\(A^2 = B^2\\) ist somit die Vereinigung der Lösungsmengen der Gleichungen\n\\[\nA = B \\text{ und } A=−B\n\\]\n\n\n\n\n\n\n\n\nAufgaben lösen\n\n\n\nLösen sie die Aufgaben zum Thema Gemischte Aufgaben 1",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quadratische Gleichungen</span>"
     ]
@@ -200,76 +200,6 @@
     ]
   },
   {
-    "objectID": "2_1_quadratische_gleichungen_aufgaben.html",
-    "href": "2_1_quadratische_gleichungen_aufgaben.html",
-    "title": "3  Übungsaufgaben Quadratische Gleichungen",
-    "section": "",
-    "text": "3.1 Gemischte Aufgaben",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Übungsaufgaben Quadratische Gleichungen</span>"
-    ]
-  },
-  {
-    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#sec-aufgaben_quad_gleichungen_mixed",
-    "href": "2_1_quadratische_gleichungen_aufgaben.html#sec-aufgaben_quad_gleichungen_mixed",
-    "title": "3  Übungsaufgaben Quadratische Gleichungen",
-    "section": "",
-    "text": "Geben Sie jeweils die Lösungsmenge der quadrierten Gleichung an.\n\n\n\\((x - 3)^2 = 16\\)\n\\((x - 4)^2 = 81\\)\n\n\\((2x - 3)^2 = 16\\)\n\n\\((x + 5)^2 = (x - 3)^2\\)\n\n\\((2x - 1)^2 = (x + 3)^2\\)\n\n\\((2x - 3)^2 = (3x + 8)^2\\)\n\n\\((2x - 5)^2 = (x + 4)^2\\)\n\n\\((2x - 3)^2 = (2x + 4)^2\\)\n\n\\((2x - 3)^2 - (x - 6)^2 = 0\\)\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\\(\\mathbb{L} = \\{7,\\,-1\\}\\)\n\\(\\mathbb{L} = \\{13,\\,-5\\}\\)\n\\(\\mathbb{L} = \\{\\tfrac{7}{2},\\,-\\tfrac{1}{2}\\}\\)\n\\(\\mathbb{L} = \\{-1\\}\\)\n\\(\\mathbb{L} = \\{4,\\,-\\tfrac{2}{3}\\}\\)\n\\(\\mathbb{L} = \\{-11,\\,-1\\}\\)\n\\(\\mathbb{L} = \\{9,\\;\\tfrac{1}{3}\\}\\)\n\\(\\mathbb{L} = \\{-\\tfrac{1}{4}\\}\\)\n\\(\\mathbb{L} = \\{-3,\\;3\\}\\)\n\n\n\n\n\n\nWählen Sie jeweils eine geeignete Lösungsmethode und geben Sie die Lösungsmenge der quadratischen Gleichung an.\n\n\n\\((x - 3)(x + 4) = 0\\)\n\\(x^2 - 144 = 0\\)\n\\(x^2 - 5x + 6 = 0\\)\n\\((2x + 6)^2 = 49\\)\n\\(x^2 - x = 20\\)\n\\(5x^2 = 125\\)\n\\(x^2 - 2x - 63 = 0\\)\n\\((2x + 7)^2 = 289\\)\n\\(3x^2 - 300 = 0\\)\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\\(\\mathbb{L} = \\{3,\\,-4\\}\\)\n\\(\\mathbb{L} = \\{12,\\,-12\\}\\)\n\\(\\mathbb{L} = \\{2,\\;3\\}\\)\n\\(\\mathbb{L} = \\{\\tfrac{1}{2},\\,-\\tfrac{13}{2}\\}\\)\n\\(\\mathbb{L} = \\{5,\\,-4\\}\\)\n\\(\\mathbb{L} = \\{5,\\,-5\\}\\)\n\\(\\mathbb{L} = \\{9,\\,-7\\}\\)\n\\(\\mathbb{L} = \\{5,\\,-12\\}\\)\n\\(\\mathbb{L} = \\{10,\\,-10\\}\\)\n\n\n\n\n\n\nWählen Sie jeweils eine geeignete Lösungsmethode und geben Sie die Lösungsmenge der quadratischen Gleichung an.\n\n\n\\(x^2 - 7x = 120\\)\n\n\\(-2x^2 = 98\\)\n\n\\((3x + 12)(x - 11) = 0\\)\n\n\\((2x + 6)^2 = 49\\)\n\n\\((x + 6)^2 = (x + 7)^2\\)\n\n\\(x^2 - 5x - 14 = 0\\)\n\n\\((2x + 3)^2 - 169 = 0\\)\n\n\\(x^2 + 16 = 0\\)\n\n\\(x^2 = (5x - 18)^2\\)\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\\(\\mathbb{L} = \\{15,\\,-8\\}\\)\nKeine reelle Lösung (\\(\\mathbb{L} = \\{\\}\\))\n\\(\\mathbb{L} = \\{-4,\\;11\\}\\)\n\\(\\mathbb{L} = \\{\\tfrac{1}{2},\\,-\\tfrac{13}{2}\\}\\)\n\\(\\mathbb{L} = \\{-\\tfrac{13}{2}\\}\\)\n\\(\\mathbb{L} = \\{7,\\,-2\\}\\)\n\\(\\mathbb{L} = \\{5,\\,-8\\}\\)\nKeine reelle Lösung (\\(\\mathbb{L} = \\{\\}\\))\n\\(\\mathbb{L} = \\{\\tfrac{9}{2},\\;3\\}\\)\n\n\n\n\n\n\nWählen Sie jeweils eine geeignete Lösungsmethode und geben Sie die Lösungsmenge der quadratischen Gleichung an.\n\n\n\\((x + 3)^2 = 0\\)\n\n\\((8 - x)^2 = 144\\)\n\n\\(x^2 - 5x = 24\\)\n\n\\((3x - 16)^2 = (4x - 19)^2\\)\n\n\\((11x + 12 - 3x)(11 + 12x - 3) = 0\\)\n\n\\((7x - 5)^2 = (2x + 5)^2\\)\n\n\\(x^2 - 15x = -50\\)\n\n\\((4 - 3x)^2 - (2x + 5)^2 = 0\\)\n\n\\((4x - 9)^2 = 36\\)\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\\(\\mathbb{L} = \\{-3\\}\\)\n\\(\\mathbb{L} = \\{-4,\\;20\\}\\)\n\\(\\mathbb{L} = \\{8,\\,-3\\}\\)\n\\(\\mathbb{L} = \\{3,\\;5\\}\\)\nGleichung vereinfacht zu \\((8x+12)(12x+8)=0\\), Lösungen: \\(\\{-\\tfrac{3}{2},\\,-\\tfrac{2}{3}\\}\\)\n\\(\\mathbb{L} = \\{2,\\;0\\}\\)\n\\(\\mathbb{L} = \\{10,\\;5\\}\\)\n\\(\\mathbb{L} = \\{-\\tfrac{1}{5},\\;9\\}\\)\n\\(\\mathbb{L} = \\{\\tfrac{15}{4},\\;\\tfrac{3}{4}\\}\\)",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Übungsaufgaben Quadratische Gleichungen</span>"
-    ]
-  },
-  {
-    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#rein-quadratische-gleichung",
-    "href": "2_1_quadratische_gleichungen_aufgaben.html#rein-quadratische-gleichung",
-    "title": "3  Übungsaufgaben Quadratische Gleichungen",
-    "section": "3.2 Rein quadratische Gleichung",
-    "text": "3.2 Rein quadratische Gleichung\nDMK, Kapitel 4.2., Seite 98, Aufgaben:\n\n50\n51\n52\n53\n54\n56\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n \n\n\n\nSeite 99, Aufgaben:\n\n59\n60\n61\n\n\n\n\n\n\n\nLösung",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Übungsaufgaben Quadratische Gleichungen</span>"
-    ]
-  },
-  {
-    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#allgemeine-quadratische-gleichung",
-    "href": "2_1_quadratische_gleichungen_aufgaben.html#allgemeine-quadratische-gleichung",
-    "title": "3  Übungsaufgaben Quadratische Gleichungen",
-    "section": "3.3 Allgemeine Quadratische Gleichung",
-    "text": "3.3 Allgemeine Quadratische Gleichung\n\n3.3.1 pq-Formel\nDMK, Kapitel 4.2., Seite 101, Aufgaben:\n(Ignoriert die Anweisung aus dem DMK, dass die mit der allgemeinen Formel gelöst werden soll. Löst diese Aufgaben mit der pq-Formel!)\n\n67\n69\n71\n\n\n\n3.3.2 Mitternachtsformel\nDMK, Kapitel 4.2., Seite 101, Aufgaben:\n(Hier bitte gerne mit der Mitternachtsformel lösen.)\n\n68\n70\n72\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\n\n\n3.3.3 Gemischte Aufgaben\nSeite 102, Aufgaben:\n\n74\n75\n76\n77\n78\n79\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n \n\n\n\nSeite 103, Aufgaben:\n\n82\n83\n84\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 104, Aufgaben:\n\n89\n90\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 109, Aufgaben:\n\n124\n125\n126\n128\n\n\n\n\n\n\n\nLösung",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Übungsaufgaben Quadratische Gleichungen</span>"
-    ]
-  },
-  {
-    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#quadratische-funktionen",
-    "href": "2_1_quadratische_gleichungen_aufgaben.html#quadratische-funktionen",
-    "title": "3  Übungsaufgaben Quadratische Gleichungen",
-    "section": "3.4 Quadratische Funktionen",
-    "text": "3.4 Quadratische Funktionen\nSeite 120, Aufgaben:\nBestimmt insbesondere auch die Nullstellen und Scheitelpunkt der Funktionen folgender Aufgaben\n\n198\n199\n200\n201\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 121, Aufgaben:\nNeu: Auch mit Berechnung der Nullstellen\n\n206\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 123, Aufgaben:\n\n221\n222\n225\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 129, Aufgaben:\n\n262\n\n\n\n\n\n\n\nLösung",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Übungsaufgaben Quadratische Gleichungen</span>"
-    ]
-  },
-  {
-    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#textaufgaben",
-    "href": "2_1_quadratische_gleichungen_aufgaben.html#textaufgaben",
-    "title": "3  Übungsaufgaben Quadratische Gleichungen",
-    "section": "3.5 Textaufgaben",
-    "text": "3.5 Textaufgaben\nSeite 105, Aufgaben:\n\n100\n101\n102\n103\n104\n\nSeite 106, Aufgaben:\n\n106\n107\n108\n110\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n \n\n\n\nSeite 108, Aufgaben:\n\n119\n120\n\n\n\n\n\n\n\nLösung",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Übungsaufgaben Quadratische Gleichungen</span>"
-    ]
-  },
-  {
-    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#substitution",
-    "href": "2_1_quadratische_gleichungen_aufgaben.html#substitution",
-    "title": "3  Übungsaufgaben Quadratische Gleichungen",
-    "section": "3.6 Substitution",
-    "text": "3.6 Substitution\nSeite 111, Aufgaben:\n\n139\n140\n141\n142\n\nSeite 112, Aufgaben:\n\n143\n144\n145\n146\n\n\n\n\n\n\n\nLösung",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Übungsaufgaben Quadratische Gleichungen</span>"
-    ]
-  },
-  {
     "objectID": "2_quadratische_gleichungen.html#substitution",
     "href": "2_quadratische_gleichungen.html#substitution",
     "title": "2  Quadratische Gleichungen",
@@ -277,6 +207,76 @@
     "text": "2.6 Substitution\nUnter Substitution verstehen wir in der Mathematik das ersetzen eines komplizierten, durch einen einfacheren Term (i.d.R. mit einer einzelnen Variable). Wir versuchen also, unser Leben bei sehr kompliziert aussehenden Termen etwas einfacher zu gestalten.\nBetrachten wir folgende biquadratische Gleichung:\n\\[\nx^4 - x^2 - 2 = 0\n\\]\nHier handelt es sich offensichtlich nicht um eine quadratische Gleichung, somit können wir weder die pq- noch die Mitternachtsformel anwenden. Durch eine einfache Substitution sind wir allerdings in der Lage, diese biquadratische in eine quadratische Gleichung umzuwandeln.\nWir substitutieren:\n\\[\nu = x^2\n\\]\nSomit wird unsere Gleichung zu: \\[\nu^2 - u - 2 = 0\n\\]\nDiese quadratische Gleichung können wir mit der pq- oder Mitternachtsformel lösen. Es gilt:\n\\[\nu_{1,2} = \\{-1, 2\\}\n\\]\nAber halt! Wir sind noch nicht fertig! Die ursprüngliche Gleichung wurde nicht gelöst. Wir erinnern uns, dass wir folgendes gesetzt haben: \\(u=x^2\\).\nUnd da wir wissen, dass gilt: \\(u_{1,2} = \\{-1, 2\\}\\), müssen wir rücksubstituieren: \\[\n-1=x_1^2 \\quad 2=x_2^2\n\\]\nZiehen wir die Wurzeln (wo möglich), erhalten wir entsprechend unsere Lösungsmenge: \\[\nx_{1,2} = \\{\\pm \\sqrt{2}\\}\n\\]\n\n\n\n\n\n\nAnleitung Substitution\n\n\n\nEine Gleichung können wir gemäss folgender Anleitung mit Substitution lösen:\n\nIdentifiziere einen Term innerhalb der Gleichung, welcher ersetzt werden kann\nSetze die Substitution (Bsp. \\(u=x^2\\))\nLöse die Gleichung\nFühre die Rücksubstitution durch und löse nach \\(x\\) auf\n\n\n\n\n\n\n\n\n\nBeispiel 1 Substitution\n\n\n\n\n\nLösen Sie folgende Gleichung mittels geeigneter Substitution:\n\\(x^4 - 6x^2 + 8 = 0\\)\n\n\n\nAuch komplizierter aussehende Gleichungen können mittels Substitution sehr elegant gelöst werden.\n\n\n\n\n\n\nBeispiel 2 Substitution\n\n\n\n\n\nLösen Sie folgende Gleichung mittels geeigneter Substitution:\n\\((x-10)^2 - 8(x-10)+ 15 = 0\\)\n\n\n\n\n\n\n\n\n\nAchtung\n\n\n\nWir müssen sicherstellen, dass wir in der Substitution unsere Variable (in diesem Fall \\(x)\\) vollständig substituieren. Es hilft in den wenigsten Fällen, wenn in der Gleichung letztlich unsere ursprüngliche Variable \\(x\\) und eine Substitution davon stehen bleibt.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Quadratische Gleichungen</span>"
+    ]
+  },
+  {
+    "objectID": "2_1_quadratische_gleichungen_aufgaben.html",
+    "href": "2_1_quadratische_gleichungen_aufgaben.html",
+    "title": "Übungsaufgaben Quadratische Gleichungen",
+    "section": "",
+    "text": "Gemischte Aufgaben",
+    "crumbs": [
+      "Übungsaufgaben Quadratische Gleichungen"
+    ]
+  },
+  {
+    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#sec-aufgaben_quad_gleichungen_mixed",
+    "href": "2_1_quadratische_gleichungen_aufgaben.html#sec-aufgaben_quad_gleichungen_mixed",
+    "title": "Übungsaufgaben Quadratische Gleichungen",
+    "section": "",
+    "text": "Geben Sie jeweils die Lösungsmenge der quadrierten Gleichung an.\n\n\n\\((x - 3)^2 = 16\\)\n\\((x - 4)^2 = 81\\)\n\n\\((2x - 3)^2 = 16\\)\n\n\\((x + 5)^2 = (x - 3)^2\\)\n\n\\((2x - 1)^2 = (x + 3)^2\\)\n\n\\((2x - 3)^2 = (3x + 8)^2\\)\n\n\\((2x - 5)^2 = (x + 4)^2\\)\n\n\\((2x - 3)^2 = (2x + 4)^2\\)\n\n\\((2x - 3)^2 - (x - 6)^2 = 0\\)\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\\(\\mathbb{L} = \\{7,\\,-1\\}\\)\n\\(\\mathbb{L} = \\{13,\\,-5\\}\\)\n\\(\\mathbb{L} = \\{\\tfrac{7}{2},\\,-\\tfrac{1}{2}\\}\\)\n\\(\\mathbb{L} = \\{-1\\}\\)\n\\(\\mathbb{L} = \\{4,\\,-\\tfrac{2}{3}\\}\\)\n\\(\\mathbb{L} = \\{-11,\\,-1\\}\\)\n\\(\\mathbb{L} = \\{9,\\;\\tfrac{1}{3}\\}\\)\n\\(\\mathbb{L} = \\{-\\tfrac{1}{4}\\}\\)\n\\(\\mathbb{L} = \\{-3,\\;3\\}\\)\n\n\n\n\n\n\nWählen Sie jeweils eine geeignete Lösungsmethode und geben Sie die Lösungsmenge der quadratischen Gleichung an.\n\n\n\\((x - 3)(x + 4) = 0\\)\n\\(x^2 - 144 = 0\\)\n\\(x^2 - 5x + 6 = 0\\)\n\\((2x + 6)^2 = 49\\)\n\\(x^2 - x = 20\\)\n\\(5x^2 = 125\\)\n\\(x^2 - 2x - 63 = 0\\)\n\\((2x + 7)^2 = 289\\)\n\\(3x^2 - 300 = 0\\)\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\\(\\mathbb{L} = \\{3,\\,-4\\}\\)\n\\(\\mathbb{L} = \\{12,\\,-12\\}\\)\n\\(\\mathbb{L} = \\{2,\\;3\\}\\)\n\\(\\mathbb{L} = \\{\\tfrac{1}{2},\\,-\\tfrac{13}{2}\\}\\)\n\\(\\mathbb{L} = \\{5,\\,-4\\}\\)\n\\(\\mathbb{L} = \\{5,\\,-5\\}\\)\n\\(\\mathbb{L} = \\{9,\\,-7\\}\\)\n\\(\\mathbb{L} = \\{5,\\,-12\\}\\)\n\\(\\mathbb{L} = \\{10,\\,-10\\}\\)\n\n\n\n\n\n\nWählen Sie jeweils eine geeignete Lösungsmethode und geben Sie die Lösungsmenge der quadratischen Gleichung an.\n\n\n\\(x^2 - 7x = 120\\)\n\n\\(-2x^2 = 98\\)\n\n\\((3x + 12)(x - 11) = 0\\)\n\n\\((2x + 6)^2 = 49\\)\n\n\\((x + 6)^2 = (x + 7)^2\\)\n\n\\(x^2 - 5x - 14 = 0\\)\n\n\\((2x + 3)^2 - 169 = 0\\)\n\n\\(x^2 + 16 = 0\\)\n\n\\(x^2 = (5x - 18)^2\\)\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\\(\\mathbb{L} = \\{15,\\,-8\\}\\)\nKeine reelle Lösung (\\(\\mathbb{L} = \\{\\}\\))\n\\(\\mathbb{L} = \\{-4,\\;11\\}\\)\n\\(\\mathbb{L} = \\{\\tfrac{1}{2},\\,-\\tfrac{13}{2}\\}\\)\n\\(\\mathbb{L} = \\{-\\tfrac{13}{2}\\}\\)\n\\(\\mathbb{L} = \\{7,\\,-2\\}\\)\n\\(\\mathbb{L} = \\{5,\\,-8\\}\\)\nKeine reelle Lösung (\\(\\mathbb{L} = \\{\\}\\))\n\\(\\mathbb{L} = \\{\\tfrac{9}{2},\\;3\\}\\)\n\n\n\n\n\n\nWählen Sie jeweils eine geeignete Lösungsmethode und geben Sie die Lösungsmenge der quadratischen Gleichung an.\n\n\n\\((x + 3)^2 = 0\\)\n\n\\((8 - x)^2 = 144\\)\n\n\\(x^2 - 5x = 24\\)\n\n\\((3x - 16)^2 = (4x - 19)^2\\)\n\n\\((11x + 12 - 3x)(11 + 12x - 3) = 0\\)\n\n\\((7x - 5)^2 = (2x + 5)^2\\)\n\n\\(x^2 - 15x = -50\\)\n\n\\((4 - 3x)^2 - (2x + 5)^2 = 0\\)\n\n\\((4x - 9)^2 = 36\\)\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\\(\\mathbb{L} = \\{-3\\}\\)\n\\(\\mathbb{L} = \\{-4,\\;20\\}\\)\n\\(\\mathbb{L} = \\{8,\\,-3\\}\\)\n\\(\\mathbb{L} = \\{3,\\;5\\}\\)\nGleichung vereinfacht zu \\((8x+12)(12x+8)=0\\), Lösungen: \\(\\{-\\tfrac{3}{2},\\,-\\tfrac{2}{3}\\}\\)\n\\(\\mathbb{L} = \\{2,\\;0\\}\\)\n\\(\\mathbb{L} = \\{10,\\;5\\}\\)\n\\(\\mathbb{L} = \\{-\\tfrac{1}{5},\\;9\\}\\)\n\\(\\mathbb{L} = \\{\\tfrac{15}{4},\\;\\tfrac{3}{4}\\}\\)",
+    "crumbs": [
+      "Übungsaufgaben Quadratische Gleichungen"
+    ]
+  },
+  {
+    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#rein-quadratische-gleichung",
+    "href": "2_1_quadratische_gleichungen_aufgaben.html#rein-quadratische-gleichung",
+    "title": "Übungsaufgaben Quadratische Gleichungen",
+    "section": "Rein quadratische Gleichung",
+    "text": "Rein quadratische Gleichung\nDMK, Kapitel 4.2., Seite 98, Aufgaben:\n\n50\n51\n52\n53\n54\n56\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n \n\n\n\nSeite 99, Aufgaben:\n\n59\n60\n61\n\n\n\n\n\n\n\nLösung",
+    "crumbs": [
+      "Übungsaufgaben Quadratische Gleichungen"
+    ]
+  },
+  {
+    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#allgemeine-quadratische-gleichung",
+    "href": "2_1_quadratische_gleichungen_aufgaben.html#allgemeine-quadratische-gleichung",
+    "title": "Übungsaufgaben Quadratische Gleichungen",
+    "section": "Allgemeine Quadratische Gleichung",
+    "text": "Allgemeine Quadratische Gleichung\n\npq-Formel\nDMK, Kapitel 4.2., Seite 101, Aufgaben:\n(Ignoriert die Anweisung aus dem DMK, dass die mit der allgemeinen Formel gelöst werden soll. Löst diese Aufgaben mit der pq-Formel!)\n\n67\n69\n71\n\n\n\nMitternachtsformel\nDMK, Kapitel 4.2., Seite 101, Aufgaben:\n(Hier bitte gerne mit der Mitternachtsformel lösen.)\n\n68\n70\n72\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\n\n\nGemischte Aufgaben\nSeite 102, Aufgaben:\n\n74\n75\n76\n77\n78\n79\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n \n\n\n\nSeite 103, Aufgaben:\n\n82\n83\n84\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 104, Aufgaben:\n\n89\n90\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 109, Aufgaben:\n\n124\n125\n126\n128\n\n\n\n\n\n\n\nLösung",
+    "crumbs": [
+      "Übungsaufgaben Quadratische Gleichungen"
+    ]
+  },
+  {
+    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#quadratische-funktionen",
+    "href": "2_1_quadratische_gleichungen_aufgaben.html#quadratische-funktionen",
+    "title": "Übungsaufgaben Quadratische Gleichungen",
+    "section": "Quadratische Funktionen",
+    "text": "Quadratische Funktionen\nSeite 120, Aufgaben:\nBestimmt insbesondere auch die Nullstellen und Scheitelpunkt der Funktionen folgender Aufgaben\n\n198\n199\n200\n201\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 121, Aufgaben:\nNeu: Auch mit Berechnung der Nullstellen\n\n206\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 123, Aufgaben:\n\n221\n222\n225\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n\n\n\n\nSeite 129, Aufgaben:\n\n262\n\n\n\n\n\n\n\nLösung",
+    "crumbs": [
+      "Übungsaufgaben Quadratische Gleichungen"
+    ]
+  },
+  {
+    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#textaufgaben",
+    "href": "2_1_quadratische_gleichungen_aufgaben.html#textaufgaben",
+    "title": "Übungsaufgaben Quadratische Gleichungen",
+    "section": "Textaufgaben",
+    "text": "Textaufgaben\nSeite 105, Aufgaben:\n\n100\n101\n102\n103\n104\n\nSeite 106, Aufgaben:\n\n106\n107\n108\n110\n\n\n\n\n\n\n\nLösung\n\n\n\n\n\n \n\n\n\nSeite 108, Aufgaben:\n\n119\n120\n\n\n\n\n\n\n\nLösung",
+    "crumbs": [
+      "Übungsaufgaben Quadratische Gleichungen"
+    ]
+  },
+  {
+    "objectID": "2_1_quadratische_gleichungen_aufgaben.html#substitution",
+    "href": "2_1_quadratische_gleichungen_aufgaben.html#substitution",
+    "title": "Übungsaufgaben Quadratische Gleichungen",
+    "section": "Substitution",
+    "text": "Substitution\nSeite 111, Aufgaben:\n\n139\n140\n141\n142\n\nSeite 112, Aufgaben:\n\n143\n144\n145\n146\n\n\n\n\n\n\n\nLösung",
+    "crumbs": [
+      "Übungsaufgaben Quadratische Gleichungen"
     ]
   },
   {
@@ -300,16 +300,6 @@
     ]
   },
   {
-    "objectID": "5_potenz_wurzelfunktionen.html#zahl-wert-präfix-präfix-wert-zahl",
-    "href": "5_potenz_wurzelfunktionen.html#zahl-wert-präfix-präfix-wert-zahl",
-    "title": "4  Potenz- und Potenzfunktionen",
-    "section": "4.2 | Zahl | Wert | Präfix || Präfix | Wert | Zahl |",
-    "text": "4.2 | Zahl | Wert | Präfix || Präfix | Wert | Zahl |",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Potenz- und Potenzfunktionen</span>"
-    ]
-  },
-  {
     "objectID": "5_potenz_wurzelfunktionen.html#potenzen-mit-rationalen-exponenten",
     "href": "5_potenz_wurzelfunktionen.html#potenzen-mit-rationalen-exponenten",
     "title": "3  Potenzen und Potenzfunktionen",
@@ -317,16 +307,6 @@
     "text": "3.2 Potenzen mit rationalen Exponenten\nBevor wir uns anschauen, was eine rationale Zahl wie z.B. \\(\\frac{1}{3}\\) im Exponenten einer Potenz bedeuten, möchten wir uns in Erinnerung rufen, wie die (Quadrat-)Wurzel definiert wurde und diese Definition verallgemeinern als Umkehrung einer allgemeinen Potenz.\n\n3.2.1 Verallgemeinerung der Wurzel\nWir haben die Wurzel einer Zahl \\(a\\) definiert als die Umkehrung für des Quadrierens. Analog kennen wir die Subtraktion als Umkehrung der Addition und die Division als Umkehrung der Multiplikation.\n\n\n\n\n\n\nGrundoperationen\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUmkehrung allgemeine Potenz\n\n\n\nDoch wie sieht die Umkehrung einer allgemeinen Potenz aus? Dazu betrachten wir die Gleichung: \\[\nx^4 = 81\n\\]\n\n\nDaraus finden wir folgende Definition:\n\n\n\n\n\n\nDefinition \\(n\\)-te Wurzel\n\n\n\nDie \\(n\\)-te Wurzel einer nicht-negativen Zahl aist definiert als die nicht-negative Zahl \\(x\\), deren \\(n\\)-te Potenz \\(a\\) ergibt: \\[\n\\sqrt[n]{a} = b \\qquad \\rightleftarrows \\qquad b^n = a\n\\]\nDie natürliche Zahl \\(n\\) heisst Wurzelexponent und die Zahl \\(a\\) heisst Radikand.\nSonderfall: Für \\(n = 2\\) ist \\(\\sqrt[2]{a} = \\sqrt{a}\\) die bereits bekannte Quadratwurzel.\n\n\n\n\n\n\n\n\nBemerkung\n\n\n\nAus der Definition folgt direkt, dass \\((\\sqrt[n]{a})^n = a\\) und \\(\\sqrt[n]{b^n} = b \\quad \\forall \\quad a,b\\geq 0\\)\n\n\n\n\n\n\n\n\nBeispiele\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.2.1.1 Wurzelgesetze\nDie Wurzelgesetze, die wir bereits bei der Quadratwurzel kennengelernt haben gelten auch weiterhin für die verallgemeinerte Definition der \\(n\\)-ten Wurzel.\n\n\n\n\n\n\nVerallgemeinerte Wurzelgesetze\n\n\n\nMultiplikation und Division mit gleichem Wurzelexponenten: \\[\n\\sqrt[n]{a} \\cdot \\sqrt[n]{b} = \\sqrt[n]{a\\cdot b}\n\\]\nMehrfaches Wurzelziehen: \\[\n\\sqrt[n]{\\sqrt[m]{a}} = \\sqrt[n\\cdot m]{a}\n\\]\nVertauschen von Potenz und Wurzel: \\[\n\\sqrt[n]{a^m} = (\\sqrt[n]{a})^m\n\\]\n\n\n\n\n\n\n\n\nBemerkung\n\n\n\nAuch für die \\(n\\)-te Wurzel gilt die oft vergessene (aber wichtige) Regel:\n\n\n\n\n\n3.2.2 Potenzen mit Brüchen im Exponenten\nWie bei den negativen Exponenten sollen auch für Brüche im Exponent die Potenzgesetze weiter gelten. Anhand dieser möchten wir uns nun herleiten, was ein Bruch im Exponent bedeutet.\n\n\n\n\n\n\nHerleitung Bruch im Exponent\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWir finden die Verallgemeinerung: \\[\na^{\\frac{1}{n}} = \\sqrt[n]{a}\n\\]\n\n\n\n\n\n\nAufgabe\n\n\n\nNotieren sie \\[\na^{\\frac{3}{7}}\n\\]\nmit den bekannten Operatoren\n\n\n\n\n\n\n\n\nDefinition Rationaler Exponent\n\n\n\nHat eine Potenz \\(a^k \\quad (a\\geq 0)\\) einen rationalen Exponenten \\(k= \\frac{m}{n}\\), so definieren wir:\n\\[\na^{\\frac{m}{n}} = \\sqrt[n]{a^m} = (\\sqrt[n]{a}\n)^m\n\\]\nInsbesondere gilt für \\(m= 1\\): \\[\na^{\\frac{1}{n}} = \\sqrt[n]{a}\n\\]\nMit einem rationalen Exponenten werden also die \\(n\\)-ten Wurzeln beschrieben. Somit sind (ähnlich wie bei den Wurzeln) die rationalen Exponenten nur für nicht-negative Basen \\(a\\) definiert.\n\n\n\n\n\n\n\n\nBemerkung\n\n\n\n\nDie allgemeinen Potenzgesetzte gelten auch für rationale Exponenten.\nDie Exponenten dürfen auch als Dezimalzahlen geschrieben sowie erweitert oder gekürzt werden.\n\n\n\n\n\n\n\n\n\nBeispiele\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAufgaben\n\n\n\nNotieren Sie als einzelne Potenz mit möglichst kleiner Basis.\n\n\\(\\sqrt[3]{7}\\)\n\\(\\frac{4}{\\sqrt{2}}\\)\n\\(2\\cdot \\sqrt[3]{2}\\)\n\\(49^{1.5}\\)\n\\(\\frac{7}{\\sqrt[7]{49}}\\)\n\\(\\sqrt[6]{16}\\)\n\n\n\n\n\n3.2.3 Reelle Exponenten\nEs liegt nahe festzulegen, dass alle Potenzgesetze weiter gelten, selbst wenn im Exponenten reelle Zahlen vorkommen. Es dürfen also im Exponenten auch irrationale Zahlen, wie z.B. \\(\\sqrt{2}\\), vorkommen. In diesem Fall ist es aber nicht mehr so einfach den Wert der Potenz zu bestimmen.\n\n\n\n\n\n\nBeispiele\n\n\n\n\n\\(\\left(a^{\\sqrt{2}}\\right)^{\\sqrt{18}}\\)\n\\(a^{\\sqrt{2}} \\cdot a^{\\sqrt{18}}\\)\n\n\n\n\n\n\n\n\n\nWas versteht man unter \\(3^\\sqrt{2}\\)?\n\n\n\nWir kommen der unbekannten \\(3^\\sqrt{2}\\) immer näher, wenn man \\(\\sqrt{2}\\) durch rationale untere und obere Schranken immer enger einschränkt:\n\n\nEs ist also sinnvoll \\(3^\\sqrt{2}\\) also jede Zahl zu festzulegen, die zwischen allen Zahlen \\(3^x\\) mit rationalem \\(x&lt;\\sqrt{2}\\) und allen Zahlen \\(3^y\\) mit rationalem \\(y&gt;\\sqrt{2}\\) liegt.\n\n\n\n\n\n\nDefinition Reeller Exponent\n\n\n\nSei \\(a\\geq 0\\) und \\(r\\in \\mathbb{R}\\), so definieren wir:\n\\(a^r\\) ist diejenige Zahl, die zwischen allen Zahlen \\(a^x\\) und \\(a^y\\) liegt mit \\(x&lt;r,\\ y&gt;r\\) und \\(x,y\\in \\mathbb{Q}\\).\n\n\n\n\n\n\n\n\nBemerkung\n\n\n\nEs lässt sich beweisen, dass es in jedem Fall genau eine solche Zahl gibt und \\(a^r\\) somit eindeutig ist. Ausserdem kann man zeigen, dass es mit dieser Definition für \\(r \\in \\mathbb{Q}\\) dieselbe Zahl herauskommt wie mit der bisherigen Definition für rationale Exponenten.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Potenzen und Potenzfunktionen</span>"
-    ]
-  },
-  {
-    "objectID": "5_potenz_wurzelfunktionen.html#reelle-exponenten",
-    "href": "5_potenz_wurzelfunktionen.html#reelle-exponenten",
-    "title": "4  Potenz- und Potenzfunktionen",
-    "section": "4.3 Reelle Exponenten",
-    "text": "4.3 Reelle Exponenten\nEs liegt nahe festzulegen, dass alle Potenzgesetze weiter gelten, selbst wenn im Exponenten reelle Zahlen vorkommen. Es dürfen also im Exponenten auch irrationale Zahlen, wie z.B. \\(\\sqrt{2}\\), vorkommen. In diesem Fall ist es aber nicht mehr so einfach den Wert der Potenz zu bestimmen.\n\n\n\n\n\n\nBeispiele\n\n\n\n\n\\(\\left(a^{\\sqrt{2}}\\right)^\\sqrt{18}\\)\n\\(a^\\sqrt{2} \\cdot a^\\sqrt{18}\\)\n\n\n\n\n\n\n\n\n\nWas versteht man unter \\(3^\\sqrt{2}\\)?\n\n\n\nWir kommen der unbekannten \\(3^\\sqrt{2}\\) immer näher, wenn man \\(\\sqrt{2}\\) durch rationale untere und obere Schranken immer enger einschränkt:\n\n\nEs ist also sinnvoll \\(3^\\sqrt{2}\\) also jede Zahl zu festzulegen, die zwischen allen Zahlen \\(3^x\\) mit rationalem \\(x&lt;\\sqrt{2}\\) und allen Zahlen \\(3^y\\) mit rationalem \\(y&gt;\\sqrt{2}\\) liegt.\n\n\n\n\n\n\nDefinition Reeller Exponent\n\n\n\nSei \\(a\\geq 0\\) und \\(r\\in \\mathbb{R}\\), so definieren wir:\n\\(a^r\\) ist diejenige Zahl, die zwischen allen Zahlen \\(a^x\\) und \\(a^y\\) liegt mit \\(x&lt;r,\\ y&gt;r\\) und \\(x,y\\in \\mathbb{Q}\\).\n\n\n\n\n\n\n\n\nBemerkung\n\n\n\nEs lässt sich beweisen, dass es in jedem Fall genau eine solche Zahl gibt und \\(a^r\\) somit eindeutig ist. Ausserdem kann man zeigen, dass es mit dieser Definition für \\(r \\in \\mathbb{Q}\\) dieselbe Zahl herauskommt wie mit der bisherigen Definition für rationale Exponenten.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Potenz- und Potenzfunktionen</span>"
     ]
   },
   {

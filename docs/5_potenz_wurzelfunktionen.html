@@ -211,6 +211,12 @@ window.Quarto = {
   <li><a href="#potenzfunktionen-mit-ganzzahligen-exponenten" id="toc-potenzfunktionen-mit-ganzzahligen-exponenten" class="nav-link" data-scroll-target="#potenzfunktionen-mit-ganzzahligen-exponenten"><span class="header-section-number">3.4.2</span> Potenzfunktionen mit Ganzzahligen Exponenten</a></li>
   <li><a href="#potenzfunktionen-mit-rationalen-exponenten" id="toc-potenzfunktionen-mit-rationalen-exponenten" class="nav-link" data-scroll-target="#potenzfunktionen-mit-rationalen-exponenten"><span class="header-section-number">3.4.3</span> Potenzfunktionen mit rationalen Exponenten</a></li>
   </ul></li>
+  <li><a href="#umkehrfunktionen" id="toc-umkehrfunktionen" class="nav-link" data-scroll-target="#umkehrfunktionen"><span class="header-section-number">3.5</span> Umkehrfunktionen</a>
+  <ul class="collapse">
+  <li><a href="#definition-1" id="toc-definition-1" class="nav-link" data-scroll-target="#definition-1"><span class="header-section-number">3.5.1</span> Definition</a></li>
+  <li><a href="#umkehrfunktion-bestimmen" id="toc-umkehrfunktion-bestimmen" class="nav-link" data-scroll-target="#umkehrfunktion-bestimmen"><span class="header-section-number">3.5.2</span> Umkehrfunktion bestimmen</a></li>
+  <li><a href="#aufgaben" id="toc-aufgaben" class="nav-link" data-scroll-target="#aufgaben"><span class="header-section-number">3.5.3</span> Aufgaben</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -1281,7 +1287,7 @@ x = 6^3 = 216
 <li><span class="math inline">\(\frac{2}{\sqrt[5]{x}} = \frac{5}{\sqrt[3]{x}}\)</span></li>
 </ul>
 <p><span class="math display">\[
-2x^{-1/5} = 5x^{-1/3} \Rightarrow 2x^{1/3} = 5x^{1/5} \Rightarrow x = \left(\frac{32}{25}\right)^{15}
+2x^{-1/5} = 5x^{-1/3} \Rightarrow 2x^{1/3} = 5x^{1/5} \Rightarrow x = \left(\frac{5}{2}\right)^{\frac{15}{2}}
 \]</span></p>
 </div>
 </div>
@@ -2135,9 +2141,9 @@ Definitionsbereich Potenzfunktion mit echt gebrochenen Exponenten
 </div>
 <div class="callout-body-container callout-body">
 <p>Eine Funktion <span class="math inline">\(f\)</span> mit Funktionsgleichung <span class="math inline">\(f(x) = x^q\)</span> mit <span class="math inline">\(q \in \mathbb{Q} \backslash \mathbb{Z}\)</span> hat den Definitionsberech <span class="math display">\[
-D = \mathbb{R_+} \backslash 0 \text{ für } q&gt;0
+D = \mathbb{R_+} \backslash 0 \text{ für } q &lt; 0
 \]</span> bzw. <span class="math display">\[
-D= \mathbb{R_+} \text{ für } q&lt;0
+D= \mathbb{R_+} \text{ für } q &gt; 0
 \]</span></p>
 </div>
 </div>
@@ -2168,216 +2174,348 @@ Auftrag
 <p>Skizzieren Sie im Koordinatensystem einige dieser Funktionen und beschreiben Sie den Einfluss des Exponenten auf die Form des Graphen. Was haben alle Funktionen gemeinsam? Notieren Sie die Eigenschaften.</p>
 </div>
 </div>
-<!-- 
-#### Transformationen und Spiegelungen
+<!-- #### Transformationen und Spiegelungen
 Analog zu Potenzfunktion mit ganzzahligen Exponenten kann man auch Potenzfunktoinen mit rationalen und reellen Exponenten verschieben, strecken und spiegeln. Die allgemeine Funktionsgleichung lautet dann:
 $$
 f(x) = a\cdot (x−b)^q + c \quad \text{mit} \quad q\in \mathbb{R}
 $$
 
 #### Aufgaben
-1. Um wie viel muss man den Graphen der Funktion $f(x) = \sqrt{x}$ nach oben/unten und rechts/links schieben, damit die neue Funktionskurve durch $P(2 |5)$ und $Q(12 |7)$ geht? Wie lautet die neue Funktionsgleichung?
-
-2. Nach Newton ist die Gravitationskraft zweier Körper umgekehrt proportional zum Quadrat des Abstandes (der beiden Massenmittelpunkte).
-    a) Welche Potenzfunktion beschreibt folglich die Gravitationskraft?
-    b) Der passende Funktionsgraph soll durch $(r|F)$ = $(2 |5)$ gehen. Welche Funktionsgleichung erhalten wir?
-
-3. Gegeben ist die Funktion $f(x) = x^3$ und der Punkt $P(4 |8)$.
-    a) Um wie viele Einheiten muss man den Funktionsgraphen von $f$ parallel zur $x$-Achse (nach rechts oder links?) schieben, damit er durch $P$ geht?
-    b) Um wie viele Einheiten muss man den Funktionsgraphen von f parallel zur $y$-Achse (nach oben oder unten?) schieben, damit er durch $P$$ geht?
-    c) Mit welchem Faktora muss man den Graphen von $f$ strecken, damit er durch $P$ geht?
-
-4. Skizzieren Sie für $x>0$ die Funktionsgraphen von $f(x) = \frac{1}{\sqrt{x}}$ und $g(x) = \frac{1}{\sqrt[3]{x}}$. Stellen Sie genau dar, welche Kurve näher an der $x$-Achse liegt.
-
-## Umkehrfunktionen
-### Definition
-::: {.callout-note title="Einstiegsbeispiel"}
-Um mit dem Handy miteinander zu kommunizieren, wird jedem von uns eine Telefonnummer zugeordnet. Als Funktion interpretiert:
-
-...........
-
-Nun kommt es auch vor, dass wir angerufen werden und die Nummer nicht kennen. Wir interessieren uns in diesem Fall also für die umgekehrte Zuordnung.
-
-...........
+::: {.callout-important title="Aufgabe 1"}
+Um wie viel muss man den Graphen der Funktion $f(x) = \sqrt{x}$ nach oben/unten und rechts/links schieben, damit die neue Funktionskurve durch $P(2 |5)$ und $Q(12 |7)$ geht? Wie lautet die neue Funktionsgleichung?
 :::
 
+::: {.callout-important title="Aufgabe 2"}
+Nach Newton ist die Gravitationskraft zweier Körper umgekehrt proportional zum Quadrat des Abstandes (der beiden Massenmittelpunkte).
 
-
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-8-1.png){width=480}
-:::
+  a) Welche Potenzfunktion beschreibt folglich die Gravitationskraft?
+  b) Der passende Funktionsgraph soll durch $(r|F)$ = $(2 |5)$ gehen. Welche Funktionsgleichung erhalten wir?
 :::
 
+::: {.callout-important title="Aufgabe 3"}
+Gegeben ist die Funktion $f(x) = x^3$ und der Punkt $P(4 |8)$.
 
-
-
-
-::: {.callout-important title="Auftrag"}
-Bestimmen Sie, welche der folgenden Funktionen umkehrbar sind. Formulieren Sie dann eine Voraussetzung, die eine Funktion erfüllen muss, damit sie umkehrbar ist.
-
-::: {.tbl-colwidths="[10,40,10,40]"}
-|     | x                                         | $\longmapsto$ | y                     |
-|-----|-------------------------------------------:|-----|:------------------------|
-| a)  | Kunde einer bestimmten Bank               | $\longmapsto$ | Kontobetrag            |
-| b)  | erwachsener Arbeitnehmer in der Schweiz   | $\longmapsto$ | AHV-Nummer             |
-| c)  | Gewicht eines Pakets                      | $\longmapsto$ | Inlandportokosten      |
-| d)  | erreichte Punktzahl in der Prüfung        | $\longmapsto$ | Prüfungsnote           |
-| e)  | Anzahl gekaufter Tafeln Schokolade        | $\longmapsto$ | Preis                  |
+  a) Um wie viele Einheiten muss man den Funktionsgraphen von $f$ parallel zur $x$-Achse (nach rechts oder links?) schieben, damit er durch $P$ geht?
+  b) Um wie viele Einheiten muss man den Funktionsgraphen von f parallel zur $y$-Achse (nach oben oder unten?) schieben, damit er durch $P$ geht?
+  c) Mit welchem Faktor $a$ muss man den Graphen von $f$ strecken, damit er durch $P$ geht?
 :::
 
-:::
-
-::: {.callout-caution title="Definition Umkehrfunktion" icon=false}
-Ist die Umkehrzuordnung einer Funktion $f$ wieder eine Funktion, so ist die Funktion $f$ _umkehrbar_.
-Ihre Umkehrzuordnung heisst _Umkehrfunktion_ $f^{−1}$ oder _inverse Funktion_.
-:::
-
-
-::: {.callout-note title="Bemerkungen"}
-- Eine Funktion ist genau dann umkehrbar, wenn jedem Element aus der Zielmenge genau ein Element aus der Definitionsmenge zugeordnet wird.
-- Die Umkehrfunktion ist nicht zu verwechseln mit einer Potenz mit negativem Exponenten.
-- Für jedes $x\in \mathbb{D}$ gilt: $f(f^{−1}(x)) = x$ und $f^{−1}(f(x)) = x$.
-:::
-
-::: {.callout-important title="Aufgabe Pfeildiagramme"}
-Entscheiden Sie bei den folgenden Pfeildiagrammen jeweils, ob des sich um eine Funktion handelt und ob diese umkehrbar ist. Begründen Sie jeweils kurz.
-
-![](images/potenzfunktionen/5_fkt_umkehrfkt.png)
-:::
-
-::: {.callout-important title="Aufgabe Graphen"}
-Entscheiden Sie, ob es sich bei den folgenden Graphen um umkehrbare Funktionen handelt. Begründen Sie jeweils kurz.
-
-![](images/potenzfunktionen/5_graphen.png)
-:::
-
-::: {.callout-caution title="Merkregeln Funktionen und Umkehrfunktionen" icon=false}
-- Vertikalentest
-
-\
-\
-\
-\
-
-
-- Horizontalentest
-
-\
-\
-\
-\
-\
-:::
-
-### Umkehrfunktion bestimmen
-Wir schauen uns nun noch an, wie man die Umkehrfunktion graphisch bzw. algebraisch bestimmen kann.
-
-#### Graphische Bestimmung
-Zeichnen Sie die Graphen und ihre inverse Funktion in dasselbe Koordinatensystem. Was fällt Ihnen dabei auf?
-
-$f:$
-$$
-\mathbb{R}^+_0 \rightarrow \mathbb{R}^+_0 \qquad x \mapsto x^2
-$$
-
-$f^{-1}$:
-$$
-\mathbb{R}^+_0 \rightarrow \mathbb{R}^+_0 \qquad x \mapsto \sqrt{x}
-$$
-
-
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-9-1.png){width=480}
-:::
-:::
-
-
-
-
-
----
-
-
-
-$g:$
-$$
-\mathbb{R} \rightarrow \mathbb{R} \qquad x \mapsto 0.5x + 1
-$$
-
-$g^{-1}$:
-$$
-\mathbb{R} \rightarrow \mathbb{R} \qquad x \mapsto 2x-2
-$$
-
-
-
-
-
-::: {.cell}
-::: {.cell-output-display}
-![](5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-10-1.png){width=480}
-:::
-:::
-
-
-
-
-
-
-::: {.callout-note title="Bemerkungen"}
-- Die Wertetabelle von $f^{−1}$ erhält man aus der Wertetabelle von $f$ durch Tauschen der Zeilen. Demnach gilt auch $D(f^{−1}) = W(f)$ und $W(f^{−1}) = D(f)$
-- Für jeden Punkt $P = (a |b)$ auf dem Graphen von $f$ ergibt sich also durch vertauschen der Koordinaten ein der Punkt $P'(b|a)$ auf dem Graphen der Umkehrfunktion $f^{−1}$
-:::
-
-#### Algebraische Bestimmung
-Um die Umkehrfunktion algebraisch zu bestimmen geht man wie folgt vor:
-
-::: {.callout-caution title="Bestimmung der Funktionsgleichung der Umkehrfunktion" icon=false}
-
-1. Funktiongleichung von $f$ nach $x$ auflösen.
-2. $x$ und $y$ vertauschen: $x$ ist nun der Funktionswert der Umkehrfunktion $f^{−1}$
-3. Umkehrfunktion mit Definitions- und Wertebereich angeben.
-:::
-
-::: {.callout-tip title="Beispiele"}
-Beispiel 1: $f(x) = \frac{1}{2}x -\frac{1}{2}$ für $x\in \mathbb{R}$. Bestimmen Sie $f^{−1}$.
-
-Beispiel 2: $f(x) = \frac{5x+6}{3-x}$ für $x\in \mathbb{R} \backslash \{3\}$. Bestimmen Sie $f^{−1}$.
-
-Beispiel 3: $f(x) = 2-\frac{3}{x} $ für $x\in \mathbb{R} \backslash \{0\}$. Bestimmen Sie $f^{−1}$.
-:::
-
-
-### Aufgaben
-
-::: {.callout-important title="Aufgabe Graphen"}
-1. Untersuchen Sie die folgenden Funktionen auf Umkehrbarkeit. Schränken Sie gegebenenfalls den Definitionsbereich ein, so dass die Funktion umkehrbar wird.
-    a) $f(x) =−x^2 + 3$ mit $x\in \mathbb{R}_{>1}$
-    b) $f(x) =−x^2 + 5$ mit $x\in \mathbb{R}$
-    d) $f(x) = \frac{1}{x^2}$ mit $x\in \mathbb{R}\backslash \{0\}$
-
-2. Bestimmen Sie die Umkehrfunktion sowie den Definitions- und Wertebereich.
-    a) $f(x) = 3x−6$ mit $x\in \mathbb{R}$
-    b) $f(x) = \frac{4}{x-2}$ mit $x\in \mathbb{R}\backslash \{2\}$
-    c) $f(x) = 4-\frac{x}{6}$ mit $x\in \mathbb{R}\backslash \{0\}$
-    d) $f(x) = (x−3)^2$ mit $x\in \mathbb{R}_{\geq 3}$
-    e) $f(x) = x^3$ mit $x\in \mathbb{R}_0^+$
-    f) $f(x) = \sqrt{x+2}$  mit $x\in \mathbb{R}_{\geq -2}$
-
-3. Gegeben ist die Funktion $f(x) = \frac{1}{2}x^2 − x − 1$
-
-    a) Bestimmen Sie die grösstmögliche Definitionsmenge, für welche $f$ umkehrbar ist.
-    b) Bestimmen Sie die Umkehrfunktion und zeichnen Sie die beiden Graphen in dasselbe Koordinatensystem.
-    c) Wodurch ist an den obigen beiden Graphen erkennbar, dass die zugrundeliegenden Funktionen invers sind?
-
-4. Der Zusammenhang von Geschwindigkeit $v$ in $km/h$ und Bremsweg $s$ in $m$ beim Autofahren wird näherungsweise durch eine quadratische Funktion $s(v) = k\cdot v^2$ beschrieben. Der Parameter $k$ wird experimentell bestimmt. Für die Rekonstruktion von Unfällen stellt sich oft die Frage, wie gross die Geschwindigkeit bei gegebenem Bremsweg war. Bestimmen Sie die Funktion, mit der aus dem Bremsweg die Geschwindigkeit berechnet werden kann.
+::: {.callout-important title="Aufgabe 4"}
+Skizzieren Sie für $x>0$ die Funktionsgraphen von $f(x) = \frac{1}{\sqrt{x}}$ und $g(x) = \frac{1}{\sqrt[3]{x}}$. Stellen Sie genau dar, welche Kurve näher an der $x$-Achse liegt.
 ::: -->
+</section>
+</section>
+<section id="umkehrfunktionen" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="umkehrfunktionen"><span class="header-section-number">3.5</span> Umkehrfunktionen</h2>
+<section id="definition-1" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="definition-1"><span class="header-section-number">3.5.1</span> Definition</h3>
+<div class="callout callout-style-default callout-note callout-titled" title="Einstiegsbeispiel">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Einstiegsbeispiel
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Um mit dem Handy miteinander zu kommunizieren, wird jedem von uns eine Telefonnummer zugeordnet. Als Funktion interpretiert:</p>
+<p><span class="math display">\[
+f(\text{Name})=\text{Nummer}
+\]</span> Beispiel: <span class="math inline">\(f(\text{Samira})=079 123 45 67\)</span></p>
+<p>Nun kommt es auch vor, dass wir angerufen werden und die Nummer nicht kennen. Wir interessieren uns in diesem Fall also für die umgekehrte Zuordnung.</p>
+<p><span class="math display">\[
+f^{−1}(\text{Nummer})=\text{Name}
+\]</span></p>
+<p>Beispiel: <span class="math inline">\(f^{−1}(079 123 45 67)=\)</span> Samira</p>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Auftrag">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Auftrag
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bestimmen Sie, welche der folgenden Funktionen umkehrbar sind. Formulieren Sie dann eine Voraussetzung, die eine Funktion erfüllen muss, damit sie umkehrbar ist.</p>
+<div class="{.tbl-colwidths=&quot;[10,40,10,40]&quot;}">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 55%">
+<col style="width: 6%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">x</th>
+<th><span class="math inline">\(\longmapsto\)</span></th>
+<th style="text-align: left;">y</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>a)</td>
+<td style="text-align: right;">Kunde einer bestimmten Bank</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">Kontobetrag</td>
+</tr>
+<tr class="even">
+<td>b)</td>
+<td style="text-align: right;">erwachsener Arbeitnehmer in der Schweiz</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">AHV-Nummer</td>
+</tr>
+<tr class="odd">
+<td>c)</td>
+<td style="text-align: right;">Gewicht eines Pakets</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">Inlandportokosten</td>
+</tr>
+<tr class="even">
+<td>d)</td>
+<td style="text-align: right;">erreichte Punktzahl in der Prüfung</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">Prüfungsnote</td>
+</tr>
+<tr class="odd">
+<td>e)</td>
+<td style="text-align: right;">Anzahl gekaufter Tafeln Schokolade</td>
+<td><span class="math inline">\(\longmapsto\)</span></td>
+<td style="text-align: left;">Preis</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Definition Umkehrfunktion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Definition Umkehrfunktion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ist die Umkehrzuordnung einer Funktion <span class="math inline">\(f\)</span> wieder eine Funktion, so ist die Funktion <span class="math inline">\(f\)</span> <em>umkehrbar</em>. Ihre Umkehrzuordnung heisst <em>Umkehrfunktion</em> <span class="math inline">\(f^{−1}\)</span> oder <em>inverse Funktion</em>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkungen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkungen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Eine Funktion ist genau dann umkehrbar, wenn jedem Element aus der Zielmenge genau ein Element aus der Definitionsmenge zugeordnet wird.</li>
+<li>Die Umkehrfunktion ist nicht zu verwechseln mit einer Potenz mit negativem Exponenten.</li>
+<li>Für jedes <span class="math inline">\(x\in \mathbb{D}\)</span> gilt: <span class="math inline">\(f(f^{−1}(x)) = x\)</span> und <span class="math inline">\(f^{−1}(f(x)) = x\)</span>.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgabe Pfeildiagramme">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgabe Pfeildiagramme
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Entscheiden Sie bei den folgenden Pfeildiagrammen jeweils, ob des sich um eine Funktion handelt und ob diese umkehrbar ist. Begründen Sie jeweils kurz.</p>
+<p><img src="images/potenzfunktionen/5_fkt_umkehrfkt.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgabe Graphen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgabe Graphen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Entscheiden Sie, ob es sich bei den folgenden Graphen um umkehrbare Funktionen handelt. Begründen Sie jeweils kurz.</p>
+<p><img src="images/potenzfunktionen/5_graphen.png" class="img-fluid"></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Merkregeln Funktionen und Umkehrfunktionen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Merkregeln Funktionen und Umkehrfunktionen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>Vertikalentest</p>
+<ul>
+<li><p><em>Wozu</em>: Prüft, ob eine Kurve eine Funktion ist.</p></li>
+<li><p><em>Regel</em>: Jede vertikale Gerade (parallel zur <span class="math inline">\(y\)</span>-Achse) darf den Graphen an <strong>höchstens</strong> einem Punkt schneiden.</p></li>
+<li><p><em>Bedeutung</em>: Jedem <span class="math inline">\(x\)</span>-Wert wird eindeutig <strong>maximal</strong> ein <span class="math inline">\(y\)</span>-Wert zugeordnet. Wird ein Graph zweimal geschnitten (z. B. bei einem Kreis), ist es keine Funktion.</p></li>
+</ul></li>
+<li><p>Horizontalentest</p>
+<ul>
+<li><p><em>Wozu</em>: Prüft, ob eine Funktion <em>umkehrbar</em> ist.</p></li>
+<li><p><em>Regel</em>: Jede horizontale Gerade (parallel zur <span class="math inline">\(x\)</span>-Achse) darf den Graphen an <strong>höchstens</strong> einem Punkt schneiden.</p></li>
+<li><p><em>Bedeutung</em>: Jedem <span class="math inline">\(y\)</span>-Wert lässt sich eindeutig der ursprüngliche <span class="math inline">\(x\)</span>-Wert zuordnen. Schneidet die Linie den Graphen öfter (z.B. bei einer Parabel <span class="math inline">\(y=x^2\)</span>), ist die Funktion in diesem Bereich nicht umkehrbar.</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="umkehrfunktion-bestimmen" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="umkehrfunktion-bestimmen"><span class="header-section-number">3.5.2</span> Umkehrfunktion bestimmen</h3>
+<p>Wir schauen uns nun noch an, wie man die Umkehrfunktion graphisch bzw. algebraisch bestimmen kann.</p>
+<section id="graphische-bestimmung" class="level4" data-number="3.5.2.1">
+<h4 data-number="3.5.2.1" class="anchored" data-anchor-id="graphische-bestimmung"><span class="header-section-number">3.5.2.1</span> Graphische Bestimmung</h4>
+<p>Zeichnen Sie die Graphen und ihre inverse Funktion in dasselbe Koordinatensystem. Was fällt Ihnen dabei auf?</p>
+<p><span class="math inline">\(f:\)</span> <span class="math display">\[
+\mathbb{R}^+_0 \rightarrow \mathbb{R}^+_0 \qquad x \mapsto x^2
+\]</span></p>
+<p><span class="math inline">\(f^{-1}\)</span>: <span class="math display">\[
+\mathbb{R}^+_0 \rightarrow \mathbb{R}^+_0 \qquad x \mapsto \sqrt{x}
+\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+<p><span class="math inline">\(g:\)</span> <span class="math display">\[
+\mathbb{R} \rightarrow \mathbb{R} \qquad x \mapsto 0.5x + 1
+\]</span></p>
+<p><span class="math inline">\(g^{-1}\)</span>: <span class="math display">\[
+\mathbb{R} \rightarrow \mathbb{R} \qquad x \mapsto 2x-2
+\]</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="5_potenz_wurzelfunktionen_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Bemerkungen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bemerkungen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Die Wertetabelle von <span class="math inline">\(f^{−1}\)</span> erhält man aus der Wertetabelle von <span class="math inline">\(f\)</span> durch Tauschen der Zeilen. Demnach gilt auch <span class="math inline">\(D(f^{−1}) = W(f)\)</span> und <span class="math inline">\(W(f^{−1}) = D(f)\)</span></li>
+<li>Für jeden Punkt <span class="math inline">\(P = (a |b)\)</span> auf dem Graphen von <span class="math inline">\(f\)</span> ergibt sich also durch vertauschen der Koordinaten ein der Punkt <span class="math inline">\(P'(b|a)\)</span> auf dem Graphen der Umkehrfunktion <span class="math inline">\(f^{−1}\)</span></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="algebraische-bestimmung" class="level4" data-number="3.5.2.2">
+<h4 data-number="3.5.2.2" class="anchored" data-anchor-id="algebraische-bestimmung"><span class="header-section-number">3.5.2.2</span> Algebraische Bestimmung</h4>
+<p>Um die Umkehrfunktion algebraisch zu bestimmen geht man wie folgt vor:</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled" title="Bestimmung der Funktionsgleichung der Umkehrfunktion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Bestimmung der Funktionsgleichung der Umkehrfunktion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Funktiongleichung von <span class="math inline">\(f\)</span> nach <span class="math inline">\(x\)</span> auflösen.</li>
+<li><span class="math inline">\(x\)</span> und <span class="math inline">\(y\)</span> vertauschen: <span class="math inline">\(x\)</span> ist nun der Funktionswert der Umkehrfunktion <span class="math inline">\(f^{−1}\)</span></li>
+<li>Umkehrfunktion mit Definitions- und Wertebereich angeben.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Beispiele">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Beispiele
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Beispiel 1: <span class="math inline">\(f(x) = \frac{1}{2}x -\frac{1}{2}\)</span> für <span class="math inline">\(x\in \mathbb{R}\)</span>. Bestimmen Sie <span class="math inline">\(f^{−1}\)</span>.</p>
+<p>Beispiel 2: <span class="math inline">\(f(x) = \frac{5x+6}{3-x}\)</span> für <span class="math inline">\(x\in \mathbb{R} \backslash \{3\}\)</span>. Bestimmen Sie <span class="math inline">\(f^{−1}\)</span>.</p>
+<p>Beispiel 3: $f(x) = 2- $ für <span class="math inline">\(x\in \mathbb{R} \backslash \{0\}\)</span>. Bestimmen Sie <span class="math inline">\(f^{−1}\)</span>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="aufgaben" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="aufgaben"><span class="header-section-number">3.5.3</span> Aufgaben</h3>
+<div class="callout callout-style-default callout-important callout-titled" title="Aufgabe Graphen">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Aufgabe Graphen
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Untersuchen Sie die folgenden Funktionen auf Umkehrbarkeit. Schränken Sie gegebenenfalls den Definitionsbereich ein, so dass die Funktion umkehrbar wird.</p>
+<ol type="a">
+<li><span class="math inline">\(f(x) =−x^2 + 3\)</span> mit <span class="math inline">\(x\in \mathbb{R}_{&gt;1}\)</span></li>
+<li><span class="math inline">\(f(x) =−x^2 + 5\)</span> mit <span class="math inline">\(x\in \mathbb{R}\)</span></li>
+<li><span class="math inline">\(f(x) = \frac{1}{x^2}\)</span> mit <span class="math inline">\(x\in \mathbb{R}\backslash \{0\}\)</span></li>
+</ol></li>
+<li><p>Bestimmen Sie die Umkehrfunktion sowie den Definitions- und Wertebereich.</p>
+<ol type="a">
+<li><span class="math inline">\(f(x) = 3x−6\)</span> mit <span class="math inline">\(x\in \mathbb{R}\)</span></li>
+<li><span class="math inline">\(f(x) = \frac{4}{x-2}\)</span> mit <span class="math inline">\(x\in \mathbb{R}\backslash \{2\}\)</span></li>
+<li><span class="math inline">\(f(x) = 4-\frac{x}{6}\)</span> mit <span class="math inline">\(x\in \mathbb{R}\backslash \{0\}\)</span></li>
+<li><span class="math inline">\(f(x) = (x−3)^2\)</span> mit <span class="math inline">\(x\in \mathbb{R}_{\geq 3}\)</span></li>
+<li><span class="math inline">\(f(x) = x^3\)</span> mit <span class="math inline">\(x\in \mathbb{R}_0^+\)</span></li>
+<li><span class="math inline">\(f(x) = \sqrt{x+2}\)</span> mit <span class="math inline">\(x\in \mathbb{R}_{\geq -2}\)</span></li>
+</ol></li>
+<li><p>Gegeben ist die Funktion <span class="math inline">\(f(x) = \frac{1}{2}x^2 − x − 1\)</span></p>
+<ol type="a">
+<li>Bestimmen Sie die grösstmögliche Definitionsmenge, für welche <span class="math inline">\(f\)</span> umkehrbar ist.</li>
+<li>Bestimmen Sie die Umkehrfunktion und zeichnen Sie die beiden Graphen in dasselbe Koordinatensystem.</li>
+<li>Wodurch ist an den obigen beiden Graphen erkennbar, dass die zugrundeliegenden Funktionen invers sind?</li>
+</ol></li>
+<li><p>Der Zusammenhang von Geschwindigkeit <span class="math inline">\(v\)</span> in <span class="math inline">\(km/h\)</span> und Bremsweg <span class="math inline">\(s\)</span> in <span class="math inline">\(m\)</span> beim Autofahren wird näherungsweise durch eine quadratische Funktion <span class="math inline">\(s(v) = k\cdot v^2\)</span> beschrieben. Der Parameter <span class="math inline">\(k\)</span> wird experimentell bestimmt. Für die Rekonstruktion von Unfällen stellt sich oft die Frage, wie gross die Geschwindigkeit bei gegebenem Bremsweg war. Bestimmen Sie die Funktion, mit der aus dem Bremsweg die Geschwindigkeit berechnet werden kann.</p></li>
+</ol>
+</div>
+</div>
 
 
 </section>
